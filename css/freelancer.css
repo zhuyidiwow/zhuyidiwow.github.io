@@ -13,6 +13,7 @@ p {
 p.small {
   font-size: 16px;
 }
+
 a,
 a:hover,
 a:focus,
@@ -35,7 +36,7 @@ hr.star-light,
 hr.star-primary {
   padding: 0;
   border: none;
-  border-top: solid 5px;
+  border-top: solid 2px;
   text-align: center;
   max-width: 250px;
   margin: 25px auto 30px;
@@ -47,7 +48,7 @@ hr.star-primary:after {
   display: inline-block;
   position: relative;
   top: -0.8em;
-  font-size: 2em;
+  font-size: 1.2em;
   padding: 0 0.125em;
 }
 hr.star-light {
@@ -504,12 +505,13 @@ fieldset[disabled] .btn-success.active {
   display: none;
 }
 
-ul {
-    list-style-type: none;
-    font-size: 1.2em;
+.portfolio-modal .modal-content .modal-body .portfolio-description {
+  font-size: 1.1em;
+  text-align: left !important;
+  font-family: "Lora", "Merriweather", serif !important;
 }
 
-.portfolio-modal .modal-body .portfolio-description {
-  text-align: left !important;
-  font-family: "Lora", "Open Sans", serif !important;
+*::selection {
+  color: snow;
+  background-color: #2C3E50;
 }
