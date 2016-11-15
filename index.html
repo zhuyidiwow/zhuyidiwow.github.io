@@ -19,7 +19,8 @@
 
     <!-- Custom Fonts -->
     <script src="https://use.fontawesome.com/48cbb5f483.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
     <link href="resources/fonts/Lora-Regular.ttf" rel="stylesheet">
@@ -35,545 +36,669 @@
 
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">Yidi Zhu</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">Yidi Zhu</a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <!-- Header -->
-    <header>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" style="width:512px; height:512px" src="resources/images/profile_svg.svg"
+                     alt="">
+                <div class="intro-text">
+                    <span class="name">Yidi Zhu</span>
+                    <hr class="star-light">
+                    <span class="skills">An Aspiring Game Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Portfolio</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i>Primal Space</i>
+                        </div>
+                    </div>
+                    <img src="resources/images/portfolio/1primalSpace.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i>Zombie town</i>
+                        </div>
+                    </div>
+                    <img src="resources/images/portfolio/2zombieTown.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i>Tomb Victims</i>
+                        </div>
+                    </div>
+                    <img src="resources/images/portfolio/3tombVictims.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i>YiCon</i>
+                        </div>
+                    </div>
+                    <img src="resources/images/portfolio/4yiCon.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i>Dual Balance</i>
+                        </div>
+                    </div>
+                    <img src="resources/images/portfolio/5dualBalance.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i>Primal Life</i>
+                        </div>
+                    </div>
+                    <img src="resources/images/portfolio/6primalLife.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i>Collaborate Conference Scheduling Web Application</i>
+                        </div>
+                    </div>
+                    <img src="resources/images/portfolio/7conferenceMGT.png" class="img-responsive" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="success" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>About</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2">
+                <p>I'm currently an undergraduate student. I was born in Henan, China and is now living in Hong Kong.
+                    Although my major is not related to games, I was inspired to be a game designer during my exchange
+                    life in University of Florida.</p>
+            </div>
+            <div class="col-lg-4">
+                <p>Games and game making amazed me. I want to found an indie game studio in the future, and produce
+                    games that are fun, entertaining, and meaningful. Now I'm working hard for my goal!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-6">
+                    <h3>Location</h3>
+                    <p>The Hong Kong Polytechnic University
+                        <br>Hung Hom, Hong Kong, China, 999077</p>
+                </div>
+                <div class="footer-col col-md-6">
+                    <h3>CONTACT</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/zhuyidiwow" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/zhuyidiwow" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://weibo.com/zhuyidiwow/" class="btn-social btn-outline"><i
+                                    class="fa fa-fw fa-weibo"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:zhuyidiwow@gmail.com" class="btn-social btn-outline"><i
+                                    class="fa fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" style="width:512px; height:512px" src="resources/images/profile_svg.svg" alt="">
-                    <div class="intro-text">
-                        <span class="name">Yidi Zhu</span>
-                        <hr class="star-light">
-                        <span class="skills">An Aspiring Game Designer</span>
-                    </div>
+                    Copyright &copy; Yidi Zhu 2016
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</footer>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+<!-- Portfolio Modals -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i>Primal Space</i>
-                            </div>
-                        </div>
-                        <img src="resources/images/portfolio/1primalSpace.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i>Zombie town</i>
-                            </div>
-                        </div>
-                        <img src="resources/images/portfolio/2zombieTown.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i>Tomb Victims</i>
-                            </div>
-                        </div>
-                        <img src="resources/images/portfolio/3tombVictims.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i>YiCon</i>
-                            </div>
-                        </div>
-                        <img src="resources/images/portfolio/4yiCon.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i>Dual Balance</i>
-                            </div>
-                        </div>
-                        <img src="resources/images/portfolio/5dualBalance.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i>Primal Life</i>
-                            </div>
-                        </div>
-                        <img src="resources/images/portfolio/6primalLife.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i>Collaborate Conference Scheduling Web Application</i>
-                            </div>
-                        </div>
-                        <img src="resources/images/portfolio/7conferenceMGT.png" class="img-responsive" alt="">
-                    </a>
-                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Primal Space</h2>
+                        <hr class="star-primary">
 
+                        <div class="portfolio-description">
+                            <p>This game was created for the <em>Interdisciplinary Design Methods</em> class offered by
+                                Digital Worlds Institute.</p>
+                            <img src="resources/images/portfolio/1primalSpace/2-start.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>In this game, the main character is an honorable astronaut, whose spacecraft crashed, and
+                                he need to survive and gather all kinds of resources on a strange planet. Along the way
+                                he may enter different areas with different landscapes, resources, and enemies.</p>
+                            <img src="resources/images/portfolio/1primalSpace/5-desert.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>I want the players to feel the loneliness of exploring a new planet, and the achievement
+                                of gathering resources and re-built a spacecraft in a barren environment.</p>
+                            <img src="resources/images/portfolio/1primalSpace/7-radiation.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>I completed this game together with Nick Cerillo. We designed the setting, character, and
+                                key mechanics together, and Nick did most of the drawing work. I did other work
+                                including coding, audio design, and some “programmer art”.</p>
+                            <img src="resources/images/portfolio/1primalSpace.png" class="img-responsive img-centered"
+                                 alt="">
+                            <p>I’m quite proud that I successfully implemented a fully functioning tile system, an
+                                inventory system, and a crafting system for the first time. I love the process of making
+                                this game, and it inspired me to devote myself to game design and development.</p>
+                            <img src="resources/images/portfolio/1primalSpace/3-craft.png"
+                                 class="img-responsive img-centered" alt="">
+                            <img src="resources/images/portfolio/1primalSpace/4-inventory.png"
+                                 class="img-responsive img-centered" alt="">
+                        </div>
+
+                        <div class="item-details">
+                            <p>
+                                <strong>Date:</strong> April 2016
+                            </p>
+                            <p>
+                                <strong>Type:</strong> 2D Platformer
+                            </p>
+                            <p>
+                                <strong>Role:</strong> Game designer & programmer
+                            </p>
+                            <p>
+                                <a href="https://github.com/zhuyidiwow/Interdisciplinary-Design/releases/tag/v1"><i
+                                        class="fa fa-download" aria-hidden="true"></i> Download</a>
+                            </p>
+                        </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Zombie Town</h2>
+                        <hr class="star-primary">
+                        <img src="resources/images/portfolio/2zombieTown.png" class="img-responsive img-centered"
+                             alt="">
+                        <div class="portfolio-description">
+                            <p>This game is made for the <em>Introduction to Game Development</em> class on Coursera,
+                                provided by Michigan State University.</p>
+
+                            <p>In this project, I got myself familiar with 3D development with <em>Unity</em>, and
+                                designed my first FPS game. This game has two levels, the first level is made according
+                                to the lectures, and the second level is designed by myself.</p>
+
+                            <p>In the first level, the player need to shoot the right target in a limited time, and
+                                shoot reward targets for more time. But if the player shoot the wrong targets, both
+                                scores and time would be deducted. The first level creates a tense experience with a
+                                very simple mechanic.</p>
+                            <img src="resources/images/portfolio/2zombieTown/1-level-1.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>The second level is an expansion of the first level. I redesigned the scene and the
+                                overall aesthetics using assets purchased from <em>Kenney Studio</em>. The assets made
+                                by <em>Kenny Studio</em> helped me a lot, as I know little about graphical assets
+                                creation. I also made simple animations with provided models. In this level, you need to
+                                shoot zombies without hurting civilians. I added different sounds for zombies and
+                                civilians, aiming at invoking the emotion of fear and empathy.</p>
+                            <img src="resources/images/portfolio/2zombieTown/2-looking-at-house.png"
+                                 class="img-responsive img-centered" alt="">
+                        </div>
+                        <div class="item-details">
+                            <p>
+                                <strong>Date:</strong> September 2016
+                            </p>
+                            <p>
+                                <strong>Type:</strong> First Person Shooter
+                            </p>
+                            <p>
+                                <strong>Role:</strong> Game designer & programmer
+                            </p>
+                            <p>
+                                <a href="https://github.com/zhuyidiwow/Box-Shooter/releases/tag/v0.1"><i
+                                        class="fa fa-download" aria-hidden="true"></i> Download</a>
+                            </p>
+                        </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I'm currently an undergraduate student. I was born in Henan, China and is now living in Hong Kong. Although my major is not related to games, I was inspired to be a game designer during my exchange life in University of Florida.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Games and game making amazed me. I want to found an indie game studio in the future, and produce games that are fun, entertaining, and meaningful. Now I'm working hard for my goal!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-6">
-                        <h3>Location</h3>
-                        <p>The Hong Kong Polytechnic University
-                            <br>Hung Hom, Hong Kong, China, 999077</p>
-                    </div>
-                    <div class="footer-col col-md-6">
-                        <h3>CONTACT</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/zhuyidiwow" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/zhuyidiwow" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://weibo.com/zhuyidiwow/" class="btn-social btn-outline"><i class="fa fa-fw fa-weibo"></i></a>
-                            </li>
-                            <li>
-                                <a href="mailto:zhuyidiwow@gmail.com" class="btn-social btn-outline"><i class="fa fa-envelope"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Yidi Zhu 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Primal Space</h2>
-                            <hr class="star-primary">
-
-                            <div class="portfolio-description">
-                                <p>This game was created for the <em>Interdisciplinary Design Methods</em> class offered by Digital Worlds Institute.</p>
-                                <img src="resources/images/portfolio/1primalSpace/2-start.png" class="img-responsive img-centered" alt="">
-                                <p>In this game, the main character is an honorable astronaut, whose spacecraft crashed, and he need to survive and gather all kinds of resources on a strange planet. Along the way he may enter different areas with different landscapes, resources, and enemies.</p>
-                                <img src="resources/images/portfolio/1primalSpace/5-desert.png" class="img-responsive img-centered" alt="">
-                                <p>I want the players to feel the loneliness of exploring a new planet, and the achievement of gathering resources and re-built a spacecraft in a barren environment.</p>
-                                <img src="resources/images/portfolio/1primalSpace/7-radiation.png" class="img-responsive img-centered" alt="">
-                                <p>I completed this game together with Nick Cerillo. We designed the setting, character, and key mechanics together, and Nick did most of the drawing work. I did other work including coding, audio design, and some “programmer art”.</p>
-                                <img src="resources/images/portfolio/1primalSpace.png" class="img-responsive img-centered" alt="">
-                                <p>I’m quite proud that I successfully implemented a fully functioning tile system, an inventory system, and a crafting system for the first time. I love the process of making this game, and it inspired me to devote myself to game design and development.</p>
-                                <img src="resources/images/portfolio/1primalSpace/3-craft.png" class="img-responsive img-centered" alt="">
-                                <img src="resources/images/portfolio/1primalSpace/4-inventory.png" class="img-responsive img-centered" alt="">
-                            </div>
-
-                            <div class="item-details">
-                                <p>
-                                    <strong>Date:</strong> April 2016
-                                </p>
-                                <p>
-                                    <strong>Type:</strong> 2D Platformer
-                                </p>
-                                <p>
-                                    <strong>Role:</strong> Game designer & programmer
-                                </p>
-                                <p>
-                                    <a href="https://github.com/zhuyidiwow/Interdisciplinary-Design/releases/tag/v1"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Tomb Victims</h2>
+                        <hr class="star-primary">
+                        <div class="portfolio-description">
+                            <img src="resources/images/portfolio/3tombVictims.png" class="img-responsive img-centered"
+                                 alt="">
+                            <p>This is a prototype made for the <em>Principles of Game Design</em> class on Coursera,
+                                provided by Michigan State University.</p>
+                            <img src="resources/images/portfolio/3tombVictims/3run.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>The story happens in a tomb. The tomb is located in a undeveloped, frigid zone mountain
+                                area, and is buried hundreds of inches beneath the ground. The story begins with the
+                                happening of something unknown and the tomb becomes unstable. Electricity supply is
+                                terminated. Corpses all start walking and trying to attack you. Walls and ceilings start
+                                shaking and collapsing.</p>
+                            <img src="resources/images/portfolio/3tombVictims/4trap.png"
+                                 class="img-responsive img-centered" alt="">
+                            <img src="resources/images/portfolio/3tombVictims/5zombie.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>In this game, I intentionally make the environment extremely dark and it’s hardly to see
+                                anything. I want the player to feel the fear of unknown. I also set traps, some of them
+                                are harmful, while other are more like surprises without harm. In the end, I created a
+                                door with a strong light, indicating that the exit is near.</p>
+                            <img src="resources/images/portfolio/3tombVictims/7exit.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>I plan to implement more feature, like powerups and crafting, and implement local
+                                multiplayer support for this game in the future.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Zombie Town</h2>
-                            <hr class="star-primary">
-                            <img src="resources/images/portfolio/2zombieTown.png" class="img-responsive img-centered" alt="">
-                            <div class="portfolio-description">
-                                <p>This game is made for the <em>Introduction to Game Development</em> class on Coursera, provided by Michigan State University.</p>
-
-                                <p>In this project, I got myself familiar with 3D development with <em>Unity</em>, and designed my first FPS game. This game has two levels, the first level is made according to the lectures, and the second level is designed by myself.</p>
-
-                                <p>In the first level, the player need to shoot the right target in a limited time, and shoot reward targets for more time. But if the player shoot the wrong targets, both scores and time would be deducted. The first level creates a tense experience with a very simple mechanic.</p>
-                                <img src="resources/images/portfolio/2zombieTown/1-level-1.png" class="img-responsive img-centered" alt="">
-                                <p>The second level is an expansion of the first level. I redesigned the scene and the overall aesthetics using assets purchased from <em>Kenney Studio</em>. The assets made by <em>Kenny Studio</em> helped me a lot, as I know little about graphical assets creation. I also made simple animations with provided models. In this level, you need to shoot zombies without hurting civilians. I added different sounds for zombies and civilians, aiming at invoking the emotion of fear and empathy.</p>
-                                <img src="resources/images/portfolio/2zombieTown/2-looking-at-house.png" class="img-responsive img-centered" alt="">
-                            </div>
-                            <div class="item-details">
-                                <p>
-                                    <strong>Date:</strong> September 2016
-                                </p>
-                                <p>
-                                    <strong>Type:</strong> First Person Shooter
-                                </p>
-                                <p>
-                                    <strong>Role:</strong> Game designer & programmer
-                                </p>
-                                <p>
-                                    <a href="https://github.com/zhuyidiwow/Box-Shooter/releases/tag/v0.1"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        <div class="item-details">
+                            <p>
+                                <strong>Date:</strong> September 2016
+                            </p>
+                            <p>
+                                <strong>Type:</strong> Running
+                            </p>
+                            <p>
+                                <strong>Role:</strong> Game designer & programmer
+                            </p>
+                            <p>
+                                <a href="https://github.com/zhuyidiwow/Tomb-Victims/releases/tag/0.1"><i
+                                        class="fa fa-download" aria-hidden="true"></i> Download</a>
+                            </p>
                         </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Tomb Victims</h2>
-                            <hr class="star-primary">
-                            <div class="portfolio-description">
-                                <img src="resources/images/portfolio/3tombVictims.png" class="img-responsive img-centered" alt="">
-                                <p>This is a prototype made for the <em>Principles of Game Design</em> class on Coursera, provided by Michigan State University.</p>
-                                <img src="resources/images/portfolio/3tombVictims/3run.png" class="img-responsive img-centered" alt="">
-                                <p>The story happens in a tomb. The tomb is located in a undeveloped, frigid zone mountain area, and is buried hundreds of inches beneath the ground. The story begins with the happening of something unknown and the tomb becomes unstable. Electricity supply is terminated. Corpses all start walking and trying to attack you. Walls and ceilings start shaking and collapsing.</p>
-                                <img src="resources/images/portfolio/3tombVictims/4trap.png" class="img-responsive img-centered" alt="">
-                                <img src="resources/images/portfolio/3tombVictims/5zombie.png" class="img-responsive img-centered" alt="">
-                                <p>In this game, I intentionally make the environment extremely dark and it’s hardly to see anything. I want the player to feel the fear of unknown. I also set traps, some of them are harmful, while other are more like surprises without harm. In the end, I created a door with a strong light, indicating that the exit is near.</p>
-                                <img src="resources/images/portfolio/3tombVictims/7exit.png" class="img-responsive img-centered" alt="">
-                                <p>I plan to implement more feature, like powerups and crafting, and implement local multiplayer support for this game in the future.</p>
-                            </div>
-                            <div class="item-details">
-                                <p>
-                                    <strong>Date:</strong> September 2016
-                                </p>
-                                <p>
-                                    <strong>Type:</strong> Running
-                                </p>
-                                <p>
-                                    <strong>Role:</strong> Game designer & programmer
-                                </p>
-                                <p>
-                                    <a href="https://github.com/zhuyidiwow/Tomb-Victims/releases/tag/0.1"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>YiCon</h2>
+                        <hr class="star-primary">
+                        <img src="resources/images/portfolio/4yiCon.png" class="img-responsive img-centered" alt="">
+                        <div class="portfolio-description">
+                            <p>This game is developed for my final year project – “<em>A Serious Game for Construction
+                                Education – Development and Evaluation</em>”.</p>
+
+                            <p>In this project, I explored the possibility of using serious games to address problems
+                                existing in undergraduate-level construction education, and tried to develop a game to
+                                achieve this goal. I am quite proud that most play testers said this game did help them
+                                understand the construction process and the dynamic nature of project management.</p>
+                            <img src="resources/images/portfolio/4yiCon/7-best-viewport.png"
+                                 class="img-responsive img-centered" alt="">
+                            <img src="resources/images/portfolio/4yiCon/13-construction-display-info.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>In this game, the player plays the role of a project manager, whose goal is to minimize
+                                project time and cost of a simulated project through optimizing labor allocation
+                                strategies. The User’s Manual was made to assist the conduction of play test and
+                                evaluation of the game, and covers all inputs methods and guidelines for playing this
+                                game.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>YiCon</h2>
-                            <hr class="star-primary">
-                            <img src="resources/images/portfolio/4yiCon.png" class="img-responsive img-centered" alt="">
-                            <div class="portfolio-description">
-                                <p>This game is developed for my final year project – “<em>A Serious Game for Construction Education – Development and Evaluation</em>”.</p>
-
-                                <p>In this project, I explored the possibility of using serious games to address problems existing in undergraduate-level construction education, and tried to develop a game to achieve this goal. I am quite proud that most play testers said this game did help them understand the construction process and the dynamic nature of project management.</p>
-                                <img src="resources/images/portfolio/4yiCon/7-best-viewport.png" class="img-responsive img-centered" alt="">
-                                <img src="resources/images/portfolio/4yiCon/13-construction-display-info.png" class="img-responsive img-centered" alt="">
-                                <p>In this game, the player plays the role of a project manager, whose goal is to minimize project time and cost of a simulated project through optimizing labor allocation strategies. The User’s Manual was made to assist the conduction of play test and evaluation of the game, and covers all inputs methods and guidelines for playing this game.</p>
-                            </div>
-                            <div class="item-details">
-                                <p>
-                                    <strong>Date:</strong> November 2016
-                                </p>
-                                <p>
-                                    <strong>Type:</strong> Serious Game - Construction Simulation
-                                </p>
-                                <p>
-                                    <strong>Role:</strong> Game designer & programmer
-                                </p>
-                                <p>
-                                    <a href="https://github.com/zhuyidiwow/Construction/releases/tag/alpha"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-                                </p>
-                                <p>
-                                    <a href="resources/articles/fyp/user's-manual.pdf"><i class="fa fa-book" aria-hidden="true"></i> User's Manual</a>
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        <div class="item-details">
+                            <p>
+                                <strong>Date:</strong> November 2016
+                            </p>
+                            <p>
+                                <strong>Type:</strong> Serious Game - Construction Simulation
+                            </p>
+                            <p>
+                                <strong>Role:</strong> Game designer & programmer
+                            </p>
+                            <p>
+                                <a href="https://github.com/zhuyidiwow/Construction/releases/tag/alpha"><i
+                                        class="fa fa-download" aria-hidden="true"></i> Download</a>
+                            </p>
+                            <p>
+                                <a href="resources/articles/fyp/user's-manual.pdf"><i class="fa fa-book"
+                                                                                      aria-hidden="true"></i> User's
+                                    Manual</a>
+                            </p>
                         </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Dual Balance</h2>
-                            <hr class="star-primary">
-                            <div class="portfolio-description">
-                                <p>This is the group project for <em>COMP3432 Innovative Computing Paradigm</em> class at HK PolyU. This is a two-player game on the Android platform. </p>
-                                <img src="resources/images/portfolio/5dualBalance/8-new-start-page.png" class="img-responsive img-centered" alt="">
-                                <p>We decided to make this game because <strong>we miss the old days when there were plenty of local multiplayer games</strong>. Nowadays we are getting better and better graphics, but games tend to focus on competitions instead of cooperation. So we made a casual game in which players can beat levels in a happy and relaxed atmosphere. We focus on making levels that require cooperations.</p>
-                                <img src="resources/images/portfolio/5dualBalance/3pushBoxLevel.png" class="img-responsive img-centered" alt="">
-                                <p>Player one controls the left and right movement, and player two controls the up and down movement. They can also make the ball jump by rising their phones quickly at the same time.</p>
-                                <img src="resources/images/portfolio/5dualBalance/5ringLevel.png" class="img-responsive img-centered" alt="">
-                                <p>Everyone who has played this game agree that this game is super fun and can certainly connect them with their friends.</p>
-                                <img src="resources/images/portfolio/5dualBalance/6rollLevel.png" class="img-responsive img-centered" alt="">
-                                <p>This game is currently available only on Android platform. But we do plan to release it on the AppStore in the near future, after polishing it, and sharing the joy with more people.</p>
-                            </div>
-                            <div class="item-details">
-                                <p>
-                                    <strong>Date:</strong> November 2016
-                                </p>
-                                <p>
-                                    <strong>Type:</strong> 3D cooperation mobile game
-                                </p>
-                                <p>
-                                    <strong>Role:</strong> Game designer & programmer
-                                </p>
-                                <p>
-                                    <a href="https://github.com/COMP4122/COMP3432-Innovative-Computing-Paradigm/releases/tag/alpha6"><i class="fa fa-download" aria-hidden="true"></i> Download (Android only)</a>
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Dual Balance</h2>
+                        <hr class="star-primary">
+                        <div class="portfolio-description">
+                            <p>This is the group project for <em>COMP3432 Innovative Computing Paradigm</em> class at HK
+                                PolyU. This is a two-player game on the Android platform. </p>
+                            <img src="resources/images/portfolio/5dualBalance/8-new-start-page.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>We decided to make this game because <strong>we miss the old days when there were plenty
+                                of local multiplayer games</strong>. Nowadays we are getting better and better graphics,
+                                but games tend to focus on competitions instead of cooperation. So we made a casual game
+                                in which players can beat levels in a happy and relaxed atmosphere. We focus on making
+                                levels that require cooperations.</p>
+                            <img src="resources/images/portfolio/5dualBalance/3pushBoxLevel.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>Player one controls the left and right movement, and player two controls the up and down
+                                movement. They can also make the ball jump by rising their phones quickly at the same
+                                time.</p>
+                            <img src="resources/images/portfolio/5dualBalance/5ringLevel.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>Everyone who has played this game agree that this game is super fun and can certainly
+                                connect them with their friends.</p>
+                            <img src="resources/images/portfolio/5dualBalance/6rollLevel.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>This game is currently available only on Android platform. But we do plan to release it
+                                on the AppStore in the near future, after polishing it, and sharing the joy with more
+                                people.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Primal Life</h2>
-                            <hr class="star-primary">
-                            <img src="resources/images/portfolio/6primalLife.png" class="img-responsive img-centered" alt="">
-                            <div class="portfolio-description">
-                                <p>This is an on-going group project for <em>COMP4122 Game Design and Development</em> class at HK PolyU.</p>
-                                <img src="resources/images/portfolio/6primalLife/1-meat.png" class="img-responsive img-centered" alt="">
-                                <p>In this game, we want to simulate the life in the primal age. The main character is an adult male, who is responsible for providing food for a whole family. He needs to go to different areas and hunt different animals, and brings food back to the cave where his family leaves so no one starves. So we can say this game focuses on hunting, collecting, and feeding. We want to create an emotional experience about care and concern. Wherever the player goes, he should always bear in mind that he should get food for his family.</p>
-                                <img src="resources/images/portfolio/6primalLife/2-sea-view.png" class="img-responsive img-centered" alt="">
-                                <p>Currently we’ve build four scenes: the cave, the deep forest, the snowfield, and the desert. There will be different animals living in different areas, and the player need to hunt them one by one to get enough food.</p>
-                                <img src="resources/images/portfolio/6primalLife/3-snowfield.png" class="img-responsive img-centered" alt="">
-                                <p>This project is still on-going, but we plan to finish it with in November 2016.</p>
-                            </div>
-                            <div class="item-details">
-                                <p>
-                                    <strong>Date:</strong> November 2016
-                                </p>
-                                <p>
-                                    <strong>Type:</strong> 3D Low-poly Survival Game
-                                </p>
-                                <p>
-                                    <strong>Role:</strong> Game designer, level designer, animator, programmer
-                                </p>
-                                <p>
-                                    <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download not available yet</a>
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        <div class="item-details">
+                            <p>
+                                <strong>Date:</strong> November 2016
+                            </p>
+                            <p>
+                                <strong>Type:</strong> 3D cooperation mobile game
+                            </p>
+                            <p>
+                                <strong>Role:</strong> Game designer & programmer
+                            </p>
+                            <p>
+                                <a href="https://github.com/COMP4122/COMP3432-Innovative-Computing-Paradigm/releases/tag/alpha6"><i
+                                        class="fa fa-download" aria-hidden="true"></i> Download (Android only)</a>
+                            </p>
                         </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Collaborative Conference Scheduling Web Application</h2>
-                            <hr class="star-primary">
-                            <img src="resources/images/portfolio/7conferenceMGT.png" class="img-responsive img-centered" alt="">
-                            <div class="portfolio-description">
-                                <p>This is the group project for <em>COMP3421 Web Application Design and Development</em> class at HK PolyU.</p>
-
-                                <p>In this project, we designed a collaborative scheduling web application which can be used during a conference. We built both guest and administrator support. The administrators can hold events, and the guests can choose which events to join. They can also create their own events can invite friends to join.</p>
-
-                                <p>I started to getting to know about interactive design with this project. I took up the role of user interface designer, and I designed all UIs with <em>Sketch</em>, a powerful tool on Mac for UI design. I investigated the functional requirements of this application, and designed the logic of human-computer interactions.</p>
-
-                                <p>As this is my first web design project, the design is quite immature and has a lot of room for improvement. But I think it’s a valuable experience for me, so I put it on my portfolio list.</p>
-
-                                <p>The website is no longer functioning as I no longer have access to the database. But you can still find a detailed description of the design and functions, and plenty of screenshots in the documentation.</p>
-                            </div>
-                            <div class="item-details">
-                                <p>
-                                    <strong>Date:</strong> November 2015
-                                </p>
-                                <p>
-                                    <strong>Type:</strong> Web Application System
-                                </p>
-                                <p>
-                                    <strong>Role:</strong> Web designer, Front-end web developer
-                                </p>
-                                <p>
-                                    <a href="resources/images/portfolio/7conferenceMGT/Documentation.pdf"><i class="fa fa-book" aria-hidden="true"></i> Documentation</a>
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Primal Life</h2>
+                        <hr class="star-primary">
+                        <img src="resources/images/portfolio/6primalLife.png" class="img-responsive img-centered"
+                             alt="">
+                        <div class="portfolio-description">
+                            <p>This is an on-going group project for <em>COMP4122 Game Design and Development</em> class
+                                at HK PolyU.</p>
+                            <img src="resources/images/portfolio/6primalLife/1-meat.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>In this game, we want to simulate the life in the primal age. The main character is an
+                                adult male, who is responsible for providing food for a whole family. He needs to go to
+                                different areas and hunt different animals, and brings food back to the cave where his
+                                family leaves so no one starves. So we can say this game focuses on hunting, collecting,
+                                and feeding. We want to create an emotional experience about care and concern. Wherever
+                                the player goes, he should always bear in mind that he should get food for his
+                                family.</p>
+                            <img src="resources/images/portfolio/6primalLife/2-sea-view.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>Currently we’ve build four scenes: the cave, the deep forest, the snowfield, and the
+                                desert. There will be different animals living in different areas, and the player need
+                                to hunt them one by one to get enough food.</p>
+                            <img src="resources/images/portfolio/6primalLife/3-snowfield.png"
+                                 class="img-responsive img-centered" alt="">
+                            <p>This project is still on-going, but we plan to finish it with in November 2016.</p>
                         </div>
+                        <div class="item-details">
+                            <p>
+                                <strong>Date:</strong> November 2016
+                            </p>
+                            <p>
+                                <strong>Type:</strong> 3D Low-poly Survival Game
+                            </p>
+                            <p>
+                                <strong>Role:</strong> Game designer, level designer, animator, programmer
+                            </p>
+                            <p>
+                                <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download not available yet</a>
+                            </p>
+                        </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Collaborative Conference Scheduling Web Application</h2>
+                        <hr class="star-primary">
+                        <img src="resources/images/portfolio/7conferenceMGT.png" class="img-responsive img-centered"
+                             alt="">
+                        <div class="portfolio-description">
+                            <p>This is the group project for <em>COMP3421 Web Application Design and Development</em>
+                                class at HK PolyU.</p>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                            <p>In this project, we designed a collaborative scheduling web application which can be used
+                                during a conference. We built both guest and administrator support. The administrators
+                                can hold events, and the guests can choose which events to join. They can also create
+                                their own events can invite friends to join.</p>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                            <p>I started to getting to know about interactive design with this project. I took up the
+                                role of user interface designer, and I designed all UIs with <em>Sketch</em>, a powerful
+                                tool on Mac for UI design. I investigated the functional requirements of this
+                                application, and designed the logic of human-computer interactions.</p>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+                            <p>As this is my first web design project, the design is quite immature and has a lot of
+                                room for improvement. But I think it’s a valuable experience for me, so I put it on my
+                                portfolio list.</p>
 
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+                            <p>The website is no longer functioning as I no longer have access to the database. But you
+                                can still find a detailed description of the design and functions, and plenty of
+                                screenshots in the documentation.</p>
+                        </div>
+                        <div class="item-details">
+                            <p>
+                                <strong>Date:</strong> November 2015
+                            </p>
+                            <p>
+                                <strong>Type:</strong> Web Application System
+                            </p>
+                            <p>
+                                <strong>Role:</strong> Web designer, Front-end web developer
+                            </p>
+                            <p>
+                                <a href="resources/images/portfolio/7conferenceMGT/Documentation.pdf"><i
+                                        class="fa fa-book" aria-hidden="true"></i> Documentation</a>
+                            </p>
+                        </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/freelancer.min.js"></script>
 
 </body>
 
