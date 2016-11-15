@@ -505,5 +505,11 @@ fieldset[disabled] .btn-success.active {
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.portfolio-modal .modal-body .portfolio-description {
+  text-align: left !important;
+  font-family: "Lora", "Open Sans", serif !important;
 }
