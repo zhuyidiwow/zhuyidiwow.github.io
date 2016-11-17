@@ -549,7 +549,7 @@ fieldset[disabled] .btn-success.active {
 }
 
 .portfolio-modal .modal-content .item-details {
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .portfolio-modal .close-modal {
@@ -600,9 +600,13 @@ fieldset[disabled] .btn-success.active {
 /* my own code below */
 .portfolio-modal .modal-content .modal-body .portfolio-description,
 .modal-body .portfolio-description{
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: left !important;
     font-family: "Lora", "Merriweather", serif !important;
+}
+
+.modal-body {
+    padding: 5px;
 }
 
 .modal-body img {
