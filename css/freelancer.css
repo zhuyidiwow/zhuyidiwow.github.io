@@ -145,6 +145,7 @@ header .intro-text .skills {
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
     color: #18BC9C;
+    background-color: white;
 }
 
 .navbar-custom .navbar-nav {
@@ -157,23 +158,26 @@ header .intro-text .skills {
 
 .navbar-custom .navbar-nav li a:hover {
     color: #18BC9C;
+    background-color: white;
     outline: none;
 }
 
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
     color: #18BC9C;
+    background-color: white;
 }
 
 .navbar-custom .navbar-nav li.active a {
     color: #18BC9C;
+    background-color: white;
 }
 
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-    color: white;
-    background: #18BC9C;
+    color: #18BC9C;
+    background-color: white;
 }
 
 .navbar-custom .navbar-toggle {
