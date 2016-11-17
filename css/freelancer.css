@@ -357,6 +357,7 @@ form .row:first-child .floating-label-form-group {
 
 footer {
     color: white;
+    padding-top: 3em;
 }
 
 footer h3 {
