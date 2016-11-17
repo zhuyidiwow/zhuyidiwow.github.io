@@ -595,10 +595,21 @@ fieldset[disabled] .btn-success.active {
     display: none;
 }
 
-.portfolio-modal .modal-content .modal-body .portfolio-description, .modal-body {
+
+/* my own code below */
+.portfolio-modal .modal-content .modal-body .portfolio-description,
+.modal-body .portfolio-description{
     font-size: 1.1em;
     text-align: left !important;
     font-family: "Lora", "Merriweather", serif !important;
+}
+
+.modal-body img {
+    padding-top: 1em;
+}
+
+.modal-body .portfolio-description p{
+    padding-top: 1em;
 }
 
 *::selection {
