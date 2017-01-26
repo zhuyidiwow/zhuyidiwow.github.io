@@ -1,0 +1,243 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Snippet: java.io."
+			],
+			[
+				"ma",
+				"Material Theme: Activate theme"
+			],
+			[
+				"mater",
+				"Material Theme: Activate theme"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/yidizhu/Desktop/Code/zhuyidiwow.github.io"
+	],
+	"file_history":
+	[
+		"/Users/yidizhu/Desktop/Code/zhuyidiwow.github.io/css/freelancer.css",
+		"/Users/yidizhu/Desktop/Code/zhuyidiwow.github.io/ggj2017.html",
+		"/Users/yidizhu/Desktop/Code/zhuyidiwow.github.io/rb/index.html",
+		"/Users/yidizhu/Desktop/Code/zhuyidiwow.github.io/index.html",
+		"/Users/yidizhu/Library/Application Support/SaltyFishKing/Ripples Blossom/save.dat",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/_Scenes/MainScreen.unity",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/_Scenes/Levels.unity",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/Sprites/star.png.meta",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/Sprites/Background/MainBackground.jpg.meta",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/Sounds/纯音乐-平湖秋月 古筝独奏.mp3.meta",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/Sounds.meta",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/Scripts/LevelController.cs",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/ProjectSettings/TagManager.asset",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/Scripts/TouchInput.cs",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/Scripts/Boundary.cs.meta",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/Prefabs/Flower.prefab",
+		"/Users/yidizhu/Desktop/Unity/GGJ2017/Assets/Scripts/Clicks.cs.meta",
+		"/Users/yidizhu/Downloads/YidiMouse.cs",
+		"/Users/yidizhu/Google Drive/Handouts/BRE326/Notes.md",
+		"/Users/yidizhu/Desktop/ChooseASubject.java",
+		"/Users/yidizhu/Desktop/Gutenberg 工作记录.md",
+		"/Users/yidizhu/Desktop/Code/zhuyidiwow.github.io backup 14 nov 2016/games/tennis/index.html",
+		"/Users/yidizhu/Desktop/Code/zhuyidiwow.github.io/git.html",
+		"/Users/yidizhu/Desktop/index.html.meta",
+		"/Users/yidizhu/Desktop/index.html",
+		"/Users/yidizhu/Google Drive/Unity/Tanks!/Assets/Standard Assets/Effects/ImageEffects/Scripts/Bloom.cs",
+		"/Users/yidizhu/Desktop/WechatIMG3_1_1.svg",
+		"/Users/yidizhu/Desktop/Code/zhuyidiwow.github.io/contactme.html",
+		"/Users/yidizhu/Downloads/百度网盘直接下载助手.user.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"",
+			"selection",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"portfolio",
+			"<<<",
+			"**",
+			"Luck"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"news",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "personal-website.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 294.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

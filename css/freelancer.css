@@ -110,7 +110,7 @@ header .intro-text .name {
     font-size: 2em;
 }
 
-header .intro-text .skills {
+header .intro-text .intro {
     font-size: 1.25em;
     font-weight: 300;
 }
@@ -125,7 +125,7 @@ header .intro-text .skills {
         font-size: 4.75em;
     }
 
-    header .intro-text .skills {
+    header .intro-text .intro {
         font-size: 1.75em;
     }
 }
