@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>A 3D Computer-based Construction Simulation Game - Development and Experiment</title>
+	</head>
+<body>
+<h1>A 3D Computer-based Construction Simulation Game - Development and Experiment</h1>
+
+<h2>Introduction</h2>
+
+<p>Building construction projects are becoming increasingly dynamic and complex, and require high-level problem-solving skills for construction professionals. However, in construction education, students typically lack practical experience in construction industry. Therefore, it is imperative for students to understand the problems arise from the dynamic nature of construction industry, and gain basic ideas of how to solve them. In addition, although the construction industry is undergoing a transformation by implementing Building Information Modeling, the representation of most building products still remain in 2-dimensional drawings instead of 3-dimensional models (Migilinskas et al., 2013). The visualization of buildings and building components also remains a problem in the construction industry.</p>
+
+<p>Games are gaining increasing attention as a supplementary tool for teaching and learning, which have been proven effective by past studies<strong> </strong>(Garris, 2002). (<strong>Add something about how games can be used for teaching and learning). </strong>This study aims at proposing a solution to the problems present in construction education, by developing a construction simulation game and integrating it in teaching and learning. In this study, the development process of a serious game which simulates the construction process will be presented, and an experiment for examining the effectiveness of this game will be conducted in Hong Kong.</p>
+
+<h2>Problem Statement</h2>
+
+<h3>Existing problems of construction education</h3>
+
+<p>With the development of new technologies and design concepts, (<strong>change sentence structure to make it less cliche) (extremely complex are becoming buildable and thus building construction are becoming insanely complex man!)</strong> building construction projects are becoming increasingly complex nowadays. <strong>(Mention some new technologies, and give a conclusion for how they make the industry more complex. Such as BIM, AR, virtual prototyping etc) </strong>In addition to traditional time, cost and quality constraints, safety and sustainability issues also need to be considered in order to deliver<strong> </strong>a successful building project. Planning and managing a highly <strong>sophisticated</strong> construction project involves solving(<strong>delete</strong>) problems arises from unanticipated changes and events, thus requires higher-level managements skills. While most fresh construction graduates typically lack the experience of managing a dynamic, complex construction project. Thus, it takes longer time for a new graduate to become an effective employee. (<strong>Add other problems come with the longer training time)</strong></p>
+
+<p>At the same time, some other problems still exist in the traditional construction education.</p>
+
+<p>First, the visualization of most teaching materials and student works remains 2-dimensional. Relying on 2D materials results in high learning difficulty. The students need first to visualize the 3D shapes of the structures documented on 2D drawings, which solely depends on the spatial imagination skill of an individual. Then students need to associate the 2D representations with the real world construction activities and the sequence of different activities (Wang, 2007). Ellifritt (1986) proposed an idea to solve this problem by establishing steel sculptures on campus to demonstrate steel shapes and steel connections. Students can gain a visual understanding of steel shapes and connections through examining the steel sculptures. However, although such teaching tools like steel sculptures give students the opportunity to understand structures in 3D, it remains static and prevent students from experimenting different options.</p>
+
+<p>Second, Nikolic (2011) pointed out that traditional lecture-based construction education still focuses on teaching the existing facts and prevents students from exploring different options. Nikolic (2011) also asserted that most exercises given in construction courses are too well structured and detached from real world context. Although students would get themselves comfortable with exercises given by lecturers, they may still find themselves confused when facing real world problems.</p>
+
+<p>Third, the spatial and sequential relationships existing between different activities are not receiving enough attention. Although students are equipped with scheduling techniques and related software skills, most of them still cannot understand the logics behind the arrangement of construction processes, which is the most important aspect of scheduling a construction project.</p>
+
+<p>Finally, traditional construction education relies only upon site visits as a supplement to lecture-based learning to provide students with a critical learning experience. However, the number of site visits are usually not enough for students to get them familiar with actual construction processes. During one site visit, students are exposed to established structures and on-going activities of one particular building type in a particular phase, but they are not exposed to the dynamic nature of the whole construction process (Messner &amp; Horman, 2003).</p>
+
+<p>In this situation, a computer-based simulation game can be used to address the problems mentioned above. The simulation game can simulate the complex and dynamic nature of construction projects and provide instant feedback to the player. Therefore, students who play this game will get an experience of managing a real construction project with 3D visualization and thus practice their problem solving and decision-making skills during the process. Games also possess the advantage of getting students engaged, concentrated and motivated easily, which are usually hard to achieve with traditional education approach.</p>
+
+<h2>Literature review</h2>
+
+<h3>Computer games in construction education</h3>
+
+<h4>Nature of computer games <strong>add more arguments here, such as difference between playing and gaming and unique experience games can provide</strong></h4>
+
+<p>The first computer game was introduced in 1972 by Atari Inc. which is known as “Pong”, after which computer games have become one of the most influential and ubiquitous forms of entertainment (Squire, 2003). (<strong>Computer games have come a long way, give a brief history of computer games here.) </strong>Computer games have developed <strong>(are still developing) </strong>rapidly with the advancements of digital technologies. With latest simulation and visualization technologies, the current generation of computer games is capable of providing the player with highly realistic graphics of simulated real-world environment and natural interaction experiences (Shiratuddin, 2011).</p>
+
+<p>Huizinga suggests in his 1938 book, <em>Homo Ludens (Playing man),</em> that playing is more primitive than culture, and acts as a necessary condition for the generation of culture. Huizinga (1938) also asserts that playing is the essential activity of archaic man, as an approaching of knowing. As such, it is reasonable and natural to involve playing in education rather than excluding the playing elements. <strong>Talk more about the difference between playing and gaming here. </strong>While gaming is regarded as more effective than playing, because it distinguished from playing through the confined space and time, and specific set of rules, goals, and tactics (Walther, 2003).</p>
+
+<p>Jane (2010) discussed the effects of gaming on the human by studying the facial expressions of people when they are playing games (figure 1). The common emotions conveyed by player’s facial expressions are optimism, surprise and engagement. Jane suggests that these emotions are signs of a successful problem-solving practice. Jane also pointed out that people at gaming are doing better than they are in real world. <strong>Someone else as mentioned in gamification class has the same point of view and can be used here. </strong>The better performance results from highly engaging, challenging, motivating and inspiring gaming environment. According to Shiratuddin (2011), these characteristics of gaming are the most important reasons why games would be an effective tool in construction education.</p>
+
+<figure><img src="image05.png" alt="figure1.png"/><figcaption>figure1.png</figcaption></figure>
+
+<p>Figure 1. Emotion of gaming (Source: Toledano)</p>
+
+<h4>Serious games for construction education</h4>
+
+<p>While the concept of serious games originated before the existence of computer games and is first proposed and discussed in Abt’s (1987) book <em>Serious games</em>. Serious games are games designed for particular goals other than pure entertaining (Bellotti et al., 2010). As such, the games developed for educational purposes are categorized as serious games, and “serious game” and “computer game” will be used interchangeably in this study.</p>
+
+<p>Rafig and Easterbrook (2005) suggests that game and simulation can enhance the learning process of students through active participation. Researches conducted by Dickinson et al. (2011) and Nikolic (2011) and other researchers have also proven computer games to be an effective supplementary element in construction education. The Federation of American Scientists (2006) also asserted that “People acquire new knowledge and complex skills from gameplay”. As such, games can help address the needs of strengthening the system of education and “preparing workers for 21st-century jobs”. According to Shiratuddin (2011), four distinguished phases of the cycle for gaming are probe, hypothesize, reprove and rethink. Players develop skills in decision making, design strategy, cooperation, and problem-solving through the repetition of the gaming cycle. A serious game developed with advanced simulation and visualization technologies, which is named as “Spore”, has been used in biological education and has given positive feedback (Poli et al., 2012). Students who played the game during learning process reported an average of 3 extra hours spent on class materials, and those students scored an average of 5% higher in the course compared with those who did not play the game.</p>
+
+<p>Nikolic (2011) used a theory proposed by Dale to back up the effectiveness of using computer games in education, as shown in figure 2. In this theory, passive activities, such as reading and hearing, are less effective than active activities such as giving a talk and participating in a discussion. While among active activities, simulating the real experience, which can be provided by simulation games is the second most effective activity.</p>
+
+<figure><img src="image04.png"/></figure>
+
+<p>Figure 2. Forms of active and passive learning methods. Adapted from (Dale, 1954)</p>
+
+<p><strong>Whoops! Years have passed and this theory should be out-dated! Find a new theory to contrast this theory and back up your arguments.</strong></p>
+
+<h3>Computer simulation for learning</h3>
+
+<p>A simulation is defined (Nikolic, 2011) as:</p>
+
+<p>“a simplified model of reality or set of abstract concepts that may be developed for teaching purposes, predicting behavior or testing models and processes, and for entertainment.”</p>
+
+<p>Simulations used in education create virtual environments with contextual information for students to acquire new skills through interaction and reflection (as cited in Nikolic, 2011). Simulations are usually computational models which include factors, their relationships, and assumptions about their importance (Prensky, 2004), while different simulation can vary significantly in complexity. </p>
+
+<p>For both simulations and games, students get instant results and feedbacks from different inputs. However, simulations are usually based on real world environments, systems, and concepts, while games do not necessarily to do so. Besides, simulations do not necessarily contain all elements for games, such as specific rules, goals, winning and losing condition, risks, and competitions. Simulations usually allow the user to explore and experiment freely and give the user serious decision-making responsibilities (as cited in Nikolic, 2011). Figure 3 presents the characteristics of games, simulations and simulation games.</p>
+
+<p><strong>YOU ARE MISSING ONE FIGURE HERE!!!!</strong></p>
+
+<p>Simulations provide a training environment for users to acquire new skills through repetitive activities and experiments, while serious games incorporate gaming elements to the simulated environment. As such, the combination of simulation and gaming elements will enable the players to make decisions and conduct experiments in a simulated real-world environment, while at the same time remain fully engaged and motivated during the whole process. Simulation games are used to represent the combination of both and is formally defined as:</p>
+
+<p>“a simplified model of reality in which students compete for a certain outcome based on the set of rules and constraints.”</p>
+
+<h3>Design considerations for the simulation game</h3>
+
+<p>Designing simulation games for construction education differs from typical game design in that the learning outcome and entertainment should be achieved at the same time. The needs of learning and gaming elements should be balanced through the design process. De Gloria et al. (2014) used a figure to show the kernels of serious game design (Figure 4). A game lacking in either pedagogical consideration or entertainment of traditional games will not be a successful construction simulation game. In addition, construction education includes diversified construction-related topics. These topics include but are not limited to estimating, bidding, laws, contracts, scheduling, construction materials and technologies, project management, structures and building services. While it is typically not feasible for one game to incorporate all topics involved in construction education, an effective construction simulation game should be specific to limited topics. In conclusion, a successful construction simulation game should, at least, have the following characteristics:</p>
+
+<ol>
+	<li>Has specific set of rules and goals</li>
+	<li>Be interactive</li>
+	<li>Provides instant but uncertain feedback</li>
+	<li>Includes challenges and strategies</li>
+	<li>Includes competition</li>
+	<li>Based on real world environment in the construction context </li>
+	<li>Involves practice of construction-related skills</li>
+	<li>Provides sound visualization of building projects</li>
+	<li>Be suitable for all kinds of learners</li>
+	<li>Allows the user to experiment and make different decisions</li>
+</ol>
+
+<figure><img src="image02.png"/></figure>
+
+<p>Figure 3. The three kernels of serious game design (De Gloria et al., 2014)</p>
+
+<p><strong>This graphic is ugly, try to modify and change colors</strong></p>
+
+<h3>Review of existing games in construction education</h3>
+
+<h4>Merit game - The International Construction Business Game</h4>
+
+<p>Merit game is a game simulating the operation of a virtual construction company (Institution of Civil Engineers, 2016), and MERIT stands for Management Enterprise Risk Innovation and Teamwork. The game is operated on Windows and supports Internet-based communication. Merit game creates realistic scenarios of a construction company’s business market and construction projects. For most cases, four young engineers group up as a team to play the game and participate in the annual competition.</p>
+
+<p>Merit game is designed to demonstrate the interrelation of various managerial and technical decisions made for the management of a construction company, and how certain decisions would affect the success or failure of a company. Players need to make decisions for various functions of a construction company, including financial, marketing, overhead, estimating, bidding, personnel and construction. The game is divided into two phases: “early years” and “final years”. During early years, players only compete against computer simulated companies. While during final years, players will compete against other virtual companies operated by other players, thus they are required to make more challenging and crucial decisions.</p>
+
+<p>Merit game has been operating since 1988, and more than 25,000 engineers, technicians, students, and construction professionals have taken part in the game (Khan, 2014). The players gain experience of not only various stages of a project from pre-qualification, estimating, bidding, and construction, but also the business and financial management of a company with proper strategies and personnel management.</p>
+
+<p>Although Merit game is proven effective and successful for training students and construction practitioners, it still has several drawbacks. Merit game focuses on the process of making key decisions to operate a construction company properly in director&#39;s points of view, but omits the fundamental topics such as estimating and site management. In addition, as the game is developed early, the graphics and interactions in the game are outdated. Furthermore, as Merit game competition is just held annually and the decisions made by teams are examined manually by people, there is a time gap between finalizing decisions and getting feedbacks from the game controller. Therefore, it is not convenient for teams to try out different options and conduct innovative but highly risky experiments. </p>
+
+<p><strong>Add more comments after your final competition experience</strong></p>
+
+<h2>Aims and objectives</h2>
+
+<p>This study aims at examining the process of developing a new construction simulation game for construction education, and conducting an experiment by implementing the use of the developed game in Hong Kong Polytechnic University to study the effectiveness of gaming in education under Hong Kong’s education system.</p>
+
+<p><strong>Further illustrate the aims and objectives</strong></p>
+
+<h2>Research methodology</h2>
+
+<p>In the early stage of this study, a substantial literature review about the integration of gaming in education and the development of serious games for construction education will be conducted. After that, a serious game for construction education will be developed. This game will be focusing on the simulation construction activities and structural elements instead of scheduling of a construction project. A game design document will be produced to document the game’s rules, level and environment design, gameplay, user interface, controls, and artistic elements. Then object-oriented design principle and UML (Unified Modeling Language) will be used during the early stage of the game’s development. The techniques and tools included in the game development will include but not be limited to Visual Paradigm, Unity3D, and <strong>Blender</strong>.</p>
+
+<p>After completion of the game, an experiment will be conducted at the Hong Kong Polytechnic University. The game will be used as a supplementary tool for an intermediate level construction subject. The desired courses for the experiment are BRE 204 (Structures) and BRE 361 (Construction Technology and Materials II). One group of the students will be playing the game while another group will not. The average study effort, effective and students’ performance in assessments will be studied and compared. </p>
+
+<p>Questionnaire surveys will be conducted before and after the experiment. Pre-survey will collect participants’ opinions about integrating gaming as part of learning process, their expectations of the game, and their former experience of gaming and using computing technology for learning. Post-survey will be used to measure the level of engagement, motivation, and effectiveness of the simulation experience.</p>
+
+<p>In addition, open-ended questions will be asked for both groups of participants to test their knowledge of certain construction activity before and after the learning process. </p>
+
+<h2>Data analysis</h2>
+
+<p>The data collected during the experiment will be used to analyze the acceptability, feasibility, and effectiveness of integrating games in the learning process. Demographic information such as participants’ former academic performance and exposure to computing technology will also be involved in the data analysis process to get a better understanding of the result.</p>
+
+<h2>Reference List</h2>
+
+<p>American Institute of Steel Construction (2016). <em>Steel sculptures</em>. Retrieved from http://www.spring.org.uk/the1sttransport</p>
+
+<p>Bellotti, F., Berta, R., &amp; De Gloria, A. (2010). Designing Effective Serious Games: Opportunities and Challenges for Research. <em>International Journal of Emerging Technologies in Learning (iJET)</em>, 5(SI3), 1–14. http://doi.org/10.3991/ijet.v5s3.1500</p>
+
+<p>Abt, C. C. (1987). <em>Serious games</em>. University Press of America.</p>
+
+<p>Construction Industry Simulations Ltd (2016). <em>Merit game</em>. Retrieved from http://meritgame.com/overview/overview</p>
+
+<p>Dale, E. (1946). The cone of experience. <em>Audio-visual methods in teaching</em>,1, 37-51.</p>
+
+<p>De Gloria, A., Bellotti, F., &amp; Berta, R. (2014). Serious Games for education and training. <em>International Journal of Serious Games</em>, 1(1).</p>
+
+<p>Dickinson, J. K., Woodard, P., Canas, R., Ahamed, S., &amp; Lockston, D. (2011). Game-based trench safety education: development and lessons learned. <em>Journal of Information Technology in Construction (ITcon)</em>, 16(2011), 119-134.</p>
+
+<p>Garris, R., Ahlers, R., &amp; Driskell, J. E. (2002). Games, Motivation, and Learning: A Research and Practice Model. <em>Simulation &amp; Gaming</em>, 33(4), 441–467. http://doi.org/10.1177/1046878102238607</p>
+
+<p>Huizinga, J. (1998). <em>Homo ludens : A study of the play-element in culture</em> (Sociology of culture ; 3). London: Routledge.</p>
+
+<p>Khan (2014). Merit game celebrates 25 years of developing civil engineers&#39; business skills. <em>Proceedings of the ICE - Civil Engineering</em>, 167(4), 150–150. http://doi.org/10.1680/cien.2014.167.4.150</p>
+
+<p>Messner, J. I., &amp; Horman, M. (2003). Using advanced visualization tools to improve construction education. Presented at the <em>Proceedings of CONVR 2003 Conference.</em></p>
+
+<p>Migilinskas, D., Popov, V., Juocevicius, V., &amp; Ustinovichius, L. (2013). The Benefits, Obstacles and Problems of Practical Bim Implementation. <em>Procedia Engineering</em>, 57, 767–774. http://doi.org/10.1016/j.proeng.2013.04.097</p>
+
+<p>Nikolić, D. (2011). <em>Evaluating a simulation game in construction engineering education: The virtual construction simulator 3</em> (Doctoral dissertation, Architectural Engineering).</p>
+
+<p>Poli, D., Berenotto, C., Blankenship, S., Piatkowski, B., Bader, G. A., &amp; Poore, M. (2012). Bringing Evolution to a Technological Generation: A Case Study with the Video Game SPORE. <em>The American Biology Teacher</em>, 74(2), 100–103. http://doi.org/10.1525/abt.2012.74.2.7</p>
+
+<p>Prensky, M. (2004). Interactive pretending: An overview of simulation. Online: http://www. marcprensky. com/writing/Prensky-Interactive_Pretending. pdf (15.06. 2006).</p>
+
+<p>Rafiq, M. Y., &amp; Easterbrook, D. J. (2005). Using the Computer to Develop a Better Understanding in Teaching Structural Engineering Behavior to Undergraduates. <em>Journal of Computing in Civil Engineering</em>, 19(1), 34–44. http://doi.org/10.1061/(ASCE)0887-3801(2005)19:1(34)</p>
+
+<p>Shiratuddin, M. F. (2011, November). Integrating computer game-based learning into construction education. In Information Technology and Multimedia (ICIM), <em>2011 International Conference on (pp. 1-6)</em>. IEEE.</p>
+
+<p>Squire, K. (2003). Video games in education. <em>International Journal of Intelligent Systems. Games &amp; Simulation</em>, 2(1), 49-62.</p>
+
+<p>Toledano (2002). Gamers [Photograph]. Retrieved from http://www.mrtoledano.com/gamers</p>
+
+<p>Walther, B. K. (2003). Playing and gaming. <em>Game Studies. </em>http://doi.org/10.1162/152028106775329688</p>
+
+<p>Wang, L. (2007). <em>Using 4D Modeling to advance construction visualization in engineering education</em>. Unpublished Thesis, Penn. State University.</p>
+
+</body>
+</html>
+
