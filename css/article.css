@@ -67,9 +67,19 @@ h3 {
 }
 
 img {
+    display:  block;
     max-width: 100%;
     max-height: 400px;
     margin: 0 auto;
+}
+
+figcaption {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 120%;
+    margin: 20px 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
 }
 
 .navbar-custom {
