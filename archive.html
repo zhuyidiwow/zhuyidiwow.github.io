@@ -58,6 +58,15 @@
             }).click(function() {
                 window.location = "games/" + $(this).attr("id");
             });
+
+            //article hover effect
+            $('.article').mouseover(function() {
+                $(this).css("background","#D6D6D6");
+            }).mouseout(function() {
+                $(this).css("background","whitesmoke");
+            }).click(function() {
+                window.location = "articles/" + $(this).attr("id");
+            });
         });
     </script>
 </head>
@@ -171,11 +180,11 @@
             </div>
 
             <div class="games">
-                <p class="game">
-                    <a href = "articles/a-comparative-study/index.html" style="color:black">
+                <p class="article" id="a-comparative-study">
+                    
                         <span class="gameName" style="overflow: hidden">A Comparative Study on Spore and Pokemon GO</span>
                         <span class="gameRate">12/2017</span>
-                    </a>
+                    
                 </p>
             </div>
             <!--

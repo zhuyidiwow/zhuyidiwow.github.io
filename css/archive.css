@@ -94,7 +94,7 @@ footer {
     display: none;
 }
 
-.game {
+.game, .article {
     min-height: 35px;
     font-size: 80%;
     width: 96%;
