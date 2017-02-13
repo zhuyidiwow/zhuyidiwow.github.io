@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+	function calculate() {
+		var d = document.getElementById("d").value;
+		var co = document.getElementById("co").value;
+		var ch = document.getElementById("ch").value;
+
+		var q = Math.sqrt(2 * d * co / ch);
+		var y = d/q;
+		var total = d/q * co + q/2 * ch;
+		var resultStr = "Number of pieces per order: " + q + "<br>" + 
+						"Number of orders per year: " + y + "<br>" + 
+						"Total Inventory Cost: " + total;
+
+		document.getElementById("result").innerHTML = resultStr;
+	}
+</script>
+</head>
+<body>
+	<p>D (Annual demand in units): <input type="text" id="d"></p>
+	<p>Co (Ordering cost for each order): <input type="text" id="co"></p>
+	<p>Ch (Holding or carrying cost per unit per year): <input type="text" id="ch"></p>
+	<button type="button" onclick="calculate()">Calculate</button>
+	<p id="result"></p>
+</body>
+</html>
