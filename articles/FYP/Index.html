@@ -4,84 +4,130 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<title>A 3D Computer-based Construction Simulation Game - Development and Experiment</title>
+		<title>A Serious Game for Construction Education - Development and Evaluation</title>
 	</head>
 <body>
-<h1>A 3D Computer-based Construction Simulation Game - Development and Experiment</h1>
+<h1>A Serious Game for Construction Education - Development and Evaluation</h1>
 
-<h2>Introduction</h2>
+<h2>Acknowledgement</h2>
 
-<p>Building construction projects are becoming increasingly dynamic and complex, and require high-level problem-solving skills for construction professionals. However, in construction education, students typically lack practical experience in construction industry. Therefore, it is imperative for students to understand the problems arise from the dynamic nature of construction industry, and gain basic ideas of how to solve them. In addition, although the construction industry is undergoing a transformation by implementing Building Information Modeling, the representation of most building products still remain in 2-dimensional drawings instead of 3-dimensional models (Migilinskas et al., 2013). The visualization of buildings and building components also remains a problem in the construction industry.</p>
+<p>I would like to take this opportunity to confide my greatest gratitude to my supervisor, Prof. Hong Qin FAN, who provided active supports during the whole process of this study and spent valuable time discussing with me about this study. The successful completion of this study is not possible without the guidance and support from him.</p>
 
-<p>Games are gaining increasing attention as a supplementary tool for teaching and learning, which have been proven effective by past studies<strong> </strong>(Garris, 2002). (<strong>Add something about how games can be used for teaching and learning). </strong>This study aims at proposing a solution to the problems present in construction education, by developing a construction simulation game and integrating it in teaching and learning. In this study, the development process of a serious game which simulates the construction process will be presented, and an experiment for examining the effectiveness of this game will be conducted in Hong Kong.</p>
+<p>I would also like to express my gratitude to Mr. Alvin Wong and Mr. WC Lee from the Industrial Center, who provided me with the student report of the construction project in the Industrial Center, which forms the foundation of this game.</p>
 
-<h2>Problem Statement</h2>
+<p>I would also like to express my thanks to my family members, classmates, and friends for their unconditional support and encouragement, especially to Wu Chao, Li Yunhao, Xu Anboning, Chang Boyang, Chen Jueqi, Liu Zhi, Yang qiaoran, Wu Pei, Liu Chang, Wang Zhisai, and Tian Yuxuan who gave useful suggestions about the design of this game and spent their valuable time participating in the play test sessions.</p>
 
-<h3>Existing problems of construction education</h3>
+<h2>Abstract</h2>
 
-<p>With the development of new technologies and design concepts, (<strong>change sentence structure to make it less cliche) (extremely complex are becoming buildable and thus building construction are becoming insanely complex man!)</strong> building construction projects are becoming increasingly complex nowadays. <strong>(Mention some new technologies, and give a conclusion for how they make the industry more complex. Such as BIM, AR, virtual prototyping etc) </strong>In addition to traditional time, cost and quality constraints, safety and sustainability issues also need to be considered in order to deliver<strong> </strong>a successful building project. Planning and managing a highly <strong>sophisticated</strong> construction project involves solving(<strong>delete</strong>) problems arises from unanticipated changes and events, thus requires higher-level managements skills. While most fresh construction graduates typically lack the experience of managing a dynamic, complex construction project. Thus, it takes longer time for a new graduate to become an effective employee. (<strong>Add other problems come with the longer training time)</strong></p>
+<p>Building construction projects are becoming increasingly dynamic and complex with the emergence of new technologies and design concepts, and require high-level problem-solving skills for construction professionals. However, traditional construction education cannot fully prepare students for entering the rigorous construction industry, and it takes a relatively long time for a fresh graduate to become an effective employee. Serious games, as an emerging supplementary tool, can be integrated to construction education to address the problem.</p>
 
-<p>At the same time, some other problems still exist in the traditional construction education.</p>
+<p>This study first examines the foundational theories and design frameworks for serious games. Then a serious game for undergraduate-level construction education is developed, and this study discusses the design and development process of the game, with a focus on how this game reflects the DPE framework and the cognitive model. After that, play tests are conducted to evaluate the effectiveness of the game.</p>
 
-<p>First, the visualization of most teaching materials and student works remains 2-dimensional. Relying on 2D materials results in high learning difficulty. The students need first to visualize the 3D shapes of the structures documented on 2D drawings, which solely depends on the spatial imagination skill of an individual. Then students need to associate the 2D representations with the real world construction activities and the sequence of different activities (Wang, 2007). Ellifritt (1986) proposed an idea to solve this problem by establishing steel sculptures on campus to demonstrate steel shapes and steel connections. Students can gain a visual understanding of steel shapes and connections through examining the steel sculptures. However, although such teaching tools like steel sculptures give students the opportunity to understand structures in 3D, it remains static and prevent students from experimenting different options.</p>
+<p>The design and development process of this game demonstrates the value and effectiveness of using the DPE framework for serious game design. The evaluation result shows that the game successfully achieves the intended learning outcomes and is deemed by the participants as suitable for undergraduate-level construction education. The result also suggests that there would be little resistance from students during the process of integrating serious games in education and the computer skills of most students are high enough for playing serious games.</p>
 
-<p>Second, Nikolic (2011) pointed out that traditional lecture-based construction education still focuses on teaching the existing facts and prevents students from exploring different options. Nikolic (2011) also asserted that most exercises given in construction courses are too well structured and detached from real world context. Although students would get themselves comfortable with exercises given by lecturers, they may still find themselves confused when facing real world problems.</p>
+<h2>Chapter 1 – Introduction</h2>
 
-<p>Third, the spatial and sequential relationships existing between different activities are not receiving enough attention. Although students are equipped with scheduling techniques and related software skills, most of them still cannot understand the logics behind the arrangement of construction processes, which is the most important aspect of scheduling a construction project.</p>
+<h3>1.1 Background</h3>
 
-<p>Finally, traditional construction education relies only upon site visits as a supplement to lecture-based learning to provide students with a critical learning experience. However, the number of site visits are usually not enough for students to get them familiar with actual construction processes. During one site visit, students are exposed to established structures and on-going activities of one particular building type in a particular phase, but they are not exposed to the dynamic nature of the whole construction process (Messner &amp; Horman, 2003).</p>
+<p>Building construction projects are becoming increasingly dynamic and complex with the emergence of new technologies and design concepts, and require high-level problem-solving skills for construction professionals. However, most students major in construction related fields lack practical experience when they enter the construction industry. Therefore, it is imperative for students to understand the problems arise from the dynamic nature of construction industry, and gain basic ideas of how to solve them before they graduate. Also, although the construction industry is undergoing a transformation by implementing Building Information Modeling, the representation of most building products remain in 2-dimensional drawings instead of 3-dimensional models (Migilinskas et al., 2013). The visualization of buildings and building components also remains a problem in the construction industry.</p>
 
-<p>In this situation, a computer-based simulation game can be used to address the problems mentioned above. The simulation game can simulate the complex and dynamic nature of construction projects and provide instant feedback to the player. Therefore, students who play this game will get an experience of managing a real construction project with 3D visualization and thus practice their problem solving and decision-making skills during the process. Games also possess the advantage of getting students engaged, concentrated and motivated easily, which are usually hard to achieve with traditional education approach.</p>
+<p>Serious games are games with purposes beyond entertainment, such purposes may include learning, training, marketing and social change. The <em>serious game movement</em> points out that seeing the game medium solely as entertainment software is an under-estimation of its potential (Jenkins, 2006). Serious games as a supplemental tool for teaching and learning are attracting more interest from scholars and teachers (Van Eck, 2006). Games as a medium are good at realistically visualizing real world complex object with the advancement of computer graphics, and can also be used as a tool for presenting the dynamic nature of construction projects with its intrinsic interactivity and immediate feedback. <br/></p>
 
-<h2>Literature review</h2>
+<h3>1.2 Aims and Objectives</h3>
 
-<h3>Computer games in construction education</h3>
+<p>Various problems are existing and emerging in construction education as a result of old pedagogy and evolution of construction industry. Serious games have been attracting increasing attention from scholars and educators, and have demonstrated their effectiveness as a supplementary tool for education. In this situation, serious games can be introduced and integrated into construction to address the problems.</p>
 
-<h4>Nature of computer games <strong>add more arguments here, such as difference between playing and gaming and unique experience games can provide</strong></h4>
+<p>This study aims at proposing a solution to the problems present in construction education, by developing a serious game for construction education and integrating it into teaching and learning. </p>
 
-<p>The first computer game was introduced in 1972 by Atari Inc. which is known as “Pong”, after which computer games have become one of the most influential and ubiquitous forms of entertainment (Squire, 2003). (<strong>Computer games have come a long way, give a brief history of computer games here.) </strong>Computer games have developed <strong>(are still developing) </strong>rapidly with the advancements of digital technologies. With latest simulation and visualization technologies, the current generation of computer games is capable of providing the player with highly realistic graphics of simulated real-world environment and natural interaction experiences (Shiratuddin, 2011).</p>
+<p>The objectives of this study are:</p>
 
-<p>Huizinga suggests in his 1938 book, <em>Homo Ludens (Playing man),</em> that playing is more primitive than culture, and acts as a necessary condition for the generation of culture. Huizinga (1938) also asserts that playing is the essential activity of archaic man, as an approaching of knowing. As such, it is reasonable and natural to involve playing in education rather than excluding the playing elements. <strong>Talk more about the difference between playing and gaming here. </strong>While gaming is regarded as more effective than playing, because it distinguished from playing through the confined space and time, and specific set of rules, goals, and tactics (Walther, 2003).</p>
+<ol>
+	<li>To conduct a literature review</li>
+	<li>To examine learning theories and design frameworks of serious games</li>
+	<li>To design and develop a serious game for construction education</li>
+	<li>To discuss the design and development process of the game</li>
+	<li>To develop a model for calculating labor productivity to be used in the game</li>
+	<li>To conduct play tests with potential players to evaluate the game</li>
+	<li>To provide a reference for development of serious games for construction education</li>
+</ol>
 
-<p>Jane (2010) discussed the effects of gaming on the human by studying the facial expressions of people when they are playing games (figure 1). The common emotions conveyed by player’s facial expressions are optimism, surprise and engagement. Jane suggests that these emotions are signs of a successful problem-solving practice. Jane also pointed out that people at gaming are doing better than they are in real world. <strong>Someone else as mentioned in gamification class has the same point of view and can be used here. </strong>The better performance results from highly engaging, challenging, motivating and inspiring gaming environment. According to Shiratuddin (2011), these characteristics of gaming are the most important reasons why games would be an effective tool in construction education.</p>
+<h3>1.3 Scope of study</h3>
 
-<figure><img src="image05.png" alt="figure1.png"/><figcaption>figure1.png</figcaption></figure>
+<p>This study contains four major parts: literature review, methodology, designing and developing the serious game, and evaluation of the serious game.</p>
 
-<p>Figure 1. Emotion of gaming (Source: Toledano)</p>
+<p>The literature review will cover the nature of computer games, the reason why serious games can be used in education, frameworks, and guidelines for designing serious games, and will examine existing games. However, the literature review will not focus on the process of integrating serious game to education.</p>
 
-<h4>Serious games for construction education</h4>
+<p>The serious game simulates project management work but is simplified due to time constraints of this study. In the game, the player will be able to make choices about labor resource allocation. The game will combine player’s input with other random factors, such as weather, to provide the player with a dynamic feedback with realistic visualization and precise progress report. However, the game will not focus on specific construction activity, such as pouring concrete and applying paintings.</p>
 
-<p>While the concept of serious games originated before the existence of computer games and is first proposed and discussed in Abt’s (1987) book <em>Serious games</em>. Serious games are games designed for particular goals other than pure entertaining (Bellotti et al., 2010). As such, the games developed for educational purposes are categorized as serious games, and “serious game” and “computer game” will be used interchangeably in this study.</p>
+<p>The effectiveness of this game will be evaluated by conducting play tests. The play tests will be conducted in Hong Kong, and most participants will be undergraduate students major in construction-related fields.</p>
 
-<p>Rafig and Easterbrook (2005) suggests that game and simulation can enhance the learning process of students through active participation. Researches conducted by Dickinson et al. (2011) and Nikolic (2011) and other researchers have also proven computer games to be an effective supplementary element in construction education. The Federation of American Scientists (2006) also asserted that “People acquire new knowledge and complex skills from gameplay”. As such, games can help address the needs of strengthening the system of education and “preparing workers for 21st-century jobs”. According to Shiratuddin (2011), four distinguished phases of the cycle for gaming are probe, hypothesize, reprove and rethink. Players develop skills in decision making, design strategy, cooperation, and problem-solving through the repetition of the gaming cycle. A serious game developed with advanced simulation and visualization technologies, which is named as “Spore”, has been used in biological education and has given positive feedback (Poli et al., 2012). Students who played the game during learning process reported an average of 3 extra hours spent on class materials, and those students scored an average of 5% higher in the course compared with those who did not play the game.</p>
+<h3>1.4 Importance of the study</h3>
 
-<p>Nikolic (2011) used a theory proposed by Dale to back up the effectiveness of using computer games in education, as shown in figure 2. In this theory, passive activities, such as reading and hearing, are less effective than active activities such as giving a talk and participating in a discussion. While among active activities, simulating the real experience, which can be provided by simulation games is the second most effective activity.</p>
+<p>Fast development of digital technologies is constantly shaping traditional industries, including the construction industry. New technologies are being implemented in the construction industry, such as modular construction, precast units, building information modeling and virtual prototyping. The use of such new technologies makes more complex and sophisticated buildings buildable. While these technologies bring increased complexity to the construction industry, they also set higher standards for buildings. In addition to traditional time, cost and quality constraints, safety and sustainability issues also need to be considered in order to deliver a successful building project. </p>
 
-<figure><img src="image04.png"/></figure>
+<p>Planning and managing a highly sophisticated building construction project involves solving problems arises from unanticipated changes and events, thus requires higher-level managements skills. While most fresh construction graduates typically lack the experience of managing a dynamic, complex construction project, it takes longer time for a new graduate to become an effective employee. The longer training time not only brings negative effects to construction companies but also decreases the development speed of the whole construction industry. As such, it is imperative that educational institutions provide more construction project management experience with students before they graduate.</p>
 
-<p>Figure 2. Forms of active and passive learning methods. Adapted from (Dale, 1954)</p>
+<p>At the same time, some other problems other than lack of experience also exist in construction education.</p>
 
-<p><strong>Whoops! Years have passed and this theory should be out-dated! Find a new theory to contrast this theory and back up your arguments.</strong></p>
+<p>First, most teaching materials and student work remain 2-dimensional. The sole dependence on 2D materials leads to high learning difficulty. Students need to first visualize the 3D shapes of the structures documented on 2D drawings, and quality of such visualization depends on the spatial imagination skill of an individual. Then students need to associate the 2D representations with the real world construction activities and the sequence of different activities (Wang, 2007). This process further increases the difficulty of learning with 2D drawings. Ellifritt (1986) proposed an idea to solve this problem by establishing steel sculptures on campus to demonstrate steel shapes and steel connections. Students can gain a visual understanding of steel shapes and connections through examining the steel sculptures. However, although such teaching tools like steel sculptures give students the opportunity to understand structures in 3D, it remains static and does not enable students to experiment with different options. For example, students can observe steel connection methods as shown by steel sculptures, but cannot change the connection method of the sculpture and test the corresponding strength of each method. </p>
 
-<h3>Computer simulation for learning</h3>
+<figure><img src="image2.JPG"/></figure>
 
-<p>A simulation is defined (Nikolic, 2011) as:</p>
+<p><strong>Figure 1. Steel Sculpture (American Institute of Steel Construction, 2016)</strong></p>
 
-<p>“a simplified model of reality or set of abstract concepts that may be developed for teaching purposes, predicting behavior or testing models and processes, and for entertainment.”</p>
+<p>Second, Nikolic (2011) pointed out that traditional lecture-based construction education still focuses on teaching the existing facts and prevents students from exploring different options. Nikolic (2011) also asserted that most exercises given in construction courses are over well-structured and detached from real world context. Although students would get themselves comfortable with exercises given by lecturers, they may still find themselves confused when facing real world problems. </p>
 
-<p>Simulations used in education create virtual environments with contextual information for students to acquire new skills through interaction and reflection (as cited in Nikolic, 2011). Simulations are usually computational models which include factors, their relationships, and assumptions about their importance (Prensky, 2004), while different simulation can vary significantly in complexity. </p>
+<p>Third, the spatial and sequential relationships existing between different activities are not receiving enough attention. Although students are equipped with scheduling techniques and related software skills, most of them still cannot understand the logics behind the arrangement of construction processes, which is the most important aspect of scheduling a construction project. </p>
 
-<p>For both simulations and games, students get instant results and feedbacks from different inputs. However, simulations are usually based on real world environments, systems, and concepts, while games do not necessarily to do so. Besides, simulations do not necessarily contain all elements for games, such as specific rules, goals, winning and losing condition, risks, and competitions. Simulations usually allow the user to explore and experiment freely and give the user serious decision-making responsibilities (as cited in Nikolic, 2011). Figure 3 presents the characteristics of games, simulations and simulation games.</p>
+<p>Finally, while new technologies, such as BIM (Building Information Modeling) software, are being integrated into construction, there is still a lack of educational challenges that prepare students for the industry (Castronovo et al., 2015). Also, BIM software is designed for professional work rather than educational purpose, the effectiveness of teaching with BIM is limited.</p>
 
-<p><strong>YOU ARE MISSING ONE FIGURE HERE!!!!</strong></p>
+<p>In this situation, a computer-based serious simulation game can be used to address the existing problems. Simulation games are capable of simulating the complex and dynamic nature of construction projects and provide instant feedback to players. A properly design serious game can lead players into a <em>flow</em> state, and provide <em>stealth learning</em> when players are focusing on playing rather than learning (as cited in Brian, 2009). By playing such a serious game, students will get an experience of managing a dynamic construction project with 3D visualization and practice their problem-solving and decision-making skills while immersing themselves in playing. The advantages of using games, which includes getting students engaged, concentrated and motivated easily, are usually hard to achieve with traditional education approach.</p>
 
-<p>Simulations provide a training environment for users to acquire new skills through repetitive activities and experiments, while serious games incorporate gaming elements to the simulated environment. As such, the combination of simulation and gaming elements will enable the players to make decisions and conduct experiments in a simulated real-world environment, while at the same time remain fully engaged and motivated during the whole process. Simulation games are used to represent the combination of both and is formally defined as:</p>
+<h3>1.5 Organization of the dissertation</h3>
 
-<p>“a simplified model of reality in which students compete for a certain outcome based on the set of rules and constraints.”</p>
+<p>This dissertation is divided into six chapters.</p>
 
-<h3>Design considerations for the simulation game</h3>
+<p>Chapter one introduces this study and states the aims and objectives, scope and importance of this study.</p>
 
-<p>Designing simulation games for construction education differs from typical game design in that the learning outcome and entertainment should be achieved at the same time. The needs of learning and gaming elements should be balanced through the design process. De Gloria et al. (2014) used a figure to show the kernels of serious game design (Figure 4). A game lacking in either pedagogical consideration or entertainment of traditional games will not be a successful construction simulation game. In addition, construction education includes diversified construction-related topics. These topics include but are not limited to estimating, bidding, laws, contracts, scheduling, construction materials and technologies, project management, structures and building services. While it is typically not feasible for one game to incorporate all topics involved in construction education, an effective construction simulation game should be specific to limited topics. In conclusion, a successful construction simulation game should, at least, have the following characteristics:</p>
+<p>Chapter two reviews research on general computer games and serious games, and analyzes three existing games in construction education.</p>
+
+<p>Chapter three illustrates the methodology of this study. This chapter introduces basic game design terminology and elements, and also provides a detailed discussion of serious design frameworks and illustrates a dynamic modeling method for labor productivity</p>
+
+<p>Chapter four gives an illustration of the game design development process. An introduction to the game and the game flow will be given, and an analysis of how the game reflects serious game design framework and cognitive models is presented.</p>
+
+<p>Chapter five illustrates the design and conduction of the play tests, data collection, data analysis, and the findings.</p>
+
+<p>Chapter six concludes the study, states the limitations of this study and gives recommendations for further study.</p>
+
+<h2>Chapter 2 – Literature Review</h2>
+
+<h3>2.1 Serious games for learning</h3>
+
+<p>While the concept of serious games originated before the existence of computer games and is first proposed and discussed in Abt’s (1987) book <em>Serious games</em>. Serious games are games designed for particular goals other than pure entertaining (Bellotti et al., 2010). As such, the games developed for educational purposes are categorized under serious games.</p>
+
+<p>Serious games facilitate learning through active participation in specific contexts. Rafig and Easterbrook (2005) suggests that games can enhance the learning process of students through active participation. Researches conducted by Dickinson et al. (2011) and Nikolic (2011) and other researchers have also proven computer games to be an effective supplementary element in construction education. As such, games can help address the needs of strengthening the system of education and “preparing workers for 21st-century jobs”. According to Shiratuddin (2011), four distinguished phases of the cycle for gaming are probe, hypothesize, reprove and rethink. Players develop skills in decision making, design strategy, cooperation, and problem-solving through the repetition of the gaming cycle. </p>
+
+<p>The feasibility and effectiveness of using games in learning are supported by theories. Nikolic (2011) used a theory proposed by Dale to back up the effectiveness of using computer games in education, as shown in Figure 2. In this theory, passive activities, such as reading and hearing, are less effective than active activities such as giving a talk and participating in a discussion. While among active activities, simulating the real experience, which can be provided by simulation games is the second most effective activity. Petty (as cited in Brian, 2008) demonstrates that active learning methods lead to better recall, enjoyment, and understanding than traditional teaching methods, such as lecturing.</p>
+
+<figure><img src="image3.png"/></figure>
+
+<p>Figure 2. Forms of active and passive learning methods. Adapted from (Dale, 1946)</p>
+
+<p>In addition, Brian (2008) points out that the structure of games mirror that of good pedagogy, and games offer progressive problem-solving and scaffolded learning. Van Eck (2006) asserts that the process of playing a game involves all nine elements of Gagne’s (1985) Nine Events of Instruction, which refers to events that active processes needed for effective learning. As cited in Brian (2008), these events are:</p>
+
+<blockquote>
+<p>“gain attention, inform learner of objectives, stimulate recall of prior learning, present stimulus material, provide learner guidance, elicit performance, provide feedback, assess performance, and enhance retention and transfer.”</p>
+</blockquote>
+
+<p>Lieberman (2006) concludes the learning benefits of games into eight points:<br/></p>
+
+<p>Table 1. Eight benefits of games for learning</p>
+
+<figure><img src="image4.png"/><br/></figure>
+
+<h3>2.2 Design considerations for serious games</h3>
+
+<p>Designing serious games for construction education differs from typical game design in that the learning outcome and entertainment should be achieved at the same time. The needs of learning and gaming elements should be balanced through the design process. De Gloria et al. (2014) used a Figure to show the kernels of serious game design (Figure 4), and Brian (2008) describes the overlapping area as “heart of serious game design”. A game lacking in either pedagogical consideration or entertainment of traditional games will not be a successful construction simulation game. In addition, construction education includes diversified construction-related topics. These topics include but are not limited to estimating, bidding, laws, contracts, scheduling, construction materials and technologies, project management, structures and building services. While it is typically not feasible for one game to incorporate all topics involved in construction education, an effective construction simulation game should be specific to limited topics. In conclusion, a successful construction serious game should, at least, have the following characteristics:</p>
 
 <ol>
 	<li>Has specific set of rules and goals</li>
@@ -96,55 +142,578 @@
 	<li>Allows the user to experiment and make different decisions</li>
 </ol>
 
-<figure><img src="image02.png"/></figure>
+<figure><img src="image5.png"/></figure>
 
 <p>Figure 3. The three kernels of serious game design (De Gloria et al., 2014)</p>
 
-<p><strong>This graphic is ugly, try to modify and change colors</strong></p>
+<h3>2.3 Review of existing games in construction education</h3>
 
-<h3>Review of existing games in construction education</h3>
+<h4>2.3.1 Introduction</h4>
 
-<h4>Merit game - The International Construction Business Game</h4>
+<p>Advancement in computer technologies and BIM software has illustrated the value of visualization and simulation in planning and managing construction projects (Castronovo et al., 2015), and there are research efforts aiming at promoting visualization and simulation in construction education, such as Constructo, Simsite.net, Virtual Construction Simulator (VCS), MERIT, and Minecraft (Halpin &amp; Woodhead, 1970; Fan, 2003; Nikolic, 2011; MERIT, 2016; Mojang, 2016). In this part of this study, three games will be introduced and analyzed to demonstrate the effectiveness of serious games and principles of serious game design.</p>
 
-<p>Merit game is a game simulating the operation of a virtual construction company (Institution of Civil Engineers, 2016), and MERIT stands for Management Enterprise Risk Innovation and Teamwork. The game is operated on Windows and supports Internet-based communication. Merit game creates realistic scenarios of a construction company’s business market and construction projects. For most cases, four young engineers group up as a team to play the game and participate in the annual competition.</p>
+<h4>2.3.2 Merit game - The International Construction Business Game</h4>
 
-<p>Merit game is designed to demonstrate the interrelation of various managerial and technical decisions made for the management of a construction company, and how certain decisions would affect the success or failure of a company. Players need to make decisions for various functions of a construction company, including financial, marketing, overhead, estimating, bidding, personnel and construction. The game is divided into two phases: “early years” and “final years”. During early years, players only compete against computer simulated companies. While during final years, players will compete against other virtual companies operated by other players, thus they are required to make more challenging and crucial decisions.</p>
+<p>Merit game is a game simulating the operation of a virtual construction company (MERIT, 2016), and MERIT stands for Management Enterprise Risk Innovation and Teamwork. The game is operated on Windows and supports Internet-based communication. Merit game creates realistic scenarios of a construction company’s business market and construction projects. For most cases, four young engineers group up as a team to play the game and participate in the annual competition.</p>
+
+<p>Merit game is designed to demonstrate the interrelation of various managerial and technical decisions made for the management of a construction company, and how certain decisions would affect the success or failure of a company. Players need to make decisions for various functions of a construction company, including financial, marketing, overhead, estimating, bidding, personnel, and construction, as shown in figure 4. The main objective of the game is getting as many jobs as possible, and this game provides bidding results based on real-world scenarios, taking both bid prices and client relationships into consideration. The game is divided into two phases: “early years” and “final years”. During early years, players only compete against computer simulated companies. During final years, players will compete against other virtual companies operated by other players. The behaviors of computer simulated companies are predictable after several periods. However, the behaviors of other teams are unpredictable. Decision-making becomes more challenging and crucial during final years.</p>
+
+<figure><img src="image6.png" title="User Interface of Merit game"/></figure>
+
+<p>Figure 4. User interface of the Merit game</p>
 
 <p>Merit game has been operating since 1988, and more than 25,000 engineers, technicians, students, and construction professionals have taken part in the game (Khan, 2014). The players gain experience of not only various stages of a project from pre-qualification, estimating, bidding, and construction, but also the business and financial management of a company with proper strategies and personnel management.</p>
 
-<p>Although Merit game is proven effective and successful for training students and construction practitioners, it still has several drawbacks. Merit game focuses on the process of making key decisions to operate a construction company properly in director&#39;s points of view, but omits the fundamental topics such as estimating and site management. In addition, as the game is developed early, the graphics and interactions in the game are outdated. Furthermore, as Merit game competition is just held annually and the decisions made by teams are examined manually by people, there is a time gap between finalizing decisions and getting feedbacks from the game controller. Therefore, it is not convenient for teams to try out different options and conduct innovative but highly risky experiments. </p>
+<p>Although Merit game is proven effective and successful for training students and construction practitioners, it still has several drawbacks. Merit game focuses on the process of making key decisions to operate a construction company properly in director&#39;s points of view but omits the fundamental topics such as estimating and site management. Also, as the game was first developed in the 1980s, the graphics and interactions in the game are outdated. Furthermore, as Merit game competition is just held annually and the decisions made by teams are examined manually by people, there is a time gap between finalizing decisions and getting feedbacks from the game controller, and the number of experiments is limited. Therefore, it is not convenient for teams to try out different options and conduct innovative but highly risky experiments. </p>
 
-<p><strong>Add more comments after your final competition experience</strong></p>
+<h4>2.3.3 Minecraft</h4>
 
-<h2>Aims and objectives</h2>
+<p>Minecraft is an open world sandbox game developed by Mojang, which is made up of blocks with identical sizes but different functions. Players can break and place blocks to produce any three-dimensional shapes in real time without modeling knowledge and techniques. Mojang has also developed an education edition of Minecraft targeted at pupils, whose goal is promoting student engagement, real-time collaboration, creative exploration, and tangible learning outcomes (Mojang, 2016). Minecraft is being used as a teaching tool in schools for programming, chemistry, physics, architecture, etc., and is extremely welcome by students (CIOB, 2016).</p>
 
-<p>This study aims at examining the process of developing a new construction simulation game for construction education, and conducting an experiment by implementing the use of the developed game in Hong Kong Polytechnic University to study the effectiveness of gaming in education under Hong Kong’s education system.</p>
+<figure><img src="image7.png" title="A house built by the author in Minecraft"/></figure>
 
-<p><strong>Further illustrate the aims and objectives</strong></p>
+<p><strong>Figure 5. User interface of Minecraft</strong></p>
 
-<h2>Research methodology</h2>
+<p>Chartered Institute of Building developed a special version of Minecraft Education edition focused on construction and aimed at 12-14-year-old students, called “Craft Your Future”. This version consists of four lessons, which provide students with the opportunity to collaboratively design, plan, and build solutions for the citizens of a virtual city (CIOB, 2016).</p>
 
-<p>In the early stage of this study, a substantial literature review about the integration of gaming in education and the development of serious games for construction education will be conducted. After that, a serious game for construction education will be developed. This game will be focusing on the simulation construction activities and structural elements instead of scheduling of a construction project. A game design document will be produced to document the game’s rules, level and environment design, gameplay, user interface, controls, and artistic elements. Then object-oriented design principle and UML (Unified Modeling Language) will be used during the early stage of the game’s development. The techniques and tools included in the game development will include but not be limited to Visual Paradigm, Unity3D, and <strong>Blender</strong>.</p>
+<p>Although Minecraft has been successfully integrated into education, there are still limitations restricting its usage in construction education. Firstly, most blocks in Minecraft have no gravity, which promotes creativity for building shapes but may also lead to misunderstanding of the real physical world. The absence of gravity sets no restrictions on construction sequence. Thus it is hard for students to understand the given construction sequences. Secondly, Minecraft focuses on actual building work and provides few opportunities for students to perform project management duties. Finally, the oversimplification, cartoon art style, and amount of repetitive work of Minecraft make it less compelling for adults. As a conclusion, Minecraft is good for enlightening young students and introducing them a career in construction, but it is not suitable for a supplementary tool used in undergraduate-level construction education.</p>
 
-<p>After completion of the game, an experiment will be conducted at the Hong Kong Polytechnic University. The game will be used as a supplementary tool for an intermediate level construction subject. The desired courses for the experiment are BRE 204 (Structures) and BRE 361 (Construction Technology and Materials II). One group of the students will be playing the game while another group will not. The average study effort, effective and students’ performance in assessments will be studied and compared. </p>
+<h4>2.3.4 Virtual Construction Simulator 4</h4>
 
-<p>Questionnaire surveys will be conducted before and after the experiment. Pre-survey will collect participants’ opinions about integrating gaming as part of learning process, their expectations of the game, and their former experience of gaming and using computing technology for learning. Post-survey will be used to measure the level of engagement, motivation, and effectiveness of the simulation experience.</p>
+<p>Virtual Construction Simulator (VCS) is an educational construction simulation game developed by the Computer Integrated Construction research group at the Pennsylvania State University. VCS has gone through four iterations, and the latest version is VCS4. VCS4 aims at teaching students the dynamic nature of construction projects and frequent changes to the construction schedule. VCS4 has separate modules for different projects, providing students with variety in difficulty, process and learning curves. Currently, available modules include the wood module, the concrete module, and the steel module. The concrete module is targeted at junior college students to first-year graduate students (Castronovo et al., 2015), and is selected for analysis in this study.</p>
 
-<p>In addition, open-ended questions will be asked for both groups of participants to test their knowledge of certain construction activity before and after the learning process. </p>
+<p>Game mechanics are developed to match the cognitive phases, the main flow of this game is presented in Figure 6. This game incorporates an iterative process of development, evaluation, test of a plan. After each iteration, students will get performance metrics and reports to help them improve in the next iteration. The game is divided into several scenes as shown in Figure 7. Each scene provides students the necessary information and graphical user interface to make decisions at that stage.</p>
 
-<h2>Data analysis</h2>
+<figure><img src="image8.png" alt="Problem-Solving%20Model%20for%20Construction%20Engineering%20Education%20Copy.png"/><figcaption>Problem-Solving%20Model%20for%20Construction%20Engineering%20Education%20Copy.png</figcaption></figure>
 
-<p>The data collected during the experiment will be used to analyze the acceptability, feasibility, and effectiveness of integrating games in the learning process. Demographic information such as participants’ former academic performance and exposure to computing technology will also be involved in the data analysis process to get a better understanding of the result.</p>
+<p>Figure 6. Game flow of VCS</p>
 
-<h2>Reference List</h2>
+<figure><img src="image9.png"/></figure>
+
+<p>Figure 7. User interface and game flow of VCS</p>
+
+<p>A considerable amount of research efforts was put into VCS (Nikolic, 2011; Castronovo et al., 2014, 2015). VCS is considered by the author as the most significant research effort in construction serious games. VCS has demonstrated its value in providing students with a visual, interaction, realistic and engaging learning experience (Nikolic, 2011). Nikolic (2011) concludes that students who played this game demonstrated a high level of understanding about the construction process, a higher capability of identifying and responding to changes in schedule and resources. However, VCS still has some limitations. First, a considerable amount of prior knowledge about construction management is required if a student wants to play the game smoothly and achieve intended learning outcomes. For example, component grouping and construction sequencing are impossible to be without prior knowledge. Second, players may be facing too many choices at the same time, especially during labor and resource allocation stage. VCS does not provide players with adequate in-game tutorials, so such choices are difficult to make, and may result in a feeling of depression and desperation. Finally, in a game development point of view, VCS4 is still not polished. The control in this game is not smooth and may put obstacles in the way of inputting decisions and interacting with the game world.</p>
+
+<h2>Chapter 3 – Methodology</h2>
+
+<h3>3.1 Introduction</h3>
+
+<p>Serious game design is still a relatively new discipline (Brian, 2007). There is currently a lack of standard practices and terminologies for designing serious games. Serious game design involves both game design and instruction design, and the lack of standards makes it hard to bring different perspectives together. Frameworks and standards for serious game design are attracting increasing research efforts and are still emerging. In this chapter, the Design, Play, Experience framework and a cognitive model will be discussed and will be used to guide the game design in the next chapter.</p>
+
+<h3>3.2 The DPE framework</h3>
+
+<p>As discussed in the literature review, the design of serious game involves a combination of different perspectives: theories about pedagogy, communication theories; content from experts about the subject; game design from the game design, concerning the fun factors, engagement, and entertainment. Therefore, it is imperative to use a unifying framework to help individuals from different disciplines achieve their full potential in serious game design.</p>
+
+<h4>3.2.1 The MDA framework</h4>
+
+<p>LeBlanc (2005) designed and taught the mechanics, dynamics, and aesthetics (MDA) framework. LeBlanc (2005) defined the goal of MDA framework as:</p>
+
+<p>“...clarify and strengthen the iterative processes of developers, scholars and researchers alike, making it easier for all parties to decompose, study and design a broad class of game designs and game artifacts.” </p>
+
+<p>The MDA framework depicts the relationship between the designer and the player with three intermediate layers, as shown in Figure 8. The mechanics, or more specifically, a formal set of rules are designed by the designer. The dynamics are the combination of actual rules instantiated during playtime and the interactions between the player and the game. The aesthetics are the resulting emotional response and feeling of players when playing.</p>
+
+<figure><img src="image10.png"/></figure>
+
+<p>Figure 8. The MDA framework</p>
+
+<p>In this framework, the designer only has director control over mechanics. The designer has to determine the desired aesthetics during the design stage, and anticipate the dynamics which will help achieve the desired aesthetics. The designer needs to utilize extensive play-testing to modify the mechanics, to achieve the desired aesthetics through an iterative process. </p>
+
+<p>Although this framework has been to be useful in the design and analysis of games, it still has some limitations. The MDA framework focuses solely on game play, while omits other essential parts in the game design, such as storytelling, user experience, and technology. Further breaking down of the three layers would help represent the process of game design more explicitly, but the semantics of the terminology prevent designers from doing so (Brian, 2007). Furthermore, the MDA framework is designed for games for entertainment rather than for serious games. Therefore, it is imperative to modify the MDA framework to make it more effective in guiding serious game design.</p>
+
+<h4>3.2.2 The DPE framework</h4>
+
+<p>The Design, Play, Experience (DPE) framework (as shown in Figure 9) is developed as an expansion of the MDA framework, and specifically addresses the needs of serous game design, with the goal of removing semantic barriers presented in the MDA framework, and helping interdisciplinary teams achieve their full potential (Brian, 2007).</p>
+
+<figure><img src="image11.png"/></figure>
+
+<p>Figure 9. The simplified DPE framework</p>
+
+<p>The DPE framework also describes the relationship between the designer and the player similar to the MDA framework. The mechanics, dynamics, and aesthetics are generalized as design, play, and experience. The designer designs the game, the player plays the game and gets the experience. The designer also only has direct control over the design. Before designing the game, the designer needs to decide the intended experience of the players. The arrow pointing from the “experience” back to the “design” represent two effects: the effects of resulting experience on the original design, and the effects of the player experience on the iterative design during latter iterations. This process reflects the iterative game design process proposed by Salen &amp; Zimmerman (2004), as shown in Figure 10. The iterative process starts with the original design, then goes to prototype, play test, and then iterates back to the design. The design is under constant modification throughout the iterative process to achieve the intended experience.</p>
+
+<figure><img src="image12.png"/></figure>
+
+<p>Figure 10. Iterative game design process</p>
+
+<p>Although the design is under the direct control of the designer, the play and experience are greatly influenced by the player. The cognitive, cultural, social, and experiential backgrounds of the player all have effects on the experience. As such, the experience may vary dramatically among different players even when the design is the same. Therefore, the designer should carefully take the target audience into consideration during the design process.</p>
+
+<p>The DPE framework (as shown in Figure 11) further breaks down the three components into sub-components with four layers: the learning layer, the storytelling layer, the game play layer, and the user experience layer. Each layer has its aspects regarding design, play, and experience. Beneath the four layers is the technology layer, which makes the implementation of the design possible. Each layer will be discussed respectively.</p>
+
+<figure><img src="image13.png"/></figure>
+
+<p>Figure 11. The DPE framework. Adapted from (Brian, 2007)</p>
+
+<h4>3.2.3 Learning layer</h4>
+
+<p>In the learning layer, the designer designs the content and pedagogy of the game, and the playing process is a teaching process. The player learns from the experience. Similar with deciding the intended experience, the designer should decide the intended learning outcomes, and design the content and pedagogy according to the intended learning outcomes. The learning layers reflect the theory and content part of <em>the three kernels of serious game design</em> (De Gloria et al., 2014).</p>
+
+<p>Bloom’s Taxonomy on Teaching and Learning (1956) can be used in the process of deciding intended learning outcomes. Cognitive, psychomotor, and affective learning are defined as three domains of learning in this taxonomy and are commonly simplified as knowledge, skills, and attitude. The cognitive domain involves the development of intellectual skills and is used by Clark (2015) to determine and assess learning outcomes. Figure 12 shows six categories of cognitive learning, and the categories on higher levels are more complex. The relative positions of the six categories represent their relative difficulty, and easier ones must be mastered before harder ones can take place (Clark, 2015).</p>
+
+<figure><img src="image14.png" title="Six categories"/></figure>
+
+<p>Figure 12. Six categories of cognitive learning</p>
+
+<p>Castronovo et al. (2015) developed a new cognitive model for solving construction engineering problems during the development of VCS, with a focus on cognitive and mega-cognitive problem-solving processes. This model includes three phases: <em>problem representation, problem execution, and solution evaluation</em> (as shown in Figure 13). This model enables learners to move non-linearly across different phases, reflecting the iterative events of metacognitive self-regulative processes, which influence the learner’s problem-solving process. The <em>problem representation</em> phase involves the following processes: the understanding of tasks and identification of problem constraints, the development of possible solutions, and assessing alternative solutions. In the <em>problem execution</em> phase, students monitor the execution of a proposed solution. Performance metrics are used to display information about important factors in a construction project, such as health, skill and learning curve of labor. The performance metrics provide feedback to the learners. In the <em>solution evaluation</em> phase, learners are provided with the final report, and the solution is evaluated based on the final report. The final report also helps learners plan the next project sequence, and identify factors affecting the construction process. This model can be used to guide the content and pedagogy design, and decisions on intended learning outcomes.</p>
+
+<figure><img src="image15.png"/></figure>
+
+<p>Figure 13. The cognitive model (Castronovo et al., 2015)</p>
+
+<p>Early decisions on the intended learning outcomes are essential in the whole design process. The intended learning outcomes not only guides the direction of content and pedagogy design, but also serves as the basis for assessing the learning effectiveness of this game.</p>
+
+<h4>3.2.4 Storytelling layer</h4>
+
+<p>Two stories exist in the storytelling layer: the designer’s story story and the player’s story. The designer designs the story with the setting, character design, and narrative. The storytelling process occurs during play time when the player interacts with the game, and the player’s story is crafted based on the resulting experience. </p>
+
+<p>In serious game design, the storytelling is usually complicated. As the goal of serious games is to achieve intended learning outcomes, the designer’s story should not deviate from the truth too much. The storytelling decisions should be made to help achieve the intended learning outcomes without significant deviation from the truth.</p>
+
+<h4>3.2.5 Game play layer</h4>
+
+<p>The game play layer defines what meaningful choices player can choose in the game, and is the major determinant of whether the game is fun. The game play layers reflect the game design part of <em>the three kernels of serious game design</em> (De Gloria et al., 2014). The game play layer is broken down into mechanics, dynamics, and affect, which is similar to the MDA framework. The <em>aesthetics</em> in the MDA framework is changed to <em>affect</em>, as semantically <em>aesthetics</em> represent whether an object is beautiful. <em>Affect</em> is a psychological term representing emotion or desire. The designer needs to decompose and understand fun to achieve the desired affects of the player. Brian (2007) listed sixteen forms of fun, which can be used as affective goals to guide the mechanics design. The sixteen forms are: beauty, immersion, intellectual problem solving, competition, social interaction, comedy, thrill of danger, physical activity, love, creation, power, discovery, advancement and completion, application of an ability, altruism, and learning (Brian, 2007).</p>
+
+<p>After determining affective goals, the designer should design the mechanics accordingly, to achieve these goals through the dynamics. As the player plays the game, his or her skills in this game will increase. The designer needs to change the difficulty of the game as the game progresses. Csikszentmihalyi (1990) proposed the theory of flow (as shown in Figure 14), which demonstrates the level of challenges needed to keep the player in a flow state. Too difficult challenges make players with low skills frustrating, and too easy challenges make players with high skills boring. The designer needs to modify mechanics design through multiple iterations to keep players in a flow state during playing.</p>
+
+<figure><img src="image16.png"/></figure>
+
+<p>Figure 14. The flow theory (Csikszentmihalyi, 1990)</p>
+
+<p>The designer also needs to take the learning curve into consideration and provide rewards with the player to keep the player motivated. A typical approach is to rewards the player more often when the learning curve (Figure 15) is steep so that the player is more motivated and less likely to quit. The balancing of progress can be used to help this process. The number of choices (Figure 16) faced by the player are usually small in the beginning, so a feeling of overwhelming is prevented. The designer needs to increase the amount of choices slowly as the game progresses, by introducing new goals. So the player needs to gain new skills to achieve new goals. This game progresses building on previously gained skills, and the progress repeats until the player finally masters all skills and achieves all goals.</p>
+
+<figure><img src="image17.png"/></figure>
+
+<p>Figure 15. Learning curve (Brian, 2007)</p>
+
+<figure><img src="image18.png"/></figure>
+
+<p>Figure 16. Number of choices in a game (Brian, 2007)</p>
+
+<h4>3.2.6 User experience layer</h4>
+
+<p>The user experience layer is broken down into three sub-components: user interface (UI), interactivity, and engagement. Although the user experience layer is the deepest layer, the UI is most visible to the players. The UI includes everything the player sees, hears, and interacts with. The user interface makes the game content accessible to the player, acts as the interface for inputs and outputs, and creates interactivity during playtime. The goal of UI design is to immerse the player in the experience. A good UI should be transparent to the player, which means the player should focus on learning, storytelling, and gameplay instead of how to interact with the system.</p>
+
+<h4>3.2.7 Technology layer</h4>
+
+<p>Technology is the ground for other designer choices in this framework. Some design is impossible to be implemented without proper technology. The user experience layer is most stringently tied to the technology, and the use of paper prototype and advanced 3D simulation will make the user experience totally different. The capabilities and limitation of technology should be taken consideration throughout the design process.</p>
+
+<p>As a conclusion, the DPE framework is a formal approach for serious game design and will be used as the guidance for designing the game in this study. However, as this game simulates the construction process, a model for labor productivity and overall project progression is required.</p>
+
+<h3>3.3 A dynamic model for labor productivity</h3>
+
+<p>Nasirzadeh and Nojedehi (2012) developed a system dynamics (SD) approach to model labor productivity. In this model, the effects of all influencing factors are considered to achieve a more precise simulation. This model includes both qualitative modeling and quantitative modeling, but only quantitative modeling will be used as a reference in this study.</p>
+
+<p>Moreover, each of these influencing factors has also been modeled considering the parameter affecting them. As an example, it has been shown that skillfulness is affected by three parameters including current work experience, minimum required work experience and amount of workforce </p>
+
+<p>The factors affecting labor productivity are shown in Figure 17. Factors with positive effects are skillfulness, motivation, and project management efficiency. Factors with negative effects are the lack of working area, labor fatigue and unfamiliarity with new techniques. Each of these factors also has respective parameters affecting them.</p>
+
+<figure><img src="image19.png"/></figure>
+
+<p>Figure 17. The factors affecting labor productivity (Nasirzadeh and Nojedehi, 2012)</p>
+
+<p>Based on this model, a simplified model for labor productivity is developed for this study, as shown in Figure 18. The five factors considered are number of labor, weather, skillfulness, temperature, and lack of working area. </p>
+
+<figure><img src="image20.png"/></figure>
+
+<p>Figure 18. A simplified model for labor productivity</p>
+
+<p>The number of labor is the determining factor, whose value directly affect the overall productivity.</p>
+
+<p>Weather would also affect labor productivity. High temperature leads to heat stress in construction labors, which is a major problem in the construction industry of Hong Kong. Heat stress increase labor fatigue, negatively affect labor health, and finally negatively affect labor productivity. Special weather conditions, such as thunderstorm and very hot weather, would also negatively affect labor productivity.</p>
+
+<p>Skillfulness is also an important factor. Higher skill increases labor productivity not only through lower time but also through less rework.</p>
+
+<p>Motivation affects labor productivity either positively or negatively depending on several parameters, such as job security, salary, empowerment, and responsibility.</p>
+
+<p>Lacking of working area is caused by excessive labor allocation. In the situation where excessive labor is allocated, the project may still progress at high speed but a significant proportion of cost on labor salary is wasted, as only a limited number of labor can be productive at the same time.</p>
+
+<p>The equation for calculating labor productivity considering these five factors will be developed during game development.</p>
+
+<h2>Chapter 4 – Game Design and Development Process</h2>
+
+<p>4.1 Introduction to the game</p>
+
+<p>4.2 Introduction to the project</p>
+
+<p>4.3 Target audience</p>
+
+<p>4.4 Game flow</p>
+
+<p>4.5 Use of the cognitive model</p>
+
+<p>4.6 Use of the DPE framework</p>
+
+<p>4.7 Modeling for labor productivity<br/></p>
+
+<p><strong>Chapter 4 - Game Design and Development Process</strong></p>
+
+<h3>4.1 Introduction to the game</h3>
+
+<p>The serious game developed in this study is called “YiCon”, which will be referred as “this game” in this study. In this game, the player plays the role of a project manager, whose goal is to minimize project time and cost of a simulated project through optimizing labor allocation strategies. In this chapter, the overall game flow will be described, and the game design and development process will be discussed with the use of the DPE framework and the cognitive model developed by Castronovo et al. (2015). </p>
+
+<p>The completed game and user’s manual of this game can be found in Appendix I and Appendix II. </p>
+
+<h3>4.2 Introduction to the project</h3>
+
+<p>To make this game more realistic, a real project conducted in the Industrial Center of The Hong Kong Polytechnic University is used for reference. In this project, a demo house for a public housing project was built by a group of students who are major in construction related fields. A model of this demo house is shown in Figure 19. This project was divided into three sessions with respective construction tasks: the structural installation, the finishing installation, and decoration. This game simulates the structural installation and installation of doors and windows, which covers the whole first session and first four days of the second session.</p>
+
+<figure><img src="image21.png"/></figure>
+
+<p>Figure 19. A 3D model for the demo house</p>
+
+<p>The working schedule of the first session and the second session are shown in Figure 20 and Figure 21 respectively. The schedule used in this game is adapted from these two schedules and is shown in Figure 22. Therefore, in this game, the project is expected to be completed in seventeen days. Players are given thirty days to completed the project and would lose the game if they fail to complete the project in thirty days.</p>
+
+<figure><img src="image22.png"/></figure>
+
+<p>Figure 20. Schedule of session 1</p>
+
+<figure><img src="image23.png"/></figure>
+
+<p>Figure 21. Schedule for session 2</p>
+
+<figure><img src="image24.png"/></figure>
+
+<p>Figure 22. Schedule used in the game</p>
+
+<h3>4.3 Target audience</h3>
+
+<p>In the DPE framework, it is asserted that player’s experience varies with player’s backgrounds, so it is essential to set target audience in the early stage of game design process.</p>
+
+<p>This game requires prior knowledge of construction management, so the target audience is junior and senior undergraduate students who major in construction-related fields.</p>
+
+<h3>4.4 Game flow</h3>
+
+<p>This game has four states as shown in Figure 23. The four states are: “fly through” state, “daily planning” state, “daily construction” state, and “daily report” state. The four states will be introduced respectively in detail.</p>
+
+<figure><img src="image25.png"/></figure>
+
+<p>Figure 23. Game flow of “YiCon”</p>
+
+<h4>4.4.1 The welcome screen</h4>
+
+<p>After the player opens the game, a welcome screen (as shown in Figure 24) will be displayed. On this screen, a brief description of the game and controls are displayed. As displayed on this page, this game has two different control modes: “fly mode” and “select mode”. In “fly mode”, the player can fly around freely with keyboard and mouse. The cursor is fixed to the center of the screen and not visible to the player, and is mainly used for changing the angle of the camera. In “select mode”, the cursor is not fixed and is visible to the player, so the player can use the cursor to click on building components and user interface elements. After reading the texts and clicking the “Start” button, the player will be directed to “fly through” state.</p>
+
+<figure><img src="image26.png"/></figure>
+
+<p>Figure 24. The welcome screen</p>
+
+<h4>4.4.2 The “fly through” state</h4>
+
+<p>A screenshot for “fly through” state is shown in Figure 25. In the “fly through” state, the player can fly around the construction site. The purpose of the “fly through” state is to introduce the overall schedule of this project and get the player familiar with the controls of this game. In this state, the game starts with day 1, and the building components which should have been completed on day 1 are displayed on the screen. The “daily information panel” on the top-left corner shows useful information about day 1, such as the expected progress, expected activities, expected number of labors, and weather. The “fly through” state is a demonstration of the construction process instead of the actual construction progress.</p>
+
+<figure><img src="image27.png"/></figure>
+
+<p>Figure 25. The “fly through” state</p>
+
+<p>Two major UI elements are located at the bottom part of the screen: the “slider for changing the displayed day” and “change day button”, as shown in Figure 25. The player can select the desired day for display by first dragging the handle of the slider, and then clicking the “change day button”. After clicking the “change day button”, an animation will start to show the expected construction activities on that day. Also, the information displayed in the “daily information panel” will change, as shown in Figure 26. The player can observe the whole construction progress through changing the “displayed day” by one day per time. The player can also rewind the project by dragging the slider leftward.</p>
+
+<figure><img src="image28.png"/></figure>
+
+<p>Figure 26. The “fly through” state after clicking “change day” button</p>
+
+<p>In this state, the player can also view information of different building components. The player can fly to the target component he or she want to examine, and click on that component. The selected component will be highlighted, and information about this component will be displayed at the bottom-left corner, as shown in Figure 27.</p>
+
+<figure><img src="image29.png"/></figure>
+
+<p>Figure 27. Select mode</p>
+
+<p>The player can click the “start construction” button at the top-right corner to go to the daily planning state.</p>
+
+<h4>4.4.3 The “daily planning” state</h4>
+
+<p>A screenshot for “daily planning” state is shown in Figure 28. To prevent potential confusion, it is important to clarify that the “displayed day” as displayed in the “fly through” state and the “actual day” as displayed in the “daily planning” state are separate and not associated with each other. As such, the player can toggle between the “fly through” state and the “daily planning” state with the “back to view button” without losing actual construction progress.</p>
+
+<figure><img src="image30.png"/></figure>
+
+<p>Figure 28. The “daily planning” state</p>
+
+<p>In this state, the player can manage the construction process by allocating labors for each day. The “daily information panel” displays information about that day, and provides the player with necessary assistance to make appropriate decisions. The decision that the player need to make is how many skilled labors and general labors should be allocated on that day. There are two input fields located at the bottom of the screen for the number of skilled labors and the number of general labors respectively. The player can click on “start day button” after inputting the two numbers and will be directed to the “daily construction” state. </p>
+
+<h4>4.4.4 The “daily construction” state</h4>
+
+<p>A screenshot for “daily construction” state is shown in Figure 29. In this state, animations are used to indicate the construction activities to be completed on that day. The player can observe the animation and click building components to see the information of them.</p>
+
+<figure><img src="image31.png"/></figure>
+
+<p>Figure 29. The “daily construction” state</p>
+
+<p>The player can click the “end day” button after the animation completes, and will be directed to the “daily report” state.</p>
+
+<h4>4.4.5 The “daily report” state</h4>
+
+<p>A screenshot for “daily report” state is shown in Figure 30. The daily report consists of three parts: “as expected” part, “actual” part, and “comments” part. The “as expected” part provides the player with information about expected progress, expected activities, expected number of skilled and general labors, and expected labor cost. The “actual” part provides information about the number of skilled and general labor actually allocated, the actual labor cost, and the actual progress. The “comments” part gives comments on the player’s performance, which are generated at run-time based on the player’s input.</p>
+
+<figure><img src="image32.png"/></figure>
+
+<p>Figure 30. The “daily report” state</p>
+
+<p>The “daily report” provides the player with useful feedback, so the player can modify the decisions to optimize the results. After examining the report, the player can click the “next day button” and will be directed back to the “daily planning” state.</p>
+
+<h4>4.4.6 The result screen</h4>
+
+<p>After the player completes the project or fails to complete the project within thirty days, the result screen will be shown. </p>
+
+<p>Figure 31 shows the result screen for a winning condition. This screen provides information about project time, total labor cost, and the amount of incentive or liquidated damage.</p>
+
+<figure><img src="image33.png"/></figure>
+
+<p>Figure 31. Result screen - win</p>
+
+<p>Figure 32 shows the result screen for a losing condition, which provides information about the project time, total labor cost, actual progress, amount of liquidated damage, and a message saying that the player was finally fired.</p>
+
+<figure><img src="image34.png"/></figure>
+
+<p>Figure 32. Result screen - lose</p>
+
+<p>The game flow ends with the result screen.</p>
+
+<h3>4.5 Use of the cognitive model</h3>
+
+<p>In this chapter, the cognitive model developed by Castronovo et al. (2015) will be referred to as “the cognitive model” for simplicity. The four states of this game reflect the cognitive model (as shown in Figure 33).</p>
+
+<figure><img src="image35.png"/></figure>
+
+<p>Figure 33. Associations between the game flow and the cognitive model</p>
+
+<p>The “fly through” state reflects problem representation phase. This state enables the player to fly around and observe the overall construction process, so it helps the player understand the tasks and identify problem constraints.</p>
+
+<p>The “daily planning” state reflects problem representation phase and problem execution phase. This state provides the player with necessary assistance for developing possible solutions, and also enables the player to assess alternative solutions with different inputs on different days. This state also presents the player with the overall progress of the project, and helps the player monitor the performance of the proposed solution.</p>
+
+<p>The “daily construction” state reflects problem execution phase with the animations of construction activities.</p>
+
+<p>The “daily report” state reflects problem execution and solution evaluation phase. This state provides the player with useful feedback, so the player can monitor the execution of the proposed solution and modify his or her decisions.</p>
+
+<p>The result page reflects solution evaluation phase. The result page presents the player with his or her overall performance on this game, and suggests potential directions for improvements.</p>
+
+<h3>4.6 Use of the DPE framework</h3>
+
+<p>This game was designed with the guidance of the DPE framework. In this part, how this game reflects the five layers of the DPE framework will be discussed.</p>
+
+<figure><img src="image13-1.png"/></figure>
+
+<p>Figure 34. The DPE framework</p>
+
+<h4>4.6.1 The learning layer</h4>
+
+<p>The DPE framework specifies that the intended learning outcomes should be defined at the early stage of game design. The intended learning outcomes of this game are to enable students to:</p>
+
+<ol>
+	<li>understand the spatial and temporal relationship between building components</li>
+	<li>understand the factors affecting labor productivity</li>
+	<li>understand the influence of project management on project cost and time</li>
+	<li>understand the dynamic nature of construction projects</li>
+</ol>
+
+<p>The four intended learning outcomes, together with the cognitive model are used to guide the content and pedagogy design. This game is designed for achieving up to the “evaluating” category of cognitive learning, as specified by Clark (2015) in Figure 12.</p>
+
+<h4>4.6.2 The storytelling layer</h4>
+
+<p>The character, setting, and narrative of this game are specified in the first part of this chapter. The storytelling is achieved through the progressing of the project. </p>
+
+<p>However, the designer’s story deviates of this game from the truth. The deviation is mainly caused by the change in actual schedule and the schedule used in game design, which is specified in the second part of this chapter. The lack of data about weather conditions also caused deviation from the truth. The simulated project starts on 13 June 2016 and ends on 26 July. The author only got exact temperature and humidity data from 13 June to 7 July, and the data for 8 July to 26 July were simulated with computer programs. In the simulation, according to the data provided by Hong Kong Observatory (2016), the expected mean value for temperature is set as 29.8ºC, and the expected mean value for humidity is set as 79%. Therefore, the scale of deviation is expected to be reasonably small. The actual and simulated weather conditions are provided in Appendix III.</p>
+
+<h4>4.6.3 The game play layer</h4>
+
+<p>The game play layer defines the choices, progression and learning curve of this game, and is a major part of game design.</p>
+
+<p>In this game, the choices are the number of skilled labors and general labors on each day. The choices are made dynamic and random by the following factors: the expected number of labors, the expected labor cost, the weather condition, the overall skillfulness, and the overall motivation. All of these factors have effects on the daily labor productivity and the overall progress of the project.</p>
+
+<p>This game progresses with the actual days of construction. On each day, the player needs to make same choices based on different conditions. Instant feedback is given with the “daily reports”. In the comments part of daily reports, the player is rewarded with positive comments. The number of negative comments is designed to be less that positive comments to keep the player motivated and prevent frustration. For example, the comments would praise the player when he or she is ahead of schedule but would not criticize the player when he or she is behind schedule. </p>
+
+<p>The learning curve of this game is not steep, as the number of choices is fixed. The difficulty of choices changes non-linearly with time (as shown in Figure 35). The choices are hard to do at the beginning, as the player has little knowledge about how to make decisions. As the game progresses, the choices become easier to do. However, after the playing assessing alternative solution, the choices become harder again due to the increase of considerations. The difficulty drops at last as the player’s skill increases to a relatively high level.</p>
+
+<figure><img src="image36.png"/></figure>
+
+<p>Figure 35. Relationship between difficulty and time</p>
+
+<p>Dynamics are created by the player’s choices. The overall skillfulness and motivation of labors are constantly modified with respect to player’s inputs at run-time. The change in overall skillfulness and motivation make the game more dynamic and unpredictable.</p>
+
+<h4>4.6.4 The user interface layer</h4>
+
+<p>The user interface layer makes the game content accessible to players. It is the author’s opinion that the user interface should not be intrusive, and should the most frequently used element should be the most accessible ones to the player. </p>
+
+<p>The user interfaces are presented in the “Game flow” part of this chapter. In the user interface design of this game, only black and white color are used, and bold texts are used to highlight important information and attract the player’s attention. It is expected that the user interface will make the interactions with the game intuitive and engaging.</p>
+
+<h4>4.6.5 The technology layer</h4>
+
+<p>Advancement in computing technologies makes the implementation of this game possible. The software and information technology services used are listed below:</p>
+
+<ol>
+	<li><em>Unity3D:</em> Unity3D is one of the most popular game engine, which provides an intuitive graphical user interface, extensive API (Application Programming Interface), graphical pipelines, advanced physics engine, and 3D game development capability. Unity3D is the major development tool for this game.</li>
+	<li><em>Blender</em>: Blender is an open source 3D modeling software, which is used to prepare 3D models for this game.</li>
+	<li><em>Consulo:</em> Consulo is an open source integrated development environment with multiple language support, which provides refactoring, debugging, code completion functions. Consulo is used for C# programming in this game.</li>
+	<li><em>GitHub</em>: GitHub is a version control service. GitHub is used to manage versions. The whole project files of this game are hosted on GitHub and are <em>open source</em>, so that everyone can access the project files and development his or her own version of this game. The link to the GitHub page for this project is provided in Appendix IV.</li>
+</ol>
+
+<h3>4.7 Modeling for labor productivity</h3>
+
+<p>The model for labor productivity of this game is adapted from the model developed by Nasirzadeh and Nojedehi (2012) (as shown in Figure 17). As discussed in chapter 3, the adapted model considers five factors: number of labor, temperature, skillfulness, temperature, and lack of working area. Also, every factor also has its influencing parameters. The qualitative model is shown in Figure 36. Positive signs indicate positive effects, while negative signs indicate negative effects.</p>
+
+<figure><img src="image37.png"/></figure>
+
+<p>Figure 36. Qualitative model for labor productivity used in the game</p>
+
+<p>The number of labor has either positive or negative effect on labor productivity, depending on whether the number of labor is enough or not.</p>
+
+<p>An excessive number of labor on site may cause lack of working area, and eventually negatively affects labor productivity.</p>
+
+<p>Weather may have negative effect on labor productivity. The influencing parameters of weather are high temperature, high humidity, and special weather conditions. Each of the influencing parameters would increase the extent of the negative effect on labor productivity.</p>
+
+<p>Skillfulness of labor has positive effects on labor productivity. Both increase in work experience and enough number of skilled labor will increase overall skillfulness of the crew and eventually, increase labor productivity.</p>
+
+<p>The motivation of labor has either positive or negative effect on labor productivity. The influencing parameters of motivation are simplified in this game. In the setting of this game, excessive labor allocation decreases overall motivation, while slight undermanning increases overall motivation.</p>
+
+<p>The exact equations for calculating labor productivity with these factors are shown in Appendix V. The magnitudes of the effects of these factors have deviated from the truth, but the deviation does not prevent the player from achieving intended learning outcomes. However, the magnitudes can be adjusted through further study and multiple play tests.</p>
+
+<h2>Chapter 5 – Evaluation of the Game</h2>
+
+<h3>5.1 Questionnaire design</h3>
+
+<p>Two questionnaires are designed to assist the evaluation of this game. One questionnaire is completed at the beginning of a play test session, and the other one is completed in the end. </p>
+
+<p>The first questionnaire collects demographic information about the players, asks questions about the players’ use of computers for learning and entertainment, and tests the players’ opinion on serious games.</p>
+
+<p>The two questionnaire asks the players about their feelings, collects their reflection on their performance and the game, asks open-ended questions, and lets the players rate whether the game is suitable for undergraduate-level construction education.</p>
+
+<p>The two questionnaires are provided in Appendix VI and VII.</p>
+
+<h3>5.2 Play test conduction</h3>
+
+<p>Ten play test sessions were conducted with ten different students to evaluation this game. The procedures of each play test session are as follows:</p>
+
+<ol>
+	<li>let the player fill in the first questionnaire,</li>
+	<li>let the player read through the User’s Manual,</li>
+	<li>let the player play the game, during which necessary help may be provided by the author,</li>
+	<li>let the player fill in the second questionnaire after finishing the game.</li>
+</ol>
+
+<h3>5.3 Data collection</h3>
+
+<p>The data collected with the first questionnaire are presented as follows:</p>
+
+<p>Table 2. Question 1 results</p>
+
+<figure><img src="image38.png"/></figure>
+
+<p>Table 3. Question 2 results</p>
+
+<figure><img src="image39.png"/></figure>
+
+<p>Table 4. Question 3 results</p>
+
+<figure><img src="image40.png"/></figure>
+
+<p>Table 5. Question 4 results</p>
+
+<figure><img src="image41.png"/></figure>
+
+<p>Table 6. Question 5 results</p>
+
+<figure><img src="image42.png"/></figure>
+
+<p>Table 7. Question 6 results</p>
+
+<figure><img src="image43.png"/></figure>
+
+<p>Table 8. Question 7 results</p>
+
+<figure><img src="image40-1.png"/></figure>
+
+<p>The data collected with the second questionnaire are presented as follows:</p>
+
+<p>Table 9. Ratings for participant’s feelings</p>
+
+<figure><img src="image44.png"/></figure>
+
+<p>Table 10. Ratings for reflections</p>
+
+<figure><img src="image45.png"/></figure>
+
+<p>Table 11. Ratings for the game</p>
+
+<figure><img src="image46.png"/></figure>
+
+<p>Table 12. Ratings for whether the game is suitable for construction education</p>
+
+<figure><img src="image47.png"/></figure>
+
+<h3>5.4 Data analysis and findings</h3>
+
+<h4>5.4.1 Demographic information</h4>
+
+<p>Among the 10 participants, 1 of them is 17 or younger, 2 of them are between 18 and 22 years old, and 7 of them are between 21 and 23 years old. 7 participants are male and 3 participants are female. 9 participants are senior students, and only 1 participant is a freshman. Furthermore, 9 participants major in construction-related fields, and all of them have experience in the construction industry. </p>
+
+<p>It is concluded that most participants are senior students who major in construction-related fields and have work experience in the construction industry.</p>
+
+<h4>5.4.2 Use of computer</h4>
+
+<p>Each participant spends an average of 32 hours per week learning with computers, and 29 hours per week entertaining with computers. </p>
+
+<p>The participants spend around 36% of their time on computers. Therefore, it is assumed that most students are familiar with computers, and this provides the ground for integrating computer games in educations.</p>
+
+<h4>5.4.3 About serious games</h4>
+
+<p>The statement “I think serious games are suitable for construction education” received a weighted average rating of 4 out of 5, and the statement “I would welcome serious games in classes” received a weighted average rating of 4.4 out of 5. </p>
+
+<p>Therefore, it is assumed that there will be no resistance from students during the process of integrating serious games in education.</p>
+
+<h4>5.4.4 About feelings after playing the game</h4>
+
+<p>Among the five given feelings, “concerned” and “happy” both received the highest weighted average rating as 3.4 out of 5, indicating that the participants care about the game and feels good after playing it.</p>
+
+<h4>5.4.5 About reflection on performance</h4>
+
+<p>The question “Do you think you can do better next time?” received a weighted average rating of 4.8 out of 5, indicating that participants received useful feedback from the game and would not refuse to play the game again.</p>
+
+<h4>5.4.6 About the game</h4>
+
+<p>The question “Did the game help you&nbsp;understand the construction process?” received a weighted average rating of 3.2 out of 5. The question “Did the game help you understand the dynamic nature of project management?” received a weighted average rating of 3.1 out of 5. The overall weighted average rating of this game is 3.9. Moreover, the statement “I think this game is suitable for undergraduate-level construction education” received a weighted average rating of 80.3 out of 100.</p>
+
+<p>Therefore, it is concluded that the game did help the participants understand the construction process of this project and the dynamic nature of project management. Also, this game received a satisfactory overall rating and most participants agree that this game is suitable for undergraduate-level construction education.</p>
+
+<h2>Chapter 6 – Conclusion</h2>
+
+<h3>6.1 Summary of the development and evaluation of the game</h3>
+
+<p>This study identified existing problems in the construction industry, and proposed to develop a serious game to address the problems.</p>
+
+<p>The game aims at helping students understand the spatial and temporal relationship between building components, the factors affecting labor productivity, the influence of project management on project cost and time, and the dynamic nature of construction projects. The game was successfully developed with the use of the DPE framework, a cognitive model, and a dynamic model for labor productivity. A new model for calculating labor productivity was also developed specifically for this game. The design and development process of this game demonstrates the value and effectiveness of using the DPE framework for serious game design. </p>
+
+<p>The game was evaluated through ten play test sessions. The play test suggests that there would be little resistance from students during the process of integrating serious games in education and the computer skills of most students are high enough for playing serious games. The play test also indicates that the game achieves the intended learning outcomes and is deemed by the participants as suitable for undergraduate-level construction education.</p>
+
+<h3>6.2 Limitations</h3>
+
+<p>Although the game is proven to be effective for learning and suitable for construction education, there are still several limitations to this study.</p>
+
+<p>First, the mathematical model developed for calculating labor productivity deviated from the real world scenario. The magnitudes of influencing factors should be modified through further study and adjusted through more play test sessions.</p>
+
+<p>Second, the implementation of this game has inherent limitations. For example, the animations in this game are quite simple and cannot reflect the real world scenario, and only daily reports are given, while milestone reports are missing. In addition, the codes of this game did not fully obey object-oriented programming principles, and may cause problems for the future development of this game.</p>
+
+<p>Third, the number of play test session is limited. It is possible for a larger number of play tests to suggest a different evaluation result for this game. Also, extensive play tests may reveal bugs which are not found at this stage.</p>
+
+<h3>6.3 Recommendations for further study</h3>
+
+<p>The game focused on minimizing project time and cost through optimizing labor allocation. So the depth of this game is limited as the only inputs from the player are the numbers of skilled labor and general labor. Further study may add new inputs and new random variables to this game, and increase the number of choices the player need to make.</p>
+
+<p>In addition, the mathematical model used for calculating labor productivity does not fully reflect the real world scenario. Further study may develop a more sophisticated and precise mathematical model for calculating labor productivity.</p>
+
+<p>At last, this game only simulates one project, further study may modify the game to make it capable of simulating different projects.</p>
+
+<h2>References</h2>
+
+<p>Abt, C. C. (1987). <em>Serious games</em>. University Press of America.</p>
 
 <p>American Institute of Steel Construction (2016). <em>Steel sculptures</em>. Retrieved from http://www.spring.org.uk/the1sttransport</p>
 
 <p>Bellotti, F., Berta, R., &amp; De Gloria, A. (2010). Designing Effective Serious Games: Opportunities and Challenges for Research. <em>International Journal of Emerging Technologies in Learning (iJET)</em>, 5(SI3), 1–14. http://doi.org/10.3991/ijet.v5s3.1500</p>
 
-<p>Abt, C. C. (1987). <em>Serious games</em>. University Press of America.</p>
+<p>Castronovo, F., Zappe, S. E., Messner, J. I., &amp; Leicht, E. M. (2015). Design of a Construction Simulation Educational Game Through a Cognitive Lens. <em>In 122nd ASEE Annual Conference &amp; Exposition</em>. Seattle.</p>
 
-<p>Construction Industry Simulations Ltd (2016). <em>Merit game</em>. Retrieved from http://meritgame.com/overview/overview</p>
+<p>Castronovo, F., Nikolic, D., Zappe, S. E., Leicht, R. M., &amp; Messner, J. I. (2014). Enhancement of Learning Objectives in Construction Engineering Education: A Step towards Simulation Assessment. <em>In Construction Research Congress 2014</em>.</p>
+
+<p>Castronovo, F., Lee, S., Nikolic, D., &amp; Messner, J. I. (2014). Visualization in 4D construction management software: a review of standards and guidelines. <em>In Computing in Civil and Building Engineering</em>.</p>
+
+<p>Clark, D. (2015). Learning domains or Bloom’s taxonomy [Weblog]. Retrieved on January 3, 2006, from http://www.nwlink.com/donclark/hrd/bloom. html </p>
+
+<p>Csikszentmihalyi, M. (1990). <em>Flow: The psychology of optimal experiences</em>. New York: Harper Perennial. </p>
 
 <p>Dale, E. (1946). The cone of experience. <em>Audio-visual methods in teaching</em>,1, 37-51.</p>
 
@@ -152,33 +721,39 @@
 
 <p>Dickinson, J. K., Woodard, P., Canas, R., Ahamed, S., &amp; Lockston, D. (2011). Game-based trench safety education: development and lessons learned. <em>Journal of Information Technology in Construction (ITcon)</em>, 16(2011), 119-134.</p>
 
-<p>Garris, R., Ahlers, R., &amp; Driskell, J. E. (2002). Games, Motivation, and Learning: A Research and Practice Model. <em>Simulation &amp; Gaming</em>, 33(4), 441–467. http://doi.org/10.1177/1046878102238607</p>
+<p>Gagne, R. (1985). <em>The conditions of learning</em>. New York: Holt, Rinehart &amp; Winston. </p>
 
-<p>Huizinga, J. (1998). <em>Homo ludens : A study of the play-element in culture</em> (Sociology of culture ; 3). London: Routledge.</p>
+<p>Halpin, D., &amp; Woodhead, Ronald W. (1973). <em>Constructo : A heuristic game for construction management</em>. Urbana: Univ. of Illinois Pr.</p>
+
+<p>Hong Kong Observatory (2016). <em>The Weather of&nbsp;July 2016</em>. Retrieved from http://www.hko.gov.hk/wxinfo/pastwx/mws2016/mws201607.htm</p>
+
+<p>Jenkins. (2006). Getting serious about games. Weblog. Retrieved September 14, 2006, from http://www.henryjenkins.org/2006/07/getting_ serious_about_games.html_</p>
 
 <p>Khan (2014). Merit game celebrates 25 years of developing civil engineers&#39; business skills. <em>Proceedings of the ICE - Civil Engineering</em>, 167(4), 150–150. http://doi.org/10.1680/cien.2014.167.4.150</p>
 
-<p>Messner, J. I., &amp; Horman, M. (2003). Using advanced visualization tools to improve construction education. Presented at the <em>Proceedings of CONVR 2003 Conference.</em></p>
+<p>LeBlanc, M. (2005). <em>Game design and tuning workshop</em>. Workshop presented at FuturePlay 2005 International Academic Conference on the Future of Game Design and Technology, East Lansing, MI. </p>
+
+<p>MERIT (2016). <em>Merit game</em>. Retrieved from http://meritgame.com/overview</p>
 
 <p>Migilinskas, D., Popov, V., Juocevicius, V., &amp; Ustinovichius, L. (2013). The Benefits, Obstacles and Problems of Practical Bim Implementation. <em>Procedia Engineering</em>, 57, 767–774. http://doi.org/10.1016/j.proeng.2013.04.097</p>
 
+<p>Mojang (2016). <em>Minecraft Education Edition</em>. Retrieved from http://education.minecraft.net/</p>
+
+<p>Nasirzadeh, &amp; Nojedehi. (2013). Dynamic modeling of labor productivity in construction projects. <em>International Journal of Project Management</em>, 31(6), 903-911.</p>
+
 <p>Nikolić, D. (2011). <em>Evaluating a simulation game in construction engineering education: The virtual construction simulator 3</em> (Doctoral dissertation, Architectural Engineering).</p>
 
-<p>Poli, D., Berenotto, C., Blankenship, S., Piatkowski, B., Bader, G. A., &amp; Poore, M. (2012). Bringing Evolution to a Technological Generation: A Case Study with the Video Game SPORE. <em>The American Biology Teacher</em>, 74(2), 100–103. http://doi.org/10.1525/abt.2012.74.2.7</p>
-
-<p>Prensky, M. (2004). Interactive pretending: An overview of simulation. Online: http://www. marcprensky. com/writing/Prensky-Interactive_Pretending. pdf (15.06. 2006).</p>
-
-<p>Rafiq, M. Y., &amp; Easterbrook, D. J. (2005). Using the Computer to Develop a Better Understanding in Teaching Structural Engineering Behavior to Undergraduates. <em>Journal of Computing in Civil Engineering</em>, 19(1), 34–44. http://doi.org/10.1061/(ASCE)0887-3801(2005)19:1(34)</p>
+<p>Salen, K., &amp; Zimmerman, E. (2004).<em> Rules of play: Game design fundamentals. </em>Cambridge, MA: The MIT Press.</p>
 
 <p>Shiratuddin, M. F. (2011, November). Integrating computer game-based learning into construction education. In Information Technology and Multimedia (ICIM), <em>2011 International Conference on (pp. 1-6)</em>. IEEE.</p>
 
-<p>Squire, K. (2003). Video games in education. <em>International Journal of Intelligent Systems. Games &amp; Simulation</em>, 2(1), 49-62.</p>
+<p>The Chartered Institute of Building (2016). <em>Craft Your Future</em>. Retrieved from http://ciobmc.org/about.html</p>
 
-<p>Toledano (2002). Gamers [Photograph]. Retrieved from http://www.mrtoledano.com/gamers</p>
-
-<p>Walther, B. K. (2003). Playing and gaming. <em>Game Studies. </em>http://doi.org/10.1162/152028106775329688</p>
+<p>Van Eck, R. (2006). Digital game-based learning: It&#39;s not just the digital natives who are restless. <em>EDUCAUSE review,</em> 41(2), 16.</p>
 
 <p>Wang, L. (2007). <em>Using 4D Modeling to advance construction visualization in engineering education</em>. Unpublished Thesis, Penn. State University.</p>
+
+<p>Winn, B. (2008). The design, play, and experience framework. <em>Handbook of research on effective electronic gaming in education</em>, 3, 1010-1024.</p>
 
 </body>
 </html>
