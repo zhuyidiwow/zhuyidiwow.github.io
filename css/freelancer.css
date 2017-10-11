@@ -40,8 +40,9 @@ h2 {
 }
 
 h3 {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 200%;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -141,7 +142,7 @@ header .intro-text .bio {
 .navbar-custom {
     background-color: #f9f9f9;
     color: black;
-    font-family: "Hind", Helvetica, sans-serif;
+    font-family: "Merriweather", serif;
     text-transform: uppercase;
     font-weight: 400;
     border-bottom: 1px solid #e0e0e0;
@@ -173,8 +174,8 @@ header .intro-text .bio {
 
 .navbar-custom .navbar-nav li a {
     color: black;
-    font-weight: 500;
-    font-size: 120%;
+    font-weight: 400;
+    font-size: 100%;
 }
 
 .navbar-custom .navbar-nav li a:hover {
@@ -406,6 +407,9 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color: #233140;
+    font-family: "Merriweather", serif;
+    font-size: 110%;
+    color: #f2f2f2;
 }
 
 .btn-outline {
