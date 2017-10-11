@@ -22,7 +22,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #18BC9C;
+    color: #08c1e6;
     outline: none;
 }
 
@@ -31,14 +31,18 @@ h2,
 h4,
 h5,
 h6 {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", serif;
     font-weight: 400;
+}
+
+h2 {
+
 }
 
 h3 {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    padding-top: 30px;
+    font-weight: 400;
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 
@@ -54,8 +58,8 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
-    font-family: FontAwesome;
+    /*content: "\f005";
+    font-family: FontAwesome; */
     display: inline-block;
     position: relative;
     top: -0.8em;
@@ -64,21 +68,21 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #18BC9C;
+    border-color: #08c1e6;
 }
 
 hr.star-light:after {
     background-color: white;
-    color: #18BC9C;
+    color: #08c1e6;
 }
 
 hr.star-primary {
-    border-color: #18BC9C;
+    border-color: #08c1e6;
 }
 
 hr.star-primary:after {
     background-color: white;
-    color: #18BC9C;
+    color: #08c1e6;
 }
 
 .img-centered {
@@ -87,13 +91,13 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    background: white;
+    background-color: white;
     color: black;
 }
 
 header .container {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 header img {
@@ -101,41 +105,47 @@ header img {
     margin: 0 auto 20px;
 }
 
-header .intro-text .name {
+header .intro-text .quote {
     display: block;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", serif;
     text-transform: none;
-    font-weight: 400;
     font-size: 2em;
 }
 
-header .intro-text .intro {
+header .intro-text .bio {
     font-size: 1.25em;
-    font-weight: 300;
+    font-family: "Merriweather", serif;
+    text-align: left;
 }
 
 @media (min-width: 768px) {
     header .container {
         padding-top: 200px;
-        padding-bottom: 100px;
+        padding-bottom: 20px;
     }
 
-    header .intro-text .name {
-        font-size: 4.75em;
+    header .intro-text .quote {
+        display: block;
+        font-family: "Merriweather", serif;
+        text-transform: none;
+        font-size: 2em;
     }
 
-    header .intro-text .intro {
-        font-size: 1.75em;
+    header .intro-text .bio {
+        font-size: 1.25em;
+        font-family: "Merriweather", serif;
+        text-align: left;
     }
 }
 
 .navbar-custom {
-    background: white;
+    background-color: #f9f9f9;
     color: black;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Hind", Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0px 1px 1px #d3d3d3;
 }
 
 .navbar-custom a:focus {
@@ -145,14 +155,16 @@ header .intro-text .intro {
 .navbar-custom .navbar-brand {
     color: black;
     text-transform: none;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-    color: #18BC9C;
-    background-color: white;
+    color: #08c1e6;
+    background-color: #f9f9f9;
 }
 
 .navbar-custom .navbar-nav {
@@ -161,34 +173,37 @@ header .intro-text .intro {
 
 .navbar-custom .navbar-nav li a {
     color: black;
+    font-weight: 500;
+    font-size: 120%;
 }
 
 .navbar-custom .navbar-nav li a:hover {
-    color: #18BC9C;
-    background-color: white;
+    color: #08c1e6;
+    background-color: #f9f9f9;
+
     outline: none;
 }
 
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
-    color: #18BC9C;
-    background-color: white;
+    color: #08c1e6;
+    background-color: #f9f9f9;
 }
 
 .navbar-custom .navbar-nav li.active a {
-    color: #18BC9C;
-    background-color: white;
+    color: #08c1e6;
+    background-color: #f9f9f9;
 }
 
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-    color: #18BC9C;
-    background-color: white;
+    color: #08c1e6;
+    background-color: #f9f9f9;
 }
 
 .navbar-custom .navbar-toggle {
-    color: #18BC9C;
+    color: #08c1e6;
     text-transform: uppercase;
     font-size: 10px;
     border-color: white;
@@ -196,9 +211,9 @@ header .intro-text .intro {
 
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-    background-color: #18BC9C;
+    background-color: #08c1e6;
     color: white;
-    border-color: #18BC9C;
+    border-color: #08c1e6;
 }
 
 @media (min-width: 768px) {
@@ -221,7 +236,7 @@ header .intro-text .intro {
     }
 
     .navbar-custom.affix .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 }
 
@@ -250,7 +265,7 @@ section.success {
 }
 
 #portfolio .portfolio-item {
-    margin: 0 0 15px;
+    margin: 15px;
     right: 0;
 }
 
@@ -261,8 +276,15 @@ section.success {
     margin: 0 auto;
 }
 
+#portfolio .portfolio-item .portfolio-title {
+    width: 100%;
+    font-family: "Merriweather", serif;
+    font-size: 120%;
+    text-align: center;
+}
+
 #portfolio .portfolio-item .portfolio-link .caption {
-    background: rgba(24, 188, 156, 0.9);
+    background: rgba(44, 62, 80, 0.95);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -355,7 +377,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18BC9C;
+    color: #08c1e6;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -372,7 +394,7 @@ footer h3 {
 }
 
 footer .footer-above {
-    padding-top: 50px;
+    padding-top: 30px;
     background-color: #2C3E50;
 }
 
@@ -398,7 +420,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    color: #18BC9C;
+    color: #08c1e6;
     background: white;
     border: solid 2px white;
 }
@@ -453,7 +475,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success {
     color: black;
     background-color: white;
-    border-color: #18BC9C;
+    border-color: #08c1e6;
     font-weight: 500;
 }
 
@@ -463,8 +485,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
     color: white;
-    background-color: #128f76;
-    border-color: #11866f;
+    background-color: #08c1e6;
+    border-color: #08c1e6;
 }
 
 .btn-success:active,
@@ -488,12 +510,12 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-    background-color: #18BC9C;
-    border-color: #18BC9C;
+    background-color: #08c1e6;
+    border-color: #08c1e6;
 }
 
 .btn-success .badge {
-    color: #18BC9C;
+    color: #08c1e6;
     background-color: white;
 }
 
@@ -607,9 +629,9 @@ fieldset[disabled] .btn-success.active {
 /* my own code below */
 .portfolio-modal .modal-content .modal-body .portfolio-description,
 .modal-body .portfolio-description{
-    font-size: 1em;
+    font-size: 120%;
     text-align: left !important;
-    font-family: "Lora", "Merriweather", serif !important;
+    font-family: "Merriweather", serif !important;
 }
 
 .modal-body {
@@ -629,62 +651,6 @@ fieldset[disabled] .btn-success.active {
     background-color: #2C3E50;
 }
 
-#news .news-item {
-    margin: 0 0 15px;
-    right: 0;
+#mainNav .fa {
+    font-size: 80%;
 }
-
-#news .news-item .news-link {
-    display: block;
-    position: relative;
-    max-width: 1200px;
-    max-height: 600px;
-    margin: 0 auto;
-
-    overflow: hidden;
-}
-
-#news .news-item .news-link .caption {
-    text-shadow: 2px 2px #000000;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    transition: all ease 0.5s;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-}
-
-#news .news-item .news-link .news-image {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-#news .news-item .news-link .caption .caption-content {
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    top: 50%;
-    margin-top: -30px;
-    color: white;
-}
-
-#news .news-item .news-link .caption .caption-content p {
-    margin-top: -12px;
-    font-size: 40px;
-
-}
-
-#news .news-item .news-link .caption .caption-content h3,
-#news .news-item .news-link .caption .caption-content h4 {
-    margin: 0;
-}
-
-#news .news-item .news-link .caption:hover {
-    background: rgba(24, 188, 156, 0.9);
-
-}
-
