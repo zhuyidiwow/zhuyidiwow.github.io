@@ -750,15 +750,50 @@ article .game {
 }
 
 #blog .post-card {
-    border: 1px solid #e0e0e0;
+    border: 2px solid #e0e0e0;
     border-radius: 3px;
-    box-shadow: 0px 1px 1px #d3d3d3;
+    box-shadow: 0px 2px 15px #d3d3d3;
+    padding: 0;
 
     display: block;
     position: relative;
-    margin: 20px auto;
+    margin-bottom: 30px;
 }
 
 #blog .post-card .post-image {
     margin: 0 auto;
+    width: 100%;
+}
+
+#blog .post-card .image-container{
+    overflow: hidden;
+    max-height: 300px;
+}
+
+#blog .post-card .post-container {
+    padding: 15px;
+    z-index: 1;
+    position: relative;
+    background-color: white;
+}
+
+#blog .post-card .post-title {
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-size: 180%;
+    padding-top: 10px;
+}
+
+#blog .post-card .post-intro {
+    font-family: "Hind", sans-serif;
+    font-size: 120%;
+}
+
+#blog a {
+    color: black;
+}
+
+#blog a:hover {
+    color: black;
+    text-decoration: none;
 }
