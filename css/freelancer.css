@@ -47,43 +47,27 @@ h3 {
     padding-bottom: 10px;
 }
 
-hr.star-light,
-hr.star-primary {
+hr.star-light {
     padding: 0;
     border: none;
     border-top: solid 2px;
+    border-color: #cecece;
+    box-shadow: 0px 0px 0px #b2b2b2;
+
     text-align: center;
-    max-width: 250px;
+    max-width: 300px;
     margin: 25px auto 30px;
 }
 
-hr.star-light:after,
-hr.star-primary:after {
-    /*content: "\f005";
-    font-family: FontAwesome; */
+hr.star-light:after {
     display: inline-block;
     position: relative;
     top: -0.8em;
     font-size: 1.2em;
     padding: 0 0.125em;
-}
 
-hr.star-light {
-    border-color: #08c1e6;
-}
-
-hr.star-light:after {
-    background-color: white;
-    color: #08c1e6;
-}
-
-hr.star-primary {
-    border-color: #08c1e6;
-}
-
-hr.star-primary:after {
-    background-color: white;
-    color: #08c1e6;
+    background-color: transparent;
+    color: #b2b2b2;
 }
 
 .img-centered {
@@ -398,7 +382,10 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 30px;
-    background-color: #2C3E50;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    color: #494949;
 }
 
 footer .footer-col {
@@ -407,16 +394,16 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #494949;
     font-family: "Merriweather", serif;
     font-size: 110%;
     color: #f2f2f2;
 }
 
 .btn-outline {
-    color: white;
+    color: #494949;
     font-size: 20px;
-    border: solid 2px white;
+    border: solid 2px #494949;
     background: transparent;
     transition: all 0.3s ease-in-out;
     margin-top: 15px;
@@ -426,9 +413,10 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    color: #08c1e6;
-    background: white;
-    border: solid 2px white;
+    color: snow;
+    background: #494949;
+    border: 2px solid #494949;
+    box-shadow: 0 0 2px #494949;
 }
 
 .btn-primary {
@@ -493,6 +481,7 @@ fieldset[disabled] .btn-primary.active {
     color: white;
     background-color: #08c1e6;
     border-color: #08c1e6;
+
 }
 
 .btn-success:active,
@@ -529,7 +518,7 @@ fieldset[disabled] .btn-success.active {
     display: inline-block;
     height: 50px;
     width: 50px;
-    border: 2px solid white;
+    border: 2px solid #6d6d6d;
     border-radius: 100%;
     text-align: center;
     font-size: 20px;
@@ -654,7 +643,7 @@ fieldset[disabled] .btn-success.active {
 
 *::selection {
     color: snow;
-    background-color: #2C3E50;
+    background-color: #494949;
 }
 
 #mainNav .fa {
@@ -695,6 +684,17 @@ article h3 {
     margin-top: 1em;
 }
 
+
+article h4 {
+    font-family: "Hind", sans-serif;
+    font-size: 150%;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+
 article p {
     font-size: 1.25em;
     line-height: 1.8em;
@@ -725,6 +725,17 @@ article .game {
     width: 100%;
 }
 
+article img {
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+article figcaption {
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -746,18 +757,23 @@ article .game {
 
 /* BLOG */
 #blog h2 {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 #blog .post-card {
-    border: 2px solid #e0e0e0;
-    border-radius: 3px;
-    box-shadow: 0px 2px 15px #d3d3d3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #adadad;
     padding: 0;
+    overflow: hidden;
 
     display: block;
     position: relative;
     margin-bottom: 30px;
+    transition: all ease 0.5s;
+}
+
+#blog .post-card:hover{
+    box-shadow: 0px 0px 50px #515151;
 }
 
 #blog .post-card .post-image {
@@ -767,7 +783,7 @@ article .game {
 
 #blog .post-card .image-container{
     overflow: hidden;
-    max-height: 300px;
+    max-height: 200px;
 }
 
 #blog .post-card .post-container {
@@ -779,9 +795,20 @@ article .game {
 
 #blog .post-card .post-title {
     font-family: "Merriweather", serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 180%;
     padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#blog .post-card .post-date {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 100%;
+    color: grey;
+    padding-top: 0px;
+    padding-bottom: 15px;
 }
 
 #blog .post-card .post-intro {
@@ -797,3 +824,10 @@ article .game {
     color: black;
     text-decoration: none;
 }
+
+
+
+
+
+
+
