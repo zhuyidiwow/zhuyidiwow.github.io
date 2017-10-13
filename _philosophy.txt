@@ -1,1 +1,5 @@
 Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away
+
+
+grey used for anchors #a09f9f
+dark grey used for text #494949
