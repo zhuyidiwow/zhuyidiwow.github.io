@@ -680,9 +680,19 @@ article figcaption {
     text-decoration: none;
 }
 
+#myCarousel .carousel-control {
+    background-color: transparent !important;
+    background-image: none;
+    transition: all ease 0.5s;
+    /* background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.15) 100%); */
+}
 
+#myCarousel .right:hover {
+    color: white;
+    margin-right: -10px;
+}
 
-
-
-
-
+#myCarousel .left:hover {
+    color: white;
+    margin-left: -10px;
+}
