@@ -189,7 +189,7 @@ header .intro-text .bio {
 }
 
 .navbar-custom .navbar-toggle {
-    color: black
+    color: black;
     text-transform: uppercase;
     font-size: 12px;
     border-color: #494949;
@@ -563,6 +563,8 @@ article figcaption {
     font-family: "Merriweather", serif;
     font-style: italic;
     font-weight: 400;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .video-wrapper {
