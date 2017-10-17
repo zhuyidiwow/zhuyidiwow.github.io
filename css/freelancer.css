@@ -19,6 +19,7 @@ p.small {
 
 a {
     color: #7a7a7a;
+    transition: all ease 0.3s;
 }
 
 a:hover,
@@ -508,25 +509,25 @@ article {
 }
 
 article h2 {
-    font-family: "Hind", sans-serif;
+    font-family: "Voces", sans-serif;
     font-size: 300%;
     font-weight: 500;
     text-align: center;
 }
 
 article h3 {
-    font-family: "Hind", sans-serif;
+    font-family: "Voces", sans-serif;
     font-size: 200%;
     font-weight: 500;
     text-align: left;
     padding-bottom: 0;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.5em;
     margin-top: 1em;
 }
 
 
 article h4 {
-    font-family: "Hind", sans-serif;
+    font-family: "Voces", sans-serif;
     font-size: 150%;
     font-weight: 400;
     text-align: left;
@@ -550,6 +551,10 @@ article table tbody tr {
     transition: all ease 0.3s;
 }
 
+article table tbody tr td:first-child {
+    font-weight: bold;
+}
+
 article p {
     font-size: 1.25em;
     line-height: 1.8em;
@@ -557,6 +562,10 @@ article p {
     text-align: left;
     margin-top: 0;
     margin-bottom: 1.25em;
+}
+article p.indented {
+    padding-left: 15px;
+    font-style: italic;
 }
 
 article .notes {
