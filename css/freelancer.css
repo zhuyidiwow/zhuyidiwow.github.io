@@ -107,6 +107,7 @@ header .intro-text .quote {
 
 header .intro-text .bio {
     font-size: 1.25em;
+    line-height: 1.7em;
     font-family: "Merriweather", serif;
     text-align: left;
 }
