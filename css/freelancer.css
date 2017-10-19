@@ -249,7 +249,7 @@ header .intro-text .objective-statement {
 }
 
 section {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 section h2 {
@@ -272,6 +272,9 @@ section.success {
     }
 }
 
+.portfolio h2 {
+    padding-top: 30px;
+}
 .portfolio .portfolio-item {
     margin: 15px;
     right: 0;
