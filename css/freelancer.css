@@ -9,7 +9,7 @@ body {
 }
 
 p {
-    font-size: 100%;
+    font-size: 1em;
     margin: 20px 0;
 }
 
@@ -233,7 +233,7 @@ header .intro-text .objective-statement {
     }
 
     .navbar-custom.affix {
-        padding: 5px 0;
+        padding: 2px 0;
         border-bottom: 1px solid #e0e0e0;
         box-shadow: 0px 1px 1px #d3d3d3;
     }
