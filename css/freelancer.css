@@ -127,7 +127,7 @@ header .intro-text .objective-statement {
 
     header .intro-text .quote {
         display: block;
-        font-family: "Merriweather", serif;
+        font-family: "Voces", serif;
         text-transform: none;
         font-size: 2em;
     }
@@ -276,6 +276,7 @@ section.success {
 
 .portfolio h2 {
     padding-top: 30px;
+    font-family: "Voces", serif;
 }
 .portfolio .portfolio-item {
     margin: 15px;
