@@ -216,6 +216,10 @@ header .intro-text .objective-statement {
     border-color: #3dbee2;
 }
 
+.navbar-custom .in  {
+    border-bottom: 1px solid #e0e0e0;
+}
+
 @media (min-width: 768px) {
     .navbar-custom {
         padding: 10px 0;
