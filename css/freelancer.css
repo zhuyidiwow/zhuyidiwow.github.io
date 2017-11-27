@@ -98,7 +98,7 @@ header img {
     margin: 0 auto 20px;
 }
 
-header .intro-text .quote {
+header .intro-text .headline {
     display: block;
     font-family: "Merriweather", serif;
     text-transform: none;
@@ -112,7 +112,7 @@ header .intro-text .bio {
     text-align: left;
 }
 
-header .intro-text .objective-statement {
+.quote {
     font-style: italic;
     line-height: 2em;
     border-left: 3px solid grey;
@@ -125,7 +125,7 @@ header .intro-text .objective-statement {
         padding-bottom: 20px;
     }
 
-    header .intro-text .quote {
+    header .intro-text .headline {
         display: block;
         font-family: "Voces", serif;
         text-transform: none;
@@ -644,19 +644,19 @@ article figcaption {
 }
 
 #blog .post-card {
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px #adadad;
-    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px #adadad;
+    padding: 5px;
     overflow: hidden;
 
     display: block;
     position: relative;
-    margin-bottom: 30px;
-    transition: all ease 0.5s;
+    margin-bottom: 20px;
+    transition: all ease 0.3s;
 }
 
 #blog .post-card:hover{
-    box-shadow: 0px 0px 15px #515151;
+    box-shadow: 0px 0px 12px #adadad;
 }
 
 #blog .post-card .post-image {
@@ -681,7 +681,7 @@ article figcaption {
     font-family: "Merriweather", serif;
     font-weight: 500;
     font-size: 180%;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 5px;
 }
 
