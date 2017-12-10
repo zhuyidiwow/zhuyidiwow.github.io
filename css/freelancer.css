@@ -548,6 +548,17 @@ article h4 {
     margin-top: 1em;
 }
 
+article h5 {
+    font-family: "Voces", sans-serif;
+    font-size: 130%;
+    font-weight: 400;
+    text-align: left;
+    font-style: italic;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
 article .table {
     margin-top: 15px;
     margin-bottom: 10px;
