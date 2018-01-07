@@ -1,0 +1,6 @@
+1. Keep deleting things until everything is necessary
+
+2. Every design should be defendable. 
+
+grey used for anchors #a09f9f
+dark grey used for text #494949
