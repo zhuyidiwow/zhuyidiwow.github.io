@@ -19,7 +19,11 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
 </head>
 
 <body id="page-top" class="index">
@@ -40,12 +44,6 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a href="#page-top"></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#game-design">Design</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#game-programming">Programming</a>
                 </li>
                 <li class="page-scroll">
                     <a href="http://www.yidizhu.com/resources/resume.pdf" target="_blank">Resume</a>
@@ -77,10 +75,10 @@
                     <hr class="star-light">
                     <div class="bio col-lg-8 col-lg-offset-2 text-center">
                         <p class="quote">
-                            I'm currently looking for 2018 summer internship in <b>game design</b> and <b>gameplay engineering.</b>
+                            I'm currently looking for 2018 summer internship in <b>gameplay engineering</b> and <b>technical design.</b>
                         </p>
                         <p>
-                            Hi there, I'm Yidi! I am a passionate <i>game designer and programmer</i>. I'm currently pursuing my <b>Master of Entertainment Technology</b> degree at the <i>Entertainment Technology Center</i> of <i>Carnegie Mellon University</i>. I dedicate myself to making games that have positive impact on people, and the world.
+                            Hi there, I'm Yidi, a passionate game designer and programmer. I'm currently pursuing my <b>Master of Entertainment Technology</b> degree at the Entertainment Technology Center of Carnegie Mellon University. I dedicate myself to making games that have positive impact on people, and the world!
                         </p>
                         <!--
                         <p>
@@ -98,94 +96,153 @@
     </div>
 </header>
 
-<section id="game-design" class="portfolio">
+<section class="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Game Design</h2>
+                <h2>Featured Work</h2>
+
+                <ul id="categorizer" class="list-inline">
+                    <li id="all">
+                        All
+                    </li>
+                    <li id="featured">
+                        Featured
+                    </li>
+                    <li id="vr">
+                        XR
+                    </li>
+                    <li id="pc">
+                        PC
+                    </li>
+                    <li id="mobile">
+                        Mobile
+                    </li>
+                </ul>
                 <hr class="star-light">
             </div>
         </div>
         <div class="row">
-
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <a href="http://www.yidizhu.com/althea.html" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i>Althea</i>
-                        </div>
-                    </div>
-                    <img src="resources/images/portfolio/tree.png" class="img-responsive" alt="">
-                </a>
-                <p class="portfolio-title">Course Project | Networked Oculus</p>
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper featured vr">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/althea.html" data-toggle="modal">
+                        <img src="resources/images/portfolio/tree.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">Althea | Co-op VR</p>
+                    </a>
+                </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <a href="http://www.yidizhu.com/ripple-blossom.html" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i>Ripple Blossom</i>
-                        </div>
-                    </div>
-                    <img src="resources/images/portfolio/ripple-blossom.png" class="img-responsive" alt="">
-                </a>
-                <p class="portfolio-title">Published Mobile Indie Game</p>
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper featured mobile">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/ripple-blossom.html" data-toggle="modal">
+                        <img src="resources/images/portfolio/ripple-blossom.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">Ripple Blossom | Indie game</p>
+                        <p class="portfolio-intro">Published mobile indie game</p>
+                    </a>
+                    
+                </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <a href="http://www.yidizhu.com/the-sea.html" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i>The Sea</i>
-                        </div>
-                    </div>
-                    <img src="resources/images/portfolio/the-sea.png" class="img-responsive" alt="">
-                </a>
-                <p class="portfolio-title">Course Project | PC</p>
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper featured pc">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/the-sea.html" data-toggle="modal">
+                        <img src="resources/images/portfolio/the-sea.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">The Sea | Solo project</p>
+                        <p class="portfolio-intro">Course Project on PC</p>
+                    </a>
+                </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <a href="http://www.yidizhu.com/maestro.html" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i>Maestro</i>
-                        </div>
-                    </div>
-                    <img src="resources/images/portfolio/maestro.png" class="img-responsive" alt="">
-                </a>
-                <p class="portfolio-title">Course Project | HTC Vive</p>
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper featured pc">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/yicon.html" data-toggle="modal">
+                        <img src="resources/images/portfolio/yicon.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">YiCon | Serious Game</p>
+                        <p class="portfolio-intro">Research Project | PC</p>
+                    </a>
+                </div>
             </div>
 
-            
-
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <a href="http:///www.yidizhu.com/dual-balance.html" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i>Dual Balance</i>
-                        </div>
-                    </div>
-                    <img src="resources/images/portfolio/dual-balance.png" class="img-responsive" alt="">
-                </a>
-                <p class="portfolio-title">Course Project | Mobile</p>
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper vr">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/maestro.html" data-toggle="modal">
+                        <img src="resources/images/portfolio/maestro.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">Maestro | HTV Vive</p>
+                        <p class="portfolio-intro">Course Project on HTC Vive</p>
+                    </a>
+                </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <a href="http://www.yidizhu.com/yicon.html" class="portfolio-link" data-toggle="modal">
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper mobile">
+                <div class="portfolio-item">
+                    <a href="http:///www.yidizhu.com/dual-balance.html" data-toggle="modal">
+                        <img src="resources/images/portfolio/dual-balance.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">Dual Balance | Co-op mobile</p>
+                        <p class="portfolio-intro">Course Project on Mobile</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper vr">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/you-are-fired.html" class="portfolio-link" data-toggle="modal">
+                        <img src="resources/images/portfolio/you're fired.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">You're Fired | Omni + Oculus</p>
+                        <p class="portfolio-intro">Course Project | Omni & Oculus Touch</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper pc">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/bopit.html" class="portfolio-link" data-toggle="modal">
+                        <img src="resources/images/portfolio/bopit.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">Bopit Extreme | Maykey Makey</p>
+                        <p class="portfolio-intro">Course Project | Makey Makey</p>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper vr">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/sound-bearier.html" class="portfolio-link" data-toggle="modal">
+                        <img src="resources/images/portfolio/sound-bearier.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">The Sound Bearier | HoloLens</p>
+                        <p class="portfolio-intro">Course Project | HoloLens</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 item-wrapper pc">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/primal-life.html" class="portfolio-link" data-toggle="modal">
+                        <img src="resources/images/portfolio/primal-life.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">Totally Accurate Primitive Simulator</p>
+                        <p class="portfolio-intro">Course Project | PC</p>
+                    </a>
+                </div>
+            </div>
+
+        <!--
+            <div class="col-lg-4 col-md-6 col-sm-6 item-wrapper">
+                <a href="http://www.yidizhu.com/primal-space.html" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
-                            <i>YiCon</i>
+                            <i>Primal Space</i>
                         </div>
                     </div>
-                    <img src="resources/images/portfolio/yicon.png" class="img-responsive" alt="">
+                    <img src="resources/images/portfolio/primal-space.png" class="img-responsive" alt="">
                 </a>
-                <p class="portfolio-title">Research Project | PC</p>
+                <p class="portfolio-title">Course Project</p>
             </div>
+        -->
 
         </div>
     </div>
 </section>
 
+<!--
 <section id="game-programming" class="portfolio">
     <div class="container">
         <div class="row">
@@ -196,7 +253,28 @@
         </div>
         <div class="row">
 
-            <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="col-lg-4 col-md-6 item-wrapper">
+                <div class="portfolio-item">
+                    <a href="http://www.yidizhu.com/maestro.html" data-toggle="modal">
+                        <img src="resources/images/portfolio/maestro.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">Maestro</p>
+                        <p class="portfolio-intro">Course Project on HTC Vive</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 item-wrapper">
+                <div class="portfolio-item">
+                    <a href="http:///www.yidizhu.com/dual-balance.html" data-toggle="modal">
+                        <img src="resources/images/portfolio/dual-balance.png" class="img-responsive" alt="">
+                        <p class="portfolio-title">Dual Balance</p>
+                        <p class="portfolio-intro">Course Project on Mobile</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-item">
                 <a href="http://www.yidizhu.com/you-are-fired.html" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
@@ -208,7 +286,8 @@
                 <p class="portfolio-title">Course Project | Omni & Oculus Touch</p>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-item">
                 <a href="http://www.yidizhu.com/bopit.html" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
@@ -220,7 +299,8 @@
                 <p class="portfolio-title">Course Project | Makey Makey</p>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-item">
                 <a href="http://www.yidizhu.com/sound-bearier.html" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
@@ -232,7 +312,8 @@
                 <p class="portfolio-title">Course Project | HoloLens</p>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-item">
                 <a href="http://www.yidizhu.com/primal-life.html" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
@@ -244,7 +325,7 @@
                 <p class="portfolio-title">Course Project | PC</p>
             </div>
 
-<!--
+
             <div class="col-lg-4 col-md-6 portfolio-item">
                 <a href="http://www.yidizhu.com/primal-space.html" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
@@ -256,10 +337,11 @@
                 </a>
                 <p class="portfolio-title">Course Project</p>
             </div>
--->
+
         </div>
     </div>
 </section>
+-->
 
 <!-- Footer -->
 <footer class="text-center">
@@ -690,8 +772,6 @@
         </div>
     </div>
 </div>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
