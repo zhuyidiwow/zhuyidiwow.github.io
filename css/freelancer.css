@@ -13,6 +13,10 @@ p {
     margin: 20px 0;
 }
 
+p.small-btm-margin {
+    margin-bottom: 3px;
+}
+
 p.small {
     font-size: 16px;
 }
@@ -45,7 +49,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Merriweather", serif;
+    font-family: "Voces", serif;
     font-weight: 300;
     font-size: 200%;
     margin-top: 20px;
@@ -569,13 +573,13 @@ fieldset[disabled] .btn-primary.active {
 }
 
 article {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
 article h2 {
     font-family: "Voces", sans-serif;
-    font-size: 300%;
+    font-size: 3em;
     font-weight: 500;
     text-align: center;
     margin-bottom: 20px;
@@ -583,7 +587,7 @@ article h2 {
 
 article h3 {
     font-family: "Voces", sans-serif;
-    font-size: 200%;
+    font-size: 1.75em;
     font-weight: 500;
     text-align: left;
     padding-bottom: 0;
@@ -594,7 +598,7 @@ article h3 {
 
 article h4 {
     font-family: "Voces", sans-serif;
-    font-size: 150%;
+    font-size: 1.5em;
     font-weight: 400;
     text-align: left;
     padding-bottom: 0;
@@ -604,7 +608,7 @@ article h4 {
 
 article h5 {
     font-family: "Voces", sans-serif;
-    font-size: 130%;
+    font-size: 1.3em;
     font-weight: 400;
     text-align: left;
     font-style: italic;
@@ -621,7 +625,7 @@ article .table {
 article table tbody tr td{
     border-top: none !important;
     font-family: "Merriweather", serif;
-    font-size: 1.25em;
+    font-size: 1.1em;
 }
 
 article table tbody tr {
@@ -633,8 +637,8 @@ article table tbody tr td:first-child {
 }
 
 article p {
-    font-size: 1.25em;
-    line-height: 1.8em;
+    font-size: 1.1em;
+    line-height: 1.5em;
     font-family: "Merriweather", serif;
     text-align: left;
     margin-top: 0;
@@ -658,10 +662,11 @@ article .notes {
 
 }
 article ul li, article ol li {
-    font-size: 1.25em;
-    line-height: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.4em;
     font-family: "Merriweather", serif;
     text-align: left;
+    padding-bottom: 0.5em;
 }
 
 
