@@ -123,27 +123,6 @@ header .intro-text .bio {
     padding-left: 10px;
 }
 
-@media (min-width: 768px) {
-    header .container {
-        padding-top: 150px;
-        padding-bottom: 20px;
-    }
-
-    header .intro-text .headline {
-        display: block;
-        font-family: "Voces", serif;
-        text-transform: none;
-        font-size: 2em;
-    }
-
-    header .intro-text .bio {
-        font-size: 1.25em;
-        font-family: "Merriweather", serif;
-        font-weight: 400;
-        text-align: left;
-    }
-}
-
 .navbar-custom {
     background-color: white;
     color: black;
@@ -233,40 +212,6 @@ header .intro-text .bio {
     border-bottom: 1px solid #e0e0e0;
 }
 
-@media (min-width: 768px) {
-    .navbar-custom {
-        padding: 10px 0;
-        min-height: 40px;
-        -webkit-transition: all ease 0.5s;
-        -moz-transition: all ease 0.5s;
-        transition: all ease 0.5s;
-    }
-
-    .navbar-custom .navbar-brand {
-        font-size: 2.2em;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-    }
-
-    .navbar-custom.affix {
-        padding: 2px 0;
-        border-bottom: 1px solid #e0e0e0;
-        box-shadow: 0px 1px 1px #d3d3d3;
-    }
-
-    .navbar-custom.affix .navbar-brand {
-        font-size: 170%;
-    }
-
-    .navbar-custom.affix .navbar-nav li a {
-        font-size: 105%;
-    }
-
-
-
-}
-
 section {
     padding: 20px 0;
 }
@@ -279,16 +224,6 @@ section h2 {
 section.success {
     background: white;
     color: black;
-}
-
-@media (max-width: 768px) {
-    section {
-        padding: 10px 0;
-    }
-
-    section.first {
-        padding-top: 1  0px;
-    }
 }
 
 #categorizer {
@@ -582,6 +517,8 @@ fieldset[disabled] .btn-primary.active {
 article {
     padding-top: 100px;
     padding-bottom: 20px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 article h2 {
@@ -655,6 +592,7 @@ article p {
     margin-top: 0;
     margin-bottom: 1.25em;
 }
+
 article p.indented {
     padding-left: 15px;
     font-style: italic;
@@ -819,4 +757,68 @@ article figcaption {
 #myCarousel .carousel-indicators .active {
     height: 17px;
     width: 17px;
+}
+
+@media (min-width: 768px) {
+    header .container {
+        padding-top: 150px;
+        padding-bottom: 20px;
+    }
+
+    header .intro-text .headline {
+        display: block;
+        font-family: "Voces", serif;
+        text-transform: none;
+        font-size: 2em;
+    }
+
+    header .intro-text .bio {
+        font-size: 1.25em;
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .navbar-custom {
+        padding: 10px 0;
+        min-height: 40px;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+    }
+
+    .navbar-custom .navbar-brand {
+        font-size: 2.2em;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .navbar-custom.affix {
+        padding: 2px 0;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: 0px 1px 1px #d3d3d3;
+    }
+
+    .navbar-custom.affix .navbar-brand {
+        font-size: 170%;
+    }
+
+    .navbar-custom.affix .navbar-nav li a {
+        font-size: 105%;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 10px 0;
+    }
+
+    section.first {
+        padding-top: 1  0px;
+    }
+
+    article {
+        padding-top: 50px;
+    }
 }
