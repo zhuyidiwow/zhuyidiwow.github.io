@@ -158,11 +158,18 @@ header .intro-text .bio {
     outline: none;
 }
 
+.navbar-custom .navbar-toggle {
+    font-family: "Voces", sans-serif;
+
+}
+
 .navbar-custom .navbar-brand {
     color: black;
     text-transform: none;
     font-family: "Voces", serif;
     font-weight: 500;
+    font-size: 1.5em;
+    padding: 20px;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -236,7 +243,7 @@ header .intro-text .bio {
     }
 
     .navbar-custom .navbar-brand {
-        font-size: 220%;
+        font-size: 2.2em;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         transition: all 0.5s;
