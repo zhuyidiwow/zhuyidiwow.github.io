@@ -643,6 +643,10 @@ article table tbody tr td:first-child {
     font-weight: bold;
 }
 
+article table .fa {
+    padding-right: 1em;
+}
+
 article p {
     font-size: 1.1em;
     line-height: 1.5em;
@@ -692,7 +696,7 @@ article figcaption {
     font-style: italic;
     font-weight: 400;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .video-wrapper {
