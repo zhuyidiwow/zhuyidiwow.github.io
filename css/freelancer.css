@@ -769,14 +769,12 @@ article figcaption {
 
     header .intro-text .headline {
         display: block;
-        font-family: "Voces", serif;
         text-transform: none;
         font-size: 2em;
     }
 
     header .intro-text .bio {
         font-size: 1.25em;
-        font-family: "Merriweather", serif;
         font-weight: 400;
         text-align: left;
     }
