@@ -4,6 +4,11 @@ $(document).ready(function(){
     select($("#featured"));
     $(".featured").fadeIn();
 
+    $("#current").click(function() {
+        select($("#current"));
+        $(".current").fadeIn();
+    });
+
     $("#featured").click(function() {
         select($("#featured"));
         $(".featured").fadeIn();
@@ -50,6 +55,7 @@ var reset = function(e) {
 
 var resetAll = function() {
     reset($("#all"));
+    reset($("#current"));
     reset($("#featured"));
     reset($("#vr"));
     reset($("#pc"));
