@@ -19,19 +19,19 @@ $(document).ready(function(){
         $(".item-wrapper").fadeIn();
     });
 
-    $("#vr").click(function() {
-        select($("#vr"));
-        $(".vr").fadeIn();
+    $("#group").click(function() {
+        select($("#group"));
+        $(".group").fadeIn();
     });
 
-    $("#pc").click(function() {
-        select($("#pc"));
-        $(".pc").fadeIn();
+    $("#indie").click(function() {
+        select($("#indie"));
+        $(".indie").fadeIn();
     });
 
-    $("#mobile").click(function() {
-        select($("#mobile"));
-        $(".mobile").fadeIn();
+    $("#solo").click(function() {
+        select($("#solo"));
+        $(".solo").fadeIn();
     });
 });
 
@@ -57,7 +57,7 @@ var resetAll = function() {
     reset($("#all"));
     reset($("#current"));
     reset($("#featured"));
-    reset($("#vr"));
-    reset($("#pc"));
-    reset($("#mobile"));
+    reset($("#group"));
+    reset($("#indie"));
+    reset($("#solo"));
 }
