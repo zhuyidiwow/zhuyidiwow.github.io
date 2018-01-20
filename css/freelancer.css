@@ -605,7 +605,7 @@ article table tbody tr td:first-child {
     font-weight: bold;
 }
 
-article table .fa {
+article table .fa, article .fa {
     padding-right: 1em;
 }
 
