@@ -523,7 +523,7 @@ article {
     padding-right: 0px !important;
 }
 
-article h2 {
+article h1, article h2 {
     font-family: "Voces", sans-serif;
     font-size: 3em;
     font-weight: 500;
@@ -558,7 +558,7 @@ article h5 {
     font-size: 1.3em;
     font-weight: 400;
     text-align: left;
-    font-style: italic;
+    text-decoration: underline;
     padding-bottom: 0;
     margin-bottom: 0.5em;
     margin-top: 1em;
@@ -645,7 +645,7 @@ article ul li, article ol li {
 
 article ul li ul li, article ol li ol li {
     font-size: 1em;
-    line-height: 1.2em;
+    line-height: 1.4em;
     padding-top: 0.2em;
     padding-bottom: 0;
 }

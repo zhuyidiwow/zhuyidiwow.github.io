@@ -20,52 +20,56 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../js/loader.js"></script>
 </head>
 
 <body id="page-top" class="index">
 <!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="http://www.yidizhu.com">Yidi Zhu</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="http://www.yidizhu.com">Home</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="http://www.yidizhu.com/resources/resume.pdf" target="_blank">Resume</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="http://www.yidizhu.com/about.html">About</a>
-                </li>
-                <!--
-                <li class="page-scroll">
-                    <a href="archive.html">Archive <i class="fa fa-external-link" aria-hidden="true"></i></a>
-                </li>
-                -->
-
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
 </nav>
 
 <div class="container">
     <article class="col-lg-8 col-lg-offset-2">
-        <h2>Hopscotch Hamlet</h2>
+        <h1>Hopscotch Hamlet</h1>
+        <p class="text-center"><i>Game Design Adventure #1 By Yidi Zhu</i></p>
         <hr class="star-primary">
+        
+
+        <h3>Table of content</h3>
+
+        <ol>
+            <li><strong>Part I</strong>
+
+                <ol>
+                    <li>Things that make Hopscotch a good game</li>
+                    <li>Problems with the game</li>
+                    <li>50 ideas</li>
+                </ol></li>
+            <li><strong>Part II</strong>
+
+                <ol>
+                    <li>Idea 1 - The strategic kid</li>
+                    <li>Idea 2 - No waiting!</li>
+                    <li>Idea 3 - Random madness</li>
+                </ol></li>
+            <li><strong>Part III</strong>
+
+                <ol>
+                    <li>Rule Set</li>
+                    <li>1st Playtest</li>
+                    <ol><li>Summary of Feedbacks</li></ol>
+                    <li>1st Analysis and 2nd rule set</li>
+                    <ol><li>And so here is the new rule set:</li></ol>
+                    <li>2nd Playtest</li>
+                    <li>2nd Analysis</li>
+                    <li>Discussion</li>
+                </ol>
+            </li>
+        </ol>
+
         <h3>Part I</h3>
 
         <p>I played hopscotch when I was super young and I’ve forgot all the rules. I’m using the rules given by Parents Magazine as reference (<a href="https://www.parents.com/fun/activities/hopscotch/">https://www.parents.com/fun/activities/hopscotch/</a>).</p>
@@ -73,17 +77,20 @@
         <h4>Things that make Hopscotch a good game:</h4>
 
         <ol>
-            <li>The rules are easy to understand</li>
-            <li>It involves physical activity</li>
-            <li>Players can get better at this game by practicing. The random elements are very limited (some I can think of are the type of markers, wind level, evenness of the surface, etc)</li>
+            <li>The rules are easy to understand. So kids can play it.</li>
+            <li>It involves physical and mental activity.</li>
+            <li>Can be played by a range of players (ideally 2-6 players).</li>
+            <li>Players can get better at this game by practicing. The random elements are very limited (some I can think of are the type of markers, wind level, evenness of the surface, etc). But this may also be a bad thing: the most skillful kid can always dominate the game.</li>
         </ol>
 
         <h4>Problems with the game:</h4>
 
         <ol>
-            <li><strong>Limited randomness</strong>: The limited number of random elements can be both good and bad. There is currently no way for players to catch up, if they are less skilled. It would be better if more random elements are added, which makes the game enjoyable for both skilled and not skilled players</li>
+            <li><strong>Limited randomness</strong>: The limited number of random elements can be both good and bad. There is currently no way for players to catch up, if they are less skilled. It could be better if more random elements are added, which makes the game enjoyable for both skilled and not skilled players</li>
             <li><strong>Limited strategy</strong>: Almost no strategic decisions need to be made in this game. More choices involve strategic thinking will make the game more interesting</li>
             <li><strong>Potentially boring waiting</strong>: When one player is playing his turn, other players need to wait until he finishes. It could be boring, especially in the early stage where failure is not so critical</li>
+            <li><strong>No fantasy: </strong>It’s played in the real world with<strong> no fantasy</strong> in it, which limits the types of aesthetics in this game</li>
+            <li><strong>Limited connections</strong> among players. The interactions between players are more spontaneous than designed.</li>
         </ol>
 
         <h4>Ideas:</h4>
@@ -116,7 +123,6 @@
             <li>Each tile has its own storyline, player need to reach further to get more story</li>
             <li>Player need to say one single word when he arrives at a new tile. Their words add together to form a sentence and a story. They need to say a word that continues the sentence and makes sense for the story</li>
         </ol>
-
         <p><em>Mechanics</em></p>
         <ol>
             <li>Pair up! Two players are paired up and need to play the game together, each with only one foot on the ground</li>
@@ -170,9 +176,7 @@
                     <li>Fail to throw the marker into a square</li>
                     <li>Fail to complete a circle</li>
                     <li>Successfully complete a circle</li>
-                </ol>
-            </li>
-            
+                </ol></li>
             <li>In one round:
 
                 <ol>
@@ -221,30 +225,166 @@
 
         <h4>1 - Rule Set</h4>
 
-        <p>I decided to try idea 3 first. The rule set is:</p>
+        <p><strong>Initial design goals:</strong></p>
+
+        <ol>
+            <li>Encourage strategic thinking</li>
+            <li>Reward risk-taking decisions</li>
+            <li>Add random elements for more dynamics and uncertainty. So the more skillful player will no longer always dominate the game</li>
+        </ol>
+
+        <p>I decided to take idea 3, and give the player some choices. The rule set is:</p>
 
         <ol>
             <li>Find an open space, draw a hopscotch map on the ground. 
 
-                <figure><img src="image1.png"/></figure></li>
-            <li>Throw a marker at tile 1. If the marker falls on lines or out of tile 1, it’s considered a failure, and event B is triggered.</li>
-            <li>Skip the tile which the marker is sitting on. Hop from 2 to 10. On normal tiles, hop with one foot. On pairs (tile 4/5 and 7/8), hop with both feet, one foot on each tile. Throughout the process, no foot shall touch lines or drop out of tiles, otherwise it’s considered a failure, and event B is triggered.</li>
-            <li>At tile 10, hop to turn around, hop back to tile 2. If the player doesn’t fail during the process, it’s considered a successful circle, and event A is triggered.</li>
-            <li>If the player can advance after the event, he should go back to the origin, and wait for next turn.</li>
+                <figure><img src="image1.png" style="max-height: 400px"/></figure></li>
+            <li>Throw a marker at tile 1. If the marker falls on lines or out of tile 1, it’s considered a failure, and player can choose to trigger event B.</li>
+            <li>Skip the tile which the marker is sitting on. Hop from 2 to 10. On normal tiles, hop with one foot. On pairs (tile 4/5 and 7/8), hop with both feet, one foot on each tile. Throughout the process, no foot shall touch lines or drop out of tiles, otherwise it’s considered a failure, and player can choose to trigger event B</li>
+            <li>At tile 10, hop to turn around, hop back to tile 2. If the player doesn’t fail during the process, it’s considered a successful circle, and player can choose event A.</li>
+            <li>If the player can advance after the event or choose not to trigger event, he should go back to the origin, and wait for next turn.</li>
             <li>When the next turn comes, go back to step 2, but change “tile 1” to whichever tile is the next.</li>
+        </ol>
+
+        <p>For event A, player roll a 12-faced dice, add the numbers. </p>
+
+        <ol>
+            <li>If the number is larger than the number on the tile he was standing on at the start of his turn, he can advance one extra tile</li>
+            <li>If the number equals or is smaller than the tile he was on, he goes back by one tile</li>
+        </ol>
+
+        <p>For event B, player roll a 6-faced dice, </p>
+
+        <ol>
+            <li>If the number is larger than the number on the tile he was standing on at the start of his turn, he get a chance to throw/hop again</li>
+            <li>If the number equals or is smaller than the number on the tile, he stays where he was</li>
         </ol>
 
         <h4>2 - 1st Playtest</h4>
 
-        <h4>3 - 1st Analysis</h4>
+        <p>Lotus and Yidi played it. The rule sets above is not clear enough and missing many details. So they spent a long time trying to figure out the exact rules to follow. </p>
+
+        <p>The 12-faced dice successfully accelerated early game. But they soon found out that the 6-faced dice is almost meaningless. During late game, as their tiles are far away, they struggled to throw the marker into their tile, and the game has no mechanics for this situation.</p>
+
+        <p>Due to the existence of randomness, the player thought she was not encouraged to get more skillful, rather, she pointed out the game is like gambling - it encourages the player to rely on randomness. </p>
+
+        <p>I also observed that both dices are meaningless during late games. Their existence failed to encourage strategic thinking, because the strategy is just too shallow. Adults can easily calculate their mathematical expectations and make decisions based on that. Although it may not be the same case for kids, I think it’s better to remove this choice</p>
+
+        <p>The player also said the addition of dices broke the low-tech feature of this game. Kids love playing this game because it’s simple and requires few items.</p>
+
+        <h5>2.1 - Summary of Feedbacks</h5>
+
+        <ul>
+            <li>Rolling dice is frustrating</li>
+            <li>Not fair for good players. Not giving them reward. Not encouraging “winning by skill”.</li>
+            <li>Event B is not so meaningful is the latter half of the game</li>
+            <li>Using 6 faced dice for event B may not be a good idea</li>
+            <li>Better not use additional items</li>
+            <li>Rules are becoming complicated</li>
+            <li>Don’t use the dice</li>
+            <li>Better introduce deeper strategy without randomness</li>
+            <li>Small reward for small risk</li>
+            <li>Maybe consider using more of player’s brain</li>
+            <li>Consider giving player the choice to give up their dice roll and force another player to roll a dice in their turn</li>
+        </ul>
+
+        <h4>3 - 1st Analysis and 2nd rule set</h4>
+
+        <p>So the 1st design failed, and I realized the design goals set before maybe not be good for this game. </p>
+
+        <p>I want to keep hopscotch what hopscotch is good at and reinforce them. At the same time, try to solve the problem of boring waiting. Still, I want to add risky tasks that are optional for players, and reward them when they succeed in those tasks. I changed the<strong> design goals to the following</strong>:</p>
+
+        <ol>
+            <li>No extra items</li>
+            <li>No randomness</li>
+            <li>Encourage positive interactions and competitions</li>
+            <li>Encourage mental and physical development</li>
+            <li>Encourage players to embrace risks</li>
+        </ol>
+
+        <h5>3.1 - And so here is the new rule set:</h5>
+
+        <p><strong>Basic rules (level 1 rules):</strong></p>
+
+        <ol>
+            <li>Find an open space, draw a hopscotch map on the ground (same one as before). </li>
+            <li>Players take turns to play the game, in each turn, a player:
+
+                <ol>
+                    <li>Standing at the origin, throw a marker at tile 1. If the marker falls on lines or out of tile 1, it’s considered a failure. Player always need to throw them marker standing at the origin with no hands touching the ground, but they are allowed to bend.</li>
+                    <li>Skip the tile which the marker is sitting on. Hop from 2 to 10. On normal tiles, hop with one foot. On pairs (tile 4/5 and 7/8), hop with both feet, one foot on each tile. Throughout the process, no foot shall touch lines or drop out of tiles, otherwise it’s considered a failure.</li>
+                    <li>At tile 10, hop to turn around, hop back to tile 2, and pick up the marker, and hop out. </li>
+                    <li>During the process of b&amp;c, everytime the player lands with a foot, player need to shout out “left” or “right” based on the foot that’s not touching the ground. For example, if they hop to tile 2 landing with left foot, they should shout “right”. When they land with both feet, they don’t need to shout anything. Shouting out the wrong word or not shouting anything is considered a failure.</li>
+                    <li> If the player doesn’t fail during the process, it’s considered a successful circle.</li>
+                    <li>Whenever failure or success occurs, player’s current turn is over, and they need to wait for the next turn. When the next turn comes, go back to step 2, but change “tile 1” to whichever tile is the next. </li>
+                </ol></li>
+            <li>Whoever throws their marker into tile first 10 wins.</li>
+        </ol>
+
+        <p>On top of the basic rules, there are <strong>advanced challenges:</strong></p>
+
+        <p><strong>Level 2: </strong>(Level 1 rules still apply)<strong> </strong>Choose a foot, land with the foot exactly the same number of times as the number on the tile he was on. For example, if player A is on tile 4 at the beginning of his turn, A can choose left foot, and land with left foot for 4 times throughout the circle. If A successfully complete a circle, he doesn’t need to throw the marker, instead, the marker will be sitting on his next tile at the beginning of the next turn. Note: Land with the same foot twice at tile 10 is considered as using that foot twice</p>
+
+        <p>Level 3: (level 1 &amp; 2 rules still apply) Player can choose to not turn around at tile 10. Hop backwards back. If succeeds, player can advance one more tile.</p>
 
         <h4>4 - 2nd Playtest</h4>
 
+        <p>Xuejun and Yifei played the game.</p>
+
+        <p>There is still some confusions on the rules. When Xuejun’s marker is on tile 5, she didn’t know how to land at tile 4 and whether she need to shout out a word. So add this to the rule: only when landing with two feet, player doesn’t need to shot out, and when landing with both feet, it doesn’t count for level 2 rule (i.e. level 2 counts only when landing with one foot).</p>
+
+        <p>They found out that the early game is still too slow. And they said there are too many rules to follow so they can’t hold everything in their brain (which is partially what I want to do). But it’s worth noting that they were not familiar with the base game before playing my version. So they also said if they are familiar with the base game, my version should be easier.</p>
+
+        <p>They agree that this game successfully challenged their brain and body at the same time, and it managed to keep the purity of the original hopscotch.</p>
+
         <h4>5 - 2nd Analysis</h4>
+
+        <p>The improved version successfully achieved the design goals.</p>
+
+        <p><strong>The good things are:</strong></p>
+
+        <ol>
+            <li>Simplicity is kept: No extra items; No randomness; No super complicated rules</li>
+            <li>Positive interactions and competitions are encourages:
+
+                <ol>
+                    <li>Audience always keeps their eyes on the current player’s feet and is always listening, so they are always engaged</li>
+                    <li>Whoever performs better, they made it through practice and risk-taking. Everything is still fair in this game</li>
+                </ol></li>
+            <li>Mental and physical development
+
+                <ol>
+                    <li>Mental development: level 1 rules force the player to think before taking every step; Level 2 rules encourage them to think before starting a round</li>
+                    <li>Physical development: it’s harder to hop and pick up the marker when going backward.</li>
+                </ol></li>
+            <li>Encourage players to embrace risks
+
+                <ol>
+                    <li>They are willing to take risks for faster progress</li>
+                </ol></li>
+        </ol>
+
+        <p><strong>The bad things are:</strong></p>
+
+        <ol>
+            <li>Early game is still slow, even with the addition of level 3 rules. I’m considering changing the rules a little bit: if a player successfully completes a round, he can continue and go an extra round. But this rule can make the waiting time longer, I’m not sure whether the audience will still be engaged when they wait too long.</li>
+            <li>Could be too hard for kids. But as the rules are layered, they can choose to use only level 1 rules.</li>
+        </ol>
 
         <h4>6 - Discussion</h4>
 
-        <p>Did your game solve the problems you described? Why or why not?</p>
+        <p>I consider the improved version a success in general and the reasons are stated above. It also solves most of the problems as stated before, as analyzed below:</p>
+
+        <ol>
+            <li><strong>Limited randomness</strong>: it still exists, but I no longer consider it as a problem. No randomness encourages players to win by practicing. Also, introducing randomness may require extra items, which makes the game less convenient to play.</li>
+            <li><strong>Limited strategy</strong>: it’s solved by level 2 &amp; 3 rules. Player can choose to take the risks, but they get reward for doing so. The game is still fair and healthy.</li>
+            <li><strong>Potentially boring waiting</strong>: it’s solved by the “shouting” mechanics. Audience has more to look at and they need to monitor current player’s performance in real time. So it’s less boring.</li>
+            <li><strong>No fantasy</strong>: the problems is still there. But I don’t think it would hurt the game so much - it’s still enjoyable and interesting to play.</li>
+            <li><strong>Limited connections</strong>: similar with problem 3. This is solved by the “shouting” mechanics. Players can get a deeper connection by real-time interactions.</li>
+        </ol>
+
+        <p>In conclusion, I struggled through the 1st playtest and designed an improved version that solves most problems while keeping the original simplicity &amp; dynamics of Hopscotch. The improved version still has a lot to be desired, but it achieves its design goals in general.</p>
+
 
     </article>
 
@@ -258,8 +398,8 @@
                  */
 
                  var disqus_config = function () {
-                 this.page.url = "http://www.yidizhu.com/articles/aesthetics-of-ori/index.html";  // Replace PAGE_URL with your page's canonical URL variable
-                 this.page.identifier = "aesthetics-of-ori"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                 this.page.url = "http://www.yidizhu.com/articles/hopscotch-hamlet/index.html";  // Replace PAGE_URL with your page's canonical URL variable
+                 this.page.identifier = "hopscotch"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                  };
 
                 (function() { // DON'T EDIT BELOW THIS LINE
@@ -271,45 +411,9 @@
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-    <footer class="text-center">
-    <div class="footer-above">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col col-md-8 col-md-offset-2">
-                    <h4>Contact</h4>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="mailto:yidiz@andrew.cmu.edu" class="btn-social btn-outline"><i
-                                    class="fa fa-envelope"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/yidi-zhu-22233a94/" class="btn-social btn-outline"> <i
-                                    class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/zhuyidiwow" class="btn-social btn-outline"><i
-                                    class="fa fa-fw fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/zhuyidiwow" class="btn-social btn-outline"><i
-                                    class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-below">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    Copyright &copy; Yidi Zhu 2017. Re-designed from <a
-                        href="http://startbootstrap.com/template-overviews/freelancer">Freelancer Theme</a>.
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+
+    <footer id="footer" class="text-center">
+    </footer>
 </div>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
