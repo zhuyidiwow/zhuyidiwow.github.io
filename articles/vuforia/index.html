@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113144653-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113144653-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Yidi Zhu, Yidi, Game Design, AR, Vuforia">
+    <meta name="description" content="A quick tutorial on how to start making AR applications with Unity and Vuforia.">
+    <meta name="author" content="Yidi Zhu">
+
+    <title>Yidi | Making a Small AR App with Unity and Vuforia</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Theme CSS -->
+    <link href="../../css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../js/loader.js"></script>
+
+</head>
+
+<body id="page-top" class="index">
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+</nav>
+
+<div class="container">
+    <article class="col-lg-8 col-lg-offset-2">
+        
+        <h2>Making a Small AR App with Unity and Vuforia</h2>
+        <hr class="star-primary">
+        <p>*<em> No programming skills required for this tutorial.</em></p>
+
+        <p>Let’s get straight to the steps. </p>
+
+        <h3>Hardware you need</h3>
+
+        <ol>
+            <li>A laptop/PC/Mac. I’m going to use Mac for this tutorial but all the steps also apply to Windows OS.</li>
+            <li>A camera (webcam on laptops is good enough)</li>
+            <li>Internet connection</li>
+        </ol>
+
+        <h3>Software you need</h3>
+
+        <p><strong>1. Unity</strong></p>
+
+        <p>Unity is a modern 3D game engine. It’s extremely versatile and easy to learn.</p>
+
+        <p>Download at <a href="https://unity3d.com/">Unity’s official website</a>, select <em>personal plan</em>, install the latest version and complete the registration process. A <em>personal plan</em> is good enough for beginners. I’m using the <em>plus plan</em> cause I’m developing some commercial titles. But the basic features are exactly the same.</p>
+
+        <p>When the installer asks which components to install, select Unity, Documentation, Standard Assets and Android Build Support. You can always install other components later with the Unity installer.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%202.30.04%20PM.png"/></figure>
+
+        <p><strong>2. Vuforia</strong></p>
+
+        <p>Vuforia provides Augmented Reality support for multiple platforms, including Android, iOS, UWP and Unity. In this tutorial, we are going to use it for Unity only.</p>
+
+        <p>Go to <a href="https://developer.vuforia.com/">Vuforia&#39;s official site</a>, complete the registration process and download the Vuforia unity package on <a href="https://developer.vuforia.com/downloads/sdk">the download page</a>.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%202.49.34%20PM.png"/></figure>
+
+        <p>Now we have all we need, let’s dive into the development.</p>
+
+        <h3>Step 1: Step up the project</h3>
+
+        <p>Open Unity, click on the <em>+New</em> button to create a new unity project. Name the project and choose a location for it as you like.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%202.52.22%20PM.png"/></figure>
+
+        <p>Now we have an empty Unity project! You may feel lost in the editor but no worry, I will cover all the steps in details so you won’t get lost. I’ve annotated different views in the editor for better communication, but if you want to learn more about this interface, sufficient training can be found on <a href="https://unity3d.com/learn/tutorials/topics/interface-essentials">Unity’s official tutorial website</a>.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%202.54.12%20PM.png"/></figure>
+
+        <h3>Step 2: Import Vuforia core assets</h3>
+
+        <p>Go to <code>Assets -&gt; Import Package -&gt; Custom package…</code>, and select the Vuforia unity package you just download.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%202.56.48%20PM.png"/></figure>
+
+        <p>Import everything as shown in the new window.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%202.58.05%20PM.png"/></figure>
+
+        <p>In the <em>project window</em>, find the <em>AR Camera</em>, drag it into the <em>hierarchy view</em>. Remember to delete the existing <em>Main Camera</em> inside <em>hierarchy view</em>, otherwise Unity will not know which camera to use. Your <em>hierarchy view</em> should look like this.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%203.11.33%20PM.png"/></figure>
+
+        <p>Now we can save the scene first by <code>Command + S</code> or <code>Control + S</code> on Windows. Put it in the <em>Assets</em> folder and name it as you want.</p>
+
+        <h3>Step 3: Add Vuforia license</h3>
+
+        <p>Your Vuforia needs a license to function properly. In this step, we’re going to add a Vuforia license.</p>
+
+        <p>Go to the <a href="https://developer.vuforia.com/targetmanager/licenseManager/licenseListing">License Manager page</a> and click <em>Add License Key</em>. Fill it as the following image and confirm. </p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%203.35.21%20PM.png"/></figure>
+
+        <p>Then click into your new license, you’ll get your license number. Copy it, and go back to Unity. </p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%203.36.16%20PM.png"/></figure>
+
+        <p>In Unity, select <em>AR Camera</em> in <em>hierarchy view</em>, click <em>Open Vuforia Configuration</em> in the <em>inspector window</em>, and paste your license number there.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%203.37.27%20PM.png"/></figure>
+
+        <h3>Step 4: Prepare the image target</h3>
+
+        <p>Vuforia works by identifying an <em>Image Target</em> inside the real world camera view. When it finds the <em>target</em>, it overlay objects that you made in Unity onto it.</p>
+
+        <p>Go to <a href="https://developer.vuforia.com/targetmanager">Vuforia’s target manager page</a>. Click <em>Add Databse</em>. Name it as you want and select <em>Device</em> for type.</p>
+
+        <p>Then clock into your new database. Click <em>Add Target</em>, and fill as in the following image. In this step, you need to prepare and upload an image as the <em>Image Target</em>. I’m using my company’s logo here, you can use any image you want. The color of that image does not matter.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%203.47.41%20PM.png"/></figure>
+
+        <p>After you’ve successfully added one target, you can <em>download databased</em> from Vuforia’s website. Remember to select Unity as the platform.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%203.50.36%20PM.png"/></figure>
+
+        <p>Now go back to Unity and import the <em>database</em> you just downloaded. The operation is same as importing Vuforia’s core assets.</p>
+
+        <h3>Step 5: Set up image target</h3>
+
+        <p>Now we’ve prepared the <em>Image Target</em>, we can find it under <code>Vuforia - Prefabs</code> folder and drag it into the hierarchy. Remember to place it under <em>AR Camera</em> like this.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%203.55.30%20PM.png"/></figure>
+
+        <p>Then select the <em>Image Target</em> in hierarchy view, and set <em>Database</em> &amp; <em>Image Target</em> in the <em>inspector window</em>.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%203.55.52%20PM.png"/></figure>
+
+        <p>I think there is some compatibility issue here, as sometimes you still cannot see your image in the <em>scene view</em>. In this case, locate your image in <code>Editor - Vuforia - ImageTargetTextures - YourDataBaseName</code> folder and select your image. In the <em>inspector window</em>, set <em>Texture Shape</em> to <em>2D</em>. Now you should be able to see your image in the <em>scene view</em>.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%203.59.38%20PM.png"/></figure>
+
+        <h3>Step 6: Add content</h3>
+
+        <p>In this tutorial, we are going to add a sphere, just to show that Vuforia is working properly. In the <em>hierarchy view</em>, right-click on <em>Image Target</em> and create a <em>sphere.</em></p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%204.02.01%20PM.png"/></figure>
+
+        <p>Here we also need to set up the <em>AR Camera</em>. Again, click on it in the <em>hierarchy view</em>, and set <em>World center mode</em> to <em>CAMERA</em> in the <em>inspector window</em>. Then, click on the <em>Open Vuforia Configuration</em>, tick <em>Load xxx Database</em> and <em>activate</em>.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%204.07.05%20PM.png"/></figure>
+
+        <p>Now, open your image on your phone or print it to a paper, click that play button above the <em>scene view</em>, put that image in front of your camera, you should be able to see that sphere. And… we are done!</p>
+
+        <h3>Step 7: One more thing - install your app on Android</h3>
+
+        <p>If you have an Android phone, you can actually install the app you just built onto your phone!</p>
+
+        <p>In Unity, go to <code>File -&gt; Build Settings</code>, click <em>Add Open Scene</em> and switch platform to <em>Android</em>. Then click on <em>Player Settings</em> at the bottom. Set the three field as shown in the image in the <em>inspector window</em>.</p>
+
+        <figure><img src="Screen%20Shot%202017-07-10%20at%204.16.17%20PM.png"/><img src="Screen%20Shot%202017-07-10%20at%204.17.09%20PM.png"/></figure>
+
+        <p>Now you can go back to <em>Building Settings</em> and build! If you need more assistance for building your app, you can find plenty of results on the internet.</p>
+
+        <p>If you’ve done everything properly, you can get your first AR App like this!</p>
+
+        <figure><img src="WechatIMG1018.jpeg"/></figure>
+
+        <h3>A closing note</h3>
+
+        <ul>
+            <li>If you want to learn more about Unity development, I highly recommend you start with <a href="https://unity3d.com/learn/tutorials">their official tutorials</a>.</li>
+            <li>Project files for this tutorial can be found on <a href="https://github.com/zhuyidiwow/First-AR">Github</a>.</li>
+        </ul>
+
+
+
+    </article>
+
+
+    <div id="disqus_thread" class="col-lg-8 col-lg-offset-2"></div>
+            <script>
+
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                 */
+
+                 var disqus_config = function () {
+                 this.page.url = "http://www.yidizhu.com/articles/vuforia/index.html";  // Replace PAGE_URL with your page's canonical URL variable
+                 this.page.identifier = "vuforia"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                 };
+
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = '//yidizhu.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    <footer id="footer" class="text-center">
+    </footer>
+</div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Theme JavaScript -->
+<script src="../../js/freelancer.min.js"></script>
+
+</body>
+
+</html>

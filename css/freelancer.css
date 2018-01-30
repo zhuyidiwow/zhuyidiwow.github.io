@@ -724,7 +724,7 @@ article figcaption {
 }
 
 #blog .post-card .post-container {
-    padding: 15px;
+    padding: 10px 15px;
     z-index: 1;
     position: relative;
     background-color: white;
