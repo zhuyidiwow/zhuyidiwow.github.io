@@ -669,6 +669,7 @@ article figcaption {
     font-weight: 400;
     text-align: center;
     font-size: 1.1em;
+    margin-bottom: 1em;
 }
 
 .video-wrapper {
