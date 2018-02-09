@@ -625,6 +625,20 @@ article p.indented {
     font-style: italic;
 }
 
+article p .hidden-text {
+    color: #E6E6E6;
+    background-color: #E6E6E6;
+}
+
+article p .hidden-text {
+    transition: all ease 0.3s;
+}
+
+article p .hidden-text:hover {
+    color: black;
+    background-color: #E6E6E6;
+}
+
 article .notes {
     background-color: #fcfcfc;
     border: 1px solid #E6E6E6;
