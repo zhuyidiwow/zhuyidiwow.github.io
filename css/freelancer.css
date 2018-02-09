@@ -631,7 +631,7 @@ article p .hidden-text {
 }
 
 article p .hidden-text {
-    transition: all ease 0.3s;
+    transition: all ease 0.5s;
 }
 
 article p .hidden-text:hover {
