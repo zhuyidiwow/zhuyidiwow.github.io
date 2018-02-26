@@ -715,7 +715,8 @@ article figcaption {
 
 #blog .post-card {
     border-radius: 6px;
-    box-shadow: 0px 0px 3px #adadad;
+    box-shadow: 1px 1px 3px #adadad;
+
     padding: 5px;
     overflow: hidden;
 
@@ -726,7 +727,7 @@ article figcaption {
 }
 
 #blog .post-card:hover{
-    box-shadow: 0px 0px 12px #adadad;
+    box-shadow: 2px 2px 6px #adadad;
 }
 
 #blog .post-card .post-image {
