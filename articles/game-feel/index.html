@@ -19,7 +19,8 @@
     <meta name="description" content="An essay analyzing the hero's journey in the movie Almost Famous.">
     <meta name="author" content="Yidi Zhu">
     
-    <title>Yidi | What are some small tricks that make a game feel better?</title>
+    <title>Yidi | Improving Game Feel with Better Feedback</title>
+
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -45,10 +46,47 @@
 
 <div class="container">
     <article class="col-lg-8 col-lg-offset-2">
-        <h2>What are some small tricks that make a game feel better?</h2>
+        <h2>Improving game feel with better feedback</h2>
         <hr class="star-primary">
         
-        <p class='notes'>This is a placeholder</p>
+        <p>The topic today is super practical. After reading one chapter of Steve’s <em>Game Feel</em> book, I think it would be nice to give some practical examples on how we can improve a game’ feel with real examples. Personally, I often find myself obsessed with adjusting how a game feels. I believe game feel has a huge impact on player’s perception on how complete, how polished, and how fun a game is. Steve talked about the whole input-output cycle, which consists of receiving input, processing input, using input for simulation, and outputs the result. This blog will focus on improving game feel through output. The main point here is: make the feedback enjoyable and helpful. This advice seems pretty straightforward and a little bit trivial, but I believe it’s still not stressed enough in the world of game design, so I decided to write on it and provide numerous examples. The discussion will be focused on digital games, but some of the principles can also be applied to other forms of games. Now, here is the essence of this blog:</p>
+
+        <h3>Give as rich feedback as you possibly can, in a wise way</h3>
+
+        <p>If by any chance you’ve read my about page, you will notice that this point is important enough that I put it as one of my design philosophies. This point echoes what Kyle Gabler refers to as “juiciness”, where he proposed that the more feedback a single interaction can yield, the more “juicy” a game feels. So how we can provide more feedback? Let looks at the types of feedback you can possibly provide: visual, aural, and tactile. </p>
+
+        <p>Now we have a list of questions to ask: do all interactions yield visual feedback? The answer is usually true. Do all of them have a corresponding sound effect? This one is where people usually omit. Sound design is such an important but not well respected discipline in games. When done right, sound can vastly improve a game’s fidelity and immersion. While tactile feedback depends on the platform (you can really provide much tactile feedback on a PC), it’s still wise to keep it in mind. </p>
+
+        <p>Those questions bring us to the next layer of questions to think about. Is the visual feedback adequate? Can the players notice them? Are they satisfying to see? Are they providing the right information? You don’t want the avatar turn green when it takes damage. Also, are they helping players understand the world and make progress? We can ask the same set of questions for sound and tactile feedback.</p>
+
+        <p>The last question for all types: am I giving out too much feedback to the degree that everything tangles together and it becomes hard for the player to get useful information? </p>
+
+        <p>Alright, enough questions, let’s look at some examples. Super Meat Boy (see below, starting ) is a good example of well designed feedback. When the meat boy moves, he makes a nice “greasy” sound, leaves blood marks, and produces some sprinkling blood when he moves and jumps. All of these feedbacks add together to make meat boy super fun to interact with. On top of them, the developers programmed specific physic engine to optimize the movement of meat boy, which makes it more enjoyable to control meat boy, and also easier to control it to go where you want it to go. In addition, the blood marks aren’t just there to be fun to see, they’re also helping the players! They don’t disappear when you die. So after you die, you have some reference to where you were, so you get a better sense of where is the right place to jump. For me, I would abandon Super Meat Boy really fast if the game doesn’t have such nice feedbacks.</p>
+
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/yQiqBY47xt4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+
+        <p>Another interesting observation is that, you can usually achieve better feeling by making things bigger than they should be. The players usually won’t notice that things are being bigger than they should be. What they are going to notice is that, the game feels good. Take a look at Broforce (see below). The explosion effects, the bullets, the blood from enemies, are all much bigger than they should be. </p>
+
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/8mOAQ7t9JjY" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <p>Well, what are some bad examples? Here, try <a href="http://www.yidizhu.com/games/primalSpaceWebGL/">this one</a>, this is the first game I’ve ever made with Unity, where I made so many mistakes that make it a good example to show bad game design. Although it’s bad, I hope you play it and get back to this blog when you find it too frustrating to play again. First, the shooting is boring. It only produces a projectile that flies at a constant speed, and a weak arbitrary laser sound. Second, killing is boring. When the projectile you shoot hits a monster, a sound effect is played and the monster disappears. Yeah, that’s all you get. Third, did you notice that there is wind blowing to the left in the later stage of the game? Fourth, did you notice the raindrops, and they are  getting slightly blown away to the left? Yeah, the rains aren’t making any sound, too. Fifth, did you notice your current life decreases when you get hit, or did you notice if you get hit at all? Sixth, I feel like the physics are making the avatar almost impossible to control. To conclude, the feedback is too bare, making the game not fun to play with, and the feedback is not helping the player in meaningful ways. So, what a masterpiece collection of bad game designs!</p>
+
+        <figure><img src="image2.png"/></figure>
+
+        <p><figcaption>Figure 1. Bad wind zone design</figcaption></p>
+
+        <p>I actually noticed the problem of “too many feedback” when playing a game made by my classmates - Cyber Arena, a VR melee dueling game (see below). This is actually one of the best VR game I’ve ever played, so I’m really being picky about some minor points here. So, the problem for this game is that, they designers want to give players the clue when they get hit by their opponent with sound, and also give players sound feedback when they hit their opponent. First, the two sound effects happen to be extremely similar, if not the same. Second, the game also gives sound feedback when your sword breaks, when your sword recharges, when your shield breaks, when your shield regenerates, when you successfully block an attack, when you hit your opponent’s shield, etc… So, did you see the problem? Too many feedbacks are given simultaneously and they easily tangle together, making it almost impossible to get useful information from sound. The rich feedback is yielding a negative result.</p>
+
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/9kDKViIlSg8" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <p>So this is all I have to say: give rich, multi-sensational feedbacks that are enjoyable and helpful, but keep them to an amount that’s digestible for the player.</p>
 
     </article>
 
@@ -62,8 +100,8 @@
                  */
 
                  var disqus_config = function () {
-                 this.page.url = "http://www.yidizhu.com/articles/game-feel";  // Replace PAGE_URL with your page's canonical URL variable
-                 this.page.identifier = "game-feel"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                 this.page.url = "http://www.yidizhu.com/articles/";  // Replace PAGE_URL with your page's canonical URL variable
+                 this.page.identifier = ""; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                  };
 
                 (function() { // DON'T EDIT BELOW THIS LINE
