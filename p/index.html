@@ -7,18 +7,17 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-117092324-1');
     </script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Prism | 04/19</title>
+    <title>Prism</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/p.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/internal-build.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -27,16 +26,15 @@
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Prism | April 19, 2018</div>
-      </div>
-      <div id="disqus_thread" style="position: absolute; top: 50%; left: 50%; margin-top: 400px; margin-left: -480px; width: 960px"></div>
+        <div class="title"><a href="https://www.etc.cmu.edu/projects/prism/">Prism</a></div>
+      </div> 
+    </div>
+    <div id="disqus_thread" style="position: absolute; top: 50%; left: 50%; margin-top: 400px; margin-left: -480px; width: 960px"></div>
             <script>
-
                  var disqus_config = function () {
                  this.page.url = "http://www.yidizhu.com/p";
                  this.page.identifier = "prism";
                  };
-
                 (function() {
                     var d = document, s = d.createElement('script');
                     s.src = '//yidizhu.disqus.com/embed.js';
@@ -46,6 +44,5 @@
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       
-    </div>
   </body>
 </html>
