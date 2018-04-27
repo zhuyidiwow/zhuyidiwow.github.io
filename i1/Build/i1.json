@@ -1,0 +1,14 @@
+{
+"companyName": "ProjectPrism",
+"productName": "Prism",
+"dataUrl": "i1.data.unityweb",
+"asmCodeUrl": "i1.asm.code.unityweb",
+"asmMemoryUrl": "i1.asm.memory.unityweb",
+"asmFrameworkUrl": "i1.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "i1.jpg",
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF"
+}
