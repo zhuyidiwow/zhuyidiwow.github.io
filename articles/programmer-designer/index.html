@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113144653-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113144653-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Yidi Zhu, Yidi">
+    <meta name="description" content="An essay on being a programmer-designer hybrid.">
+    <meta name="author" content="Yidi Zhu">
+    
+    <title>Yidi | On Programmer-Designer Hybrid</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Theme CSS -->
+    <link href="../../css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../js/loader.js"></script>
+</head>
+
+<body id="page-top" class="index">
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+</nav>
+
+<div class="container">
+    <article class="col-lg-8 col-lg-offset-2">
+        <h2>On Programmer-Designer Hybrid</h2>
+        <hr class="star-primary">
+
+        <h3>Introduction</h3>
+
+        <p>I always see myself as a programmer-designer hybrid in the game development field and I’m not letting go of either programming and design - there is something charming about being able to do both, but I wasn’t sure what it is exactly. </p>
+
+        <p>There is an evidence for why programming knowledge is invaluable for designers and their reaction. It’s not hard to come up with a list of great designers who were/are also programmers: Shigeru Miyamoto, Sid Meier, Jonathan Blow, etc. In this article, I will try to answer the question of how I think programming and design complement each other with my experience. Hopefully, part of the answer can apply to those legends, too.</p>
+
+        <h3>Inspiration and Speed</h3>
+
+        <p>One reason why the two disciplinaries help each other is closely tied to the creative process of making games. The process varies for each studio and each person, but here is the way how I make games:</p>
+
+        <ol>
+            <li><strong>Find the core idea of this game.</strong> It’s the most high-level, usually one sentence description of the game. Some examples are: “An emotional journey where two players help each other”, or “An infinitely large world where you shoot and fly at a high speed”.</li>
+            <li><strong>Decide the design pillars.</strong> Pillars will then be used as the guideline of future detailed design decisions. They usually look like this: “Each mechanic should facilitate player-to-player interactions”; “Player should get complete freedom for deciding where to go next”; “or “Each mechanic should be used in at least three places”.</li>
+            <li><strong>Prototype mechanics and gameplay. </strong>This step goes in circle: design a small mechanic -&gt; implement it -&gt; playtest it -&gt; good? keep it / bad? fix it or throw it on a shelf -&gt; design a small mechanic. The reason why a shelf exists is that some mechanics could be used at a later stage.</li>
+            <li><strong>Combine and polish the prototypes.</strong> Yeah, I usually don’t have a formal “development” phase. Things just come together naturally. And a game would be born after some stitching and polishing work.</li>
+        </ol>
+
+        <p>This process looks very design-centric, but programming knowledge helped me in each of the stages.</p>
+
+        <h4>1 - Ideation</h4>
+
+        <p>Some ideas are directly inspired by programming experience. The “infinitely large world” game idea originated because I wanted to make a game centered around procedural generation techniques. This idea then leads me to more ideas related to dynamic systems and procedural generation like dynamic difficulty adjustment through dynamic enemy generation and power-up generation (you can try the game <a href="https://yidizhu.itch.io/you">here</a> by the way, it’s called “You”).</p>
+
+        <p>While for the industry in general, it’s not uncommon for technology to inspire game ideas. In the late 1990s, the advancement in 3D graphics pushed development of games like Quake and Unreal, and RTS games were made better because of 2.5D orthographic projection techniques. If we generalize programming to include technology in general, we can see that more powerful hardware provides the ground for more and better open-world games in recent years. Takuhiro Dohta explicitly said Breath of the Wild was only made possible because of advanced hardware [1].</p>
+
+        <h4>2 - Design pillars</h4>
+
+        <p>Design pillars are influenced by the programming the least because it’s more about design philosophy. </p>
+
+        <h4>3 - Iterations</h4>
+
+        <p>This is where programming skill is the most helpful and makes the process of game development more enjoyable. As I’m the person who programs gameplay, I’m also the person who experiences it first. The minute I finishes programming, I can immediately compile it and try it out. Because I’m also the designer, I can make design changes and implement them on the fly. This process brings super fast iteration speed and as we all know, faster speed leads to more iteration cycles and probably also better results. The experience of making a game better and better every time I play it is also part of the reason why game development is addictive for me - sometimes it’s just an almost infinite positive feedback loop.</p>
+
+        <p>Apart from fast iteration speed, programming also brings a lot of new ideas. As stated in the process, I only had a rough idea of what the game should look like and several design pillars when I start prototyping, so most designs emerge from the process of actually implementing and playing the game. To some degree, the process of making the game facilitates the creation of its remaining part. For example, the grids in “You” was inspired when I was playing the game and found it very fun to squeeze between two blocks. I only get the luxury of doing so as a result of my capabilities of doing both programming and design. If I had a programmer as a partner and I only worked as a designer, it’s not hard to drive the programmer crazy with this process.</p>
+
+        <h4>4 - Polishing</h4>
+
+        <p>The main advantage of programming skills here is still fast speed. As I know how the code works, it’s easy and fast to find the piece of code which influences the feel of control in this game and modify that.</p>
+
+        <p>In a word, working as a programmer-designer hybrid, I get the privilege of faster iterations speeds and resource of inspirations for design.</p>
+
+        <h3>No Communication Barrier</h3>
+
+        <p>A lot of advantages mentioned in the former section comes from the removal of communication barriers. Making games is an inherently interdisciplinary process where expertise from every single domain has a large influence on the end result. However, it’s inherently hard for people from a different domain to communicate with each other smoothly. They typically think in vastly different ways and have different goals. As a simple example, artists want to make the game look great while programmers want the game to run smoothly without any bugs. The differences bring the communication barrier and make it challenging to get a whole interdisciplinary team working on a single shared goal.</p>
+
+        <p>With programming skills, a designer can push the game forward without intervention from programmers and vice versa. Sometimes, it’s hard to describe a design to another person precise enough so that person can precisely deliver what you had in mind. Sometimes, the design you have in mind is just almost impossible to convey without showing the actual gameplay. In such situations, a programmer-designer would be invaluable. A programmer who has design capabilities has the instinct to implement the game in a way that contributes to the design goals. This prevents a single task from going back and forth between different disciplines and will save a lot of development time. </p>
+
+        <p>I’m not saying communication isn’t important and interdisciplinary cooperation sucks. On the contrary, I think we should do anything possible to simplify communication and make it as fluid and effective as possible - it’s the only way people can make big games. One of the best ways to facilitate communication is to get some expertise of the other party you are communicating to. In the context of game development, it means that if you are a designer, you should know how code, music, sound, art, production, and business work on a primal level. This is also the kind of person that companies like Valve are looking for - T shaped employees [2].</p>
+
+        <figure><img src="t-shaped.png"/></figure>
+
+        <p><mark>Figure 1. T-shaped Employee</mark></p>
+
+        <p>However, I think it’s worth pointing out that there is another type of communication - communication with one’s self. This time it’s not about cooperation. It’s more about listening. In most cases, one’s self knows what’s the right thing to do and what can make the game better. Sometimes listening to it is not easy but we should all pay close attention to that as designers.</p>
+
+        <h3>Closing thoughts</h3>
+
+        <p>Apart from inspiration, faster iterations, and no communication barrier, this is one another thing - freedom. It means that once I have a game idea in mind, I can immediately start prototyping without help from other people. What about art? Compared with design and programming, art is much easier to substitute later in the process, so I usually wouldn’t worry about art. This freedom means a lot to me: I can really make the game I want to make, anywhere, anytime. Well, at least I can make a fairly good prototype and use it to gather a team or pitch to others. I treasure this freedom, and it’s the reason why I am always pushing myself to do both. I hope other people can join me and share the joy. And I hope one day it will become a norm in the industry.</p>
+
+        <h3>References</h3>
+
+        <ol>
+            <li>Nintendo (2017). The Making of The Legend of Zelda: Breath of the Wild Video – The Beginning. [YouTube Video]. Retrieved from https://www.youtube.com/watch?v=30jGWna4-Ns.</li>
+            <li>Valve (2012). Handbook for New Employees. Retrieved from http://media.steampowered.com/apps/valve/Valve_NewEmployeeHandbook.pdf</li>
+        </ol>
+
+    </article>
+
+
+    <div id="disqus_thread" class="col-lg-8 col-lg-offset-2"></div>
+            <script>
+
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                 */
+
+                 var disqus_config = function () {
+                 this.page.url = "http://www.yidizhu.com/articles/programmer-designer";  // Replace PAGE_URL with your page's canonical URL variable
+                 this.page.identifier = "programmer-hybrid"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                 };
+
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = '//yidizhu.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    <footer id="footer" class="text-center">
+    </footer>
+</div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Theme JavaScript -->
+<script src="../../js/freelancer.min.js"></script>
+
+</body>
+
+</html>
