@@ -613,8 +613,8 @@ article table .fa, article .fa {
 }
 
 article p {
-    font-size: 1.1em;
-    line-height: 1.6em;
+    font-size: 1.2em;
+    line-height: 1.8em;
     font-family: "Merriweather", serif;
     text-align: left;
     margin-top: 0;
@@ -653,8 +653,8 @@ article .notes {
 
 }
 article ul li, article ol li {
-    font-size: 1.1em;
-    line-height: 1.4em;
+    font-size: 1.2em;
+    line-height: 1.5em;
     font-family: "Merriweather", serif;
     text-align: left;
     padding-bottom: 0.5em;
@@ -662,7 +662,7 @@ article ul li, article ol li {
 
 article ul li ul li, article ol li ol li {
     font-size: 1em;
-    line-height: 1.4em;
+    line-height: 1.5em;
     padding-top: 0.2em;
     padding-bottom: 0;
 }
