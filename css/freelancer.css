@@ -14,7 +14,7 @@ p {
 }
 
 p.small-btm-margin {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 p.small {
@@ -22,7 +22,7 @@ p.small {
 }
 
 a {
-    color: #7a7a7a;
+    color: #3dbee2;
     transition: all ease 0.3s;
 }
 
@@ -30,7 +30,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #3dbee2;
+    color: #1d5c6d;
     outline: none;
     text-decoration: none;
 }
@@ -594,14 +594,18 @@ article .table {
     margin-bottom: 10px;
 }
 
+article table tbody tr {
+    transition: all ease 0.3s;
+}
+
 article table tbody tr td{
     border-top: none !important;
     font-family: "Merriweather", serif;
     font-size: 1.1em;
 }
 
-article table tbody tr {
-    transition: all ease 0.3s;
+article table tbody tr td p a{
+    font-size: 0.9em;
 }
 
 article table tbody tr td:first-child {
