@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113144653-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113144653-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Yidi Zhu, Yidi, Game Design, Autism, Empathy, Kids">
+    <meta name="description" content="Our team work with Beech Bottom Primary School, our project advisors, and the advisory board to design and implement an interactive experience for grade 1-4 students to understand students on the autism spectrum see, hear, and feel life. ">
+    <meta name="author" content="Yidi Zhu">
+
+    <title>Yidi | Pirates of the Whirl</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Theme CSS -->
+    <link href="../../css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../js/loader.js"></script>
+</head>
+
+<body id="page-top" class="index">
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+</nav>
+
+<div class="container"">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <article>
+                <h2>Pirates of the Whirld</h2>
+                <p class="text-center"><i>A board game about sailing and sinking</i></p>
+                <hr class="star-primary">
+                <h3>Project Info</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Duration</td>
+                            <td>3 weeks</td>
+                        </tr>
+
+                        <tr>
+                            <td>Team Size</td>
+                            <td>Solo Project</td>
+                        </tr>
+                        <tr>
+                            <td>Course</td>
+                            <td>This game is made as Game Design Adventure #3 - Dice Canyon</td>
+                        </tr>
+                        <tr>
+                            <td>Links</td>
+                            <td>
+                                <p class="small-btm-margin">
+                                    <a href="ruleset.html" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>Ruleset</a><br>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <hr class="star-primary">
+                
+                <h3>Introduction</h3>
+                <p>
+                    Who doesn't love dices and sailing! This is a game about sailing or sinking, trading or robbing, alliance or treason, at your call.
+                </p>
+
+                <p>
+                    <b>If you want to give this game a try and have a great great time, please contact me! (So bad I didn't find a publisher for it!)</b>
+                </p>
+
+                <h3>Notable Experience</h3>
+                <ol>
+                    <li>
+                        Independently designed, playtested, and iterated on a board game centered around randomness and pvp
+                    </li>
+                    <li>
+                        Designed a deck of cards with varied types for adding strategy depth, creating surprises, balancing players' power
+                    </li>
+                    <li>
+                        Designed a battle mechanic with dice that feels fair and balanced
+                    </li>
+                    <li>
+                        Recreated the feeling of sailing on a dangerous sea as pirates for the players
+                    </li>
+                </ol>
+
+                <hr class="star-primary">
+                <h2>Detailed Design Notes</h2>
+
+                <h3>1 - Brainstorm & Initial idea</h3>
+                <p>
+                Brainstorm of this game is fairly easy, or, almost doesn't exist. I had the idea
+                of a sailing game. I love the feeling of sailing across the sea and conquering
+                all kinds of dangers along the way. This idea itself is solid, "automatically
+                themed" and can generate many interesting gameplay mechanics, so I felt
+                confident with it and decided to go with it.
+                </p>
+                <p>
+                So, the initial idea is: make a game centered around sailing and dices.
+                </p>
+                <p>
+                And the I came up with the problem statement:
+                </p><ol>
+                <li>Make a fun and engaging table top game for 16 - 25 years old people, which
+                can be played in roughly 15 - 30 minutes play sessions. Potentially a good fit
+                to be played during nerd parties
+                <li>Use dices as the center for all mechanics
+                <li>Give the player some space for strategic planning while keeping a sense of
+                uncertainty (which is, a balance of skill and chance)</li></ol>
+                <p>
+                Then I came up with the first rule set.
+                </p>
+                <h3>2 - Initial Set of Rules</h3>
+                <p>
+                This is a sailing & trading & battling game happens on the sea. The first game
+                includes: a map, cards, ship tokens, account books, and two dices.
+                </p>
+                <h4>Set up</h4>
+                <p>
+                In the beginning, each player choose his/her ship and starting harbor, and have
+                the chance to buy some goods. Everyone's starting fund is 2,000. Everyone also
+                gets an account book to mark down transactions.
+                </p>
+                <h4>Map</h4>
+                <ol>
+                <li>Island: no one can sail on islands
+                <li>Whirl: if one stays in the whirl, in his/her rolling stage: <ol>
+                 <li>If two dices are equal, lose half cargo, else:
+                 <li>Draw one card
+                <li>Nanda & Flola: they are neutral cities, randomly sell goods.</li></ol>
+                </li></ol>
+                <h4>Flow</h4>
+                <ol>
+                <li>Everyone take turns to roll two dices: <ol>
+                 <li>Choose one as the tailwind dice, another as dead wind dice. Movement point
+                is the difference between them. If they equal to each other, the player cannot
+                move, but can draw a card.
+                <li>Pirate ship: At the end of each round, two players each roll one dice. The
+                first dice determines the number of steps the pirate ship can move, the second
+                dice determines  the direction: 1-North, and rotate clockwise (2-Northeast,
+                etc). <ol>
+                 <li>If pirate ship gets adjacent to a player ship, that player ship sink.
+                <li>A ship can trade with port when get adjacent to the port or stops in the
+                port.</li></ol>
+                </li></ol>
+                </li></ol>
+                <h4>Cards</h4>
+                <p>
+                (Cards are not included in this document)
+                </p><ol>
+                <li>If not specified, one can use action card at anytime
+                <li>Event cards are triggered when drawn
+                <li>Improv cards are used when drawn</li></ol>
+                <p>
+                
+                <figure><img src="images/image1.jpg"/></figure>
+                <figcaption>A peek at my board game work station</figcaption>
+
+                <h3>3 - Iterations</h3>
+                <h4>3.1 - First iteration</h4>
+                <h5>Analysis:</h5>
+                <p>
+                Playtesters: Yidi himself testing in his head.
+                </p>
+                <p>
+                The pirate ship looks like a good idea, but it's hard to find a convenient and
+                clean way to move it, and it's hard to decide an appropriate penalty. In the
+                first place, I add the pirate ship to increase interactions between players, but
+                this seems like not the best way.
+                </p>
+                <h4>Modifications</h4>
+                <p>
+                Remove the pirate ship, and add the following rule:
+                </p><ol>
+                <li>If a player(A) sails onto or adjacent to another player (B)'s tile, battle:
+                <ol>
+                 <li>Each of them roll two dices:   <ol>
+                  <li>if A is higher: A get half of B's cargo
+                  <li>Else: B is free to move 2 tiles</li>  </ol>
+                </li>  </ol>
+                </li>  </ol>
+                <p>
+                This rule will vastly increase the interaction between players, I think it's
+                promising
+                </p>
+                <p>
+                <strong>Potential problem</strong>
+                </p><ol>
+                <li>Now I'm not sure whether the board I'm using is big enough. And the dice
+                roll rules seem unusual. Focus on them in the next playtest</li></ol>
+                <h4>3.2 - Second iteration</h4>
+                <p>
+                Erhan (ETC 1st year) and I played the game.
+                </p>
+                <h5>Analysis</h5>
+                <p>
+                Erhan was confused with most rules, even I explained them in our native
+                language. So I think it's a good idea to make more clarifications for rules.
+                </p>
+                <h5>Modifications</h5>
+                <p>
+                So, this iteration focuses on clarification of rules.
+                </p><ol>
+                <li>If a ship stops in the whirl or get dragged into the whirl, it's stuck. When
+                stuck: <ol>
+                 <li>The player need to roll a number that's larger than 9 to get out. The
+                player can choose one of the tile adjacent to the whirl. And his/her turn ends.
+                <li>A ship can use partial movement points to stop in a port. When a ship stops
+                in a port, the ship can trade with the port. After trading, the ship can use
+                remaining movement points.
+                <li>After dice roll and movement, draw one card.</li></ol>
+                </li></ol>
+                <h4>3.3 - Third iteration</h4>
+                <p>
+                Lotus (ETC 1st year), Xuejun (ETC 1st year), Erhan (ETC 1st year) and I played
+                the game.
+                </p>
+                <figure><img src="images/image2.jpg"/></figure>
+                <figcaption>Playtesting 3</figcaption>
+                <p>
+                People love the unusual dice roll, and they enjoyed the game! And the potential
+                problem listed in iteration 1 seems to be not a problem at all.
+                </p>
+                <h5>Analysis</h5>
+                <p>
+                They loved the rich interations between players, the mechanics of the whirld,
+                the event and action cards, and the rich system. However, the numerical system
+                of this version is totally messed up! For example, Xuejun got a "full sail"
+                cards, which increases her movement speed by 100% during one turn, and she
+                rolled a 6 and a 1, which gives her a total of 5 * 2 = 10 movement points! She
+                sailed across the sea and got an easy victory.
+                </p>
+                <p>
+                Beside that, there is still many confusions about the rules.
+                </p>
+                <p>
+                One final thing, Erhan seems to not like the improv cards - he always discard
+                them. This is not a good signal.
+                </p>
+                <h5>Modifications</h5>
+                <p>
+                More clarifications:
+                </p><ol>
+                <li>Battle is a choice
+                <li>Can't battle ships that are in the whirld or port
+                <li>Each neutral port only sell one good at a time
+                <li>Inflation also affect new goods
+                <li>Two inflation cards means: x1.4. Not x 1.44</li></ol>
+                <p>
+                I also did some modifications to the cards. One major change is to the "full
+                sail" cards, I changed the extra movement point from 100% to 50%. The reason why
+                I have this card is to give the player the chance to move faster while still
+                taking some risk. Because this card can only be played before dice roll, so its
+                effectiveness still depend on the dice roll. If the player rolls a 2 + 1, the
+                card only gives 1 extra movement points. If the player rolls a 6 + 1, the card
+                gives 3 extra movement points.
+                </p>
+                <h4>3.4 - Fourth Iteration</h4>
+                <p>
+                Tommy (a CS major from GCS), Euna (ETC 1st year), SorryIForgotHisNameA (ETC 2nd
+                year), and SorryIForgotHisNameB (a business major) played this game during the
+                class.
+                </p>
+                <h5>Analysis</h5>
+                <p>
+                They thought the game was surely fun! But the numercial system is totally
+                broken, and the improv cards can be either awkward or interesting, all depending
+                on the people.
+                </p>
+                <p>
+                They gave many nice suggestions, such as making improv cards compulsory,
+                limiting the cargo capacity. They also felt it's so hard to get out of the
+                whirl, and the neutral ports are not really helpful.
+                </p>
+                <h5>Modifications</h5>
+                <ol>
+                <li>Neutral port price changed to 50
+                <li>Cargo limit: 30
+                <li>When roll two identical dice: move point = point
+                <li>When in whirl: roll more than 6 to get out</li></ol>
+                <h4>3.5 - Fifth iteration</h4>
+                <p>
+                Amukta (ECE Junior), Zohaib (HCI Master), and I played the game.
+                </p>
+                <h5>Analysis</h5>
+                <p>
+                This playtesting reveals the math problems in this game!!! It's almost
+                impossible to calculate the numbers after drawing one inflation cards (which
+                increases all prices by 20%).
+                </p>
+                <p>
+                Also, no one want to write on the ship.
+                </p>
+                <p>
+                Also, the goods availability, and prices, chance too frequently. It's hard for
+                players to make strategic planning.
+                </p>
+                <p>
+                They also give me the suggestion to use tokens, but I would need a LOT of them,
+                which makes it not so feasible.
+                </p>
+                <h5>Modifications</h5>
+                <p>
+                If people don't want to write the goods on their ship, and I don't want the ship
+                to look dull, why not give them the chance to name their ships!! It must feel
+                good to sail a ship with a name on it. It's a feel of ownership, and it helps to
+                get players immersed.
+                </p>
+                <p>
+                Then, all trading information can be written on the account book.
+                </p>
+                <p>
+                <strong>To deal with the math problem:</strong>
+                </p><ol>
+                <li>When you get a decimal, convert it to an integer by rounding up (always do
+                this for everything)
+                <li>I changed the "inflation" cards. Right now, they only change the buy prices
+                at all ports without introducing too much decimals.</li></ol>
+                <h4>3.6 - Sixth iteration</h4>
+                <p>
+                I played the new version with myself. This time I focuses on cards.
+                </p>
+                <h5>Analysis</h5>
+                <p>
+                Cards are still a great idea, but the current design is not perfect. First,
+                improv cards are still troublesome. Second, storm card is too OP. Third, there
+                are too few movement intervention cards (like <em>Frame, Full Sail, Dead
+                Wind</em>). I will make modifications to them
+                </p>
+                <h5>Modifications</h5>
+                <ol>
+                <li>For improv cards: make them an optional module that the player can choose
+                whether to include them or not. It would be a nice idea to include them after 2
+                beers. Also, I changed all of them to involve all players, rather than selecting
+                one player and embarrase him/her.
+                <li>For the storm card, I introduced dice roll to it. Player will only lose
+                goods if rolls smaller than 7. This makes the game more random and more
+                exciting!
+                <li>I added more movement intervention cards. Also, one new card: "Tail wind" -
+                get two movement points this turn.
+                <li>Also a card on combat: "Superior strategy" - instantly win a
+                combat.</li></ol>
+                <h4>3.7 - Seventh iteration</h4>
+                <p>
+                Shan (ETC 1st year), Srujani (ETC 1st year), and I played the game.
+                </p>
+                <h5>Analysis</h5>
+                <p>
+                Some confusion about the attack mechanics. Other than that, the playtest went
+                well. And they seem to enjoy writing on the account book.
+                </p>
+                <h5>Modifications</h5>
+                <p>
+                The new map provides less information. I added goods beside ports to show what
+                they sell.
+                </p>
+                <p>
+                And for attack:
+                </p><ol>
+                <li>Attack costs no movement points, and one can only attack once in one
+                turn.</li></ol>
+                <h4>3.8 - Eighth iteration</h4>
+                <p>
+                I had a final playthrough with myself before class. And I feel like the neutral
+                ports is kind annoying - they are not predictable and really change a lot.
+                However, if by any chance a player can buy some good from them, it's very OP! I
+                want to find a way to deal with them.
+                </p>
+                <p>
+                Actually, why don't I set more limitations on harvest cards (harvest cards
+                change the goods being sold at neutral ports). Now, each harvest cards only
+                provide 10 items which is priced at 50/each. So the neutral port will still play
+                a good role in the game, but is still not too OP. I think it's promising. I'll
+                do another playtest after the deadline to find out :)
+                </p>
+                <h3>4 - Final Rule Set</h3>
+                <p>
+                For descriptions of map elements, cards, and battle mechanics, see the attached
+                sheets in the package.
+                </p>
+                <h4>4.1 - Set up</h4>
+                <p>
+                Place the map on a table. Each player gets to pick a ship, name the ship, and
+                write the name on it. Each player gets an account book, that matches the ship's
+                color. Each player gets 2,000 golds as starting fund.
+                </p>
+                <p>
+                Then, each player choose a starting port. (The map is symmetric so it doesn't
+                really matter! Choose anyone you want!)
+                </p>
+                <p>
+                Each player rolls two dices, whoever largest gets to move first.
+                </p>
+                <h4>4.2 - Goal</h4>
+                <p>
+                Whoever gets 20,000 golds first wins!
+                </p>
+                <h4>4.3 - Flow</h4>
+                <p>
+                Player take turns to:
+                </p><ol>
+                <li>Roll two dices. The movement is the different between two dices. However, if
+                the two dice are identical, like two 5s, the movement point will be 5 instead of
+                0.
+                <li>The player can move as he/she wants. <ol>
+                 <li>During/before/after movement, player can trade with ports. Player can only
+                trade with ports when sitting inside them.  <ol>
+                  <li>Trading prices are written on the "price list" sheet that's included in
+                the package. (All additional sheets are also attached to this document)
+                 <li>During/before/after movement, if a player (A) gets adjacent to another
+                player (B)'s ship, or onto another player (B)'s ship, player A can choose to
+                attack player B. See the "Battle mechanics" sheet for more information  <ol>
+                  <li>Note: each player can only attack once in her/his turn. And attacking
+                doesn't cost movement points.
+                <li>Then the turn ends. The player draws a card. Move on to the next player's
+                turn.</li></ol>
+                </li></ol>
+                </li></ol>
+                </li></ol>
+                <p>
+                Notes:
+                </p><ol>
+                <li>The player can use as many action cards during his/her turn as he/she wants.
+                <li>If a ship is in the whirld, or in a port, other ships cannot attack it.
+                <li>For rules on map areas and cards, see attached sheets in the
+                package.</li></ol>
+                <p>
+                <strong>One more thing: Remember to draw a card at the end of your
+                turn.</strong>
+                </p>
+                <h4>4.4 - Additional info sheets</h4>
+                <figure><img src="images/image3.jpg"/></figure>
+                <figcaption>Special Areas</figcaption>
+                <figure><img src="images/image4.jpg"/></figure>
+                <figcaption>Battle Mechanics</figcaption>
+                <figure><img src="images/image5.jpg"/></figure>
+                <figcaption>Card Types</figcaption>
+                <figure><img src="images/image6.jpg"/></figure>
+                <figcaption>Price List</figcaption>
+
+            </article>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- Footer -->
+<footer id="footer" class="text-center">
+    
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Theme JavaScript -->
+<script src="../js/freelancer.min.js"></script>
+</body>
+
+</html>
