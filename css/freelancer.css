@@ -251,6 +251,10 @@ section.success {
     color: snow !important;
 }
 
+.portfolio {
+    padding-top: 10em;
+}
+
 .portfolio h2 {
     padding-top: 0px;
     font-family: "Voces", serif;
