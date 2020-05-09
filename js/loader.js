@@ -1,4 +1,4 @@
 $(document).ready(function () {
-	$("#mainNav").load("http://www.yidizhu.com/resources/header.html");
-	$("#footer").load("http://www.yidizhu.com/resources/footer.html");
+	$("#mainNav").load("https://www.yidizhu.com/resources/header.html");
+	$("#footer").load("https://www.yidizhu.com/resources/footer.html");
 });
